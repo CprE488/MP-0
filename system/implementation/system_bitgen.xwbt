@@ -1,0 +1,7 @@
+INFILE=/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system.ncd
+OUTFILE=/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation
+LICENSE=ISE
+USER_INFO=174157297_174157298_210562663_503

@@ -1,0 +1,25 @@
+16:11:54.443 INFO  - Processing command line option -hwspec /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/system.xml. 
+16:27:15.678 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use 
+16:34:09.822 INFO  - FPGA configured successfully with bitstream "/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/sw/system_hw_platform/system.bit" 
+16:35:29.105 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:35:29.205 INFO  - PS initialization will be done as it is not done before. 
+16:35:29.261 INFO  - Running PS initialization.... 
+16:35:30.320 INFO  - ps7_init is completed. 
+16:35:30.420 INFO  - ps7_post_config is completed. 
+16:35:30.520 INFO  - PS Initialization is complete. 
+16:42:35.397 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:43:58.290 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:44:05.399 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:44:54.578 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:44:59.383 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:49:40.260 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:49:59.228 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:50:02.406 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:51:25.208 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:51:32.403 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:53:13.009 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:53:16.409 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:53:41.011 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:53:44.412 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:01:08.199 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:01:46.694 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
