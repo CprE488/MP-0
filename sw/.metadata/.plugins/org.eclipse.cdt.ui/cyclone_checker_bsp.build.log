@@ -1,0 +1,6 @@
+21:17:25 **** Auto Build of project cyclone_checker_bsp ****
+make -k all 
+Finished building libraries
+
+21:17:25 Build Finished (took 123ms)
+

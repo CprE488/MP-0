@@ -23,3 +23,26 @@
 16:53:44.412 INFO  - Processor reset is completed for ps7_cortexa9_0 
 18:01:08.199 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
 18:01:46.694 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:17:18.602 INFO  - Processing command line option -hwspec /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/system.xml. 
+21:17:20.618 INFO  - The hardware specification for project 'system_hw_platform' is different from /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/system.xml. 
+21:17:20.986 INFO  - Copied contents of /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/system.xml into /system_hw_platform/system.xml. 
+21:17:21.567 INFO  - Copied contents of /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+21:17:23.391 INFO  - Copied contents of /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/ps7_init.c into /system_hw_platform/ps7_init.c. 
+21:17:23.840 INFO  - Copied contents of /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/ps7_init.h into /system_hw_platform/ps7_init.h. 
+21:17:24.409 INFO  - Copied contents of /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/ps7_init.html into /system_hw_platform/ps7_init.html. 
+21:17:24.709 INFO  - Copied contents of /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/ps7_init.tcl into /system_hw_platform/ps7_init.tcl. 
+21:17:25.550 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:17:28.121 INFO  - Updating MSS for Board Support Package Project: cyclone_checker_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: axi_vdma_0, driver: axivdma_v4_05_a.
+			Peripheral Instance: v_tc_0, driver: vtc_v4_00_a.
+ 
+21:17:28.952 INFO  - Updating MSS for Board Support Package Project: hello_world_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: axi_vdma_0, driver: axivdma_v4_05_a.
+			Peripheral Instance: v_tc_0, driver: vtc_v4_00_a.
+ 
+21:17:29.784 INFO  - Updating hardware inferred compiler options for cyclone_checker. 
+21:17:30.542 INFO  - Updating hardware inferred compiler options for hello_world. 
+21:17:30.561 INFO  - Clearing existing target manager status. 
+21:18:24.277 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

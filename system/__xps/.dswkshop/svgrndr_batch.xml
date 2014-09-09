@@ -11,6 +11,14 @@
 
   <RENDERIMG RASNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/processing_system7_0.jpg" SVGNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/processing_system7_0.svg" TMPSVGFN="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/__xps/.dswkshop/processing_system7_0.svg"/>
 
+  <RENDERIMG RASNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/axi_interconnect_1.jpg" SVGNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/axi_interconnect_1.svg" TMPSVGFN="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/__xps/.dswkshop/axi_interconnect_1.svg"/>
+
+  <RENDERIMG RASNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/axi_vdma_0.jpg" SVGNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/axi_vdma_0.svg" TMPSVGFN="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/__xps/.dswkshop/axi_vdma_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/v_axi4s_vid_out_0.jpg" SVGNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/v_axi4s_vid_out_0.svg" TMPSVGFN="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/__xps/.dswkshop/v_axi4s_vid_out_0.svg"/>
+
+  <RENDERIMG RASNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/v_tc_0.jpg" SVGNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/v_tc_0.svg" TMPSVGFN="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/__xps/.dswkshop/v_tc_0.svg"/>
+
   <RENDERIMG RASNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/system_blkd.jpg" SVGNAME="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/SDK/SDK_Export/hw/imgs/system_blkd.svg" TMPSVGFN="/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/__xps/.dswkshop/system_blkd.svg"/>
 
 </RENDERBATCH>

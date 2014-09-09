@@ -32,7 +32,12 @@ entity system_stub is
     processing_system7_0_DDR_DQS : inout std_logic_vector(3 downto 0);
     processing_system7_0_DDR_DQS_n : inout std_logic_vector(3 downto 0);
     processing_system7_0_DDR_VRN : inout std_logic;
-    processing_system7_0_DDR_VRP : inout std_logic
+    processing_system7_0_DDR_VRP : inout std_logic;
+    v_axi4s_vid_out_0_video_hsync_pin : out std_logic;
+    v_axi4s_vid_out_0_video_data_pin : out std_logic_vector(23 downto 0);
+    v_axi4s_vid_out_0_video_vsync_pin : out std_logic;
+    v_axi4s_vid_out_0_video_vblank_pin : out std_logic;
+    v_axi4s_vid_out_0_video_hblank_pin : out std_logic
   );
 end system_stub;
 
@@ -63,7 +68,12 @@ architecture STRUCTURE of system_stub is
       processing_system7_0_DDR_DQS : inout std_logic_vector(3 downto 0);
       processing_system7_0_DDR_DQS_n : inout std_logic_vector(3 downto 0);
       processing_system7_0_DDR_VRN : inout std_logic;
-      processing_system7_0_DDR_VRP : inout std_logic
+      processing_system7_0_DDR_VRP : inout std_logic;
+      v_axi4s_vid_out_0_video_hsync_pin : out std_logic;
+      v_axi4s_vid_out_0_video_data_pin : out std_logic_vector(23 downto 0);
+      v_axi4s_vid_out_0_video_vsync_pin : out std_logic;
+      v_axi4s_vid_out_0_video_vblank_pin : out std_logic;
+      v_axi4s_vid_out_0_video_hblank_pin : out std_logic
     );
   end component;
 
@@ -97,7 +107,12 @@ begin
       processing_system7_0_DDR_DQS => processing_system7_0_DDR_DQS,
       processing_system7_0_DDR_DQS_n => processing_system7_0_DDR_DQS_n,
       processing_system7_0_DDR_VRN => processing_system7_0_DDR_VRN,
-      processing_system7_0_DDR_VRP => processing_system7_0_DDR_VRP
+      processing_system7_0_DDR_VRP => processing_system7_0_DDR_VRP,
+      v_axi4s_vid_out_0_video_hsync_pin => v_axi4s_vid_out_0_video_hsync_pin,
+      v_axi4s_vid_out_0_video_data_pin => v_axi4s_vid_out_0_video_data_pin,
+      v_axi4s_vid_out_0_video_vsync_pin => v_axi4s_vid_out_0_video_vsync_pin,
+      v_axi4s_vid_out_0_video_vblank_pin => v_axi4s_vid_out_0_video_vblank_pin,
+      v_axi4s_vid_out_0_video_hblank_pin => v_axi4s_vid_out_0_video_hblank_pin
     );
 
 end architecture STRUCTURE;

@@ -1,9 +1,611 @@
-16:53:08 **** Incremental Build of configuration Debug for project hello_world ****
+02:01:49 **** Incremental Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:140:1: warning: no semicolon at end of struct or union [enabled by default]
+../src/main.c: In function 'init_board':
+../src/main.c:147:14: error: expected expression before ')' token
+../src/main.c:148:2: error: expected expression before '}' token
+../src/main.c: In function 'main':
+../src/main.c:169:22: error: 'Background' undeclared (first use in this function)
+../src/main.c:169:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:182:9: error: expected ';' before ')' token
+../src/main.c:182:9: error: expected expression before ')' token
+../src/main.c:157:8: warning: unused variable 'background' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:75:12: warning: 'queen' defined but not used [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:185:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+02:08:15 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:160:5: error: too many arguments to function 'init_board'
+../src/main.c:138:6: note: declared here
+../src/main.c:166:22: error: 'Background' undeclared (first use in this function)
+../src/main.c:166:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:179:9: error: expected ';' before ')' token
+../src/main.c:179:9: error: expected expression before ')' token
+../src/main.c:154:8: warning: unused variable 'background' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:75:12: warning: 'queen' defined but not used [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:182:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+02:09:06 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:179:9: error: expected ';' before ')' token
+../src/main.c:179:9: error: expected expression before ')' token
+../src/main.c: At top level:
+../src/main.c:75:12: warning: 'queen' defined but not used [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:182:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+02:09:23 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:75:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23640	   1448	 644532	 669620	  a37b4	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+02:20:12 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:43:2: error: unknown type name 'Img'
+../src/main.c:44:2: error: unknown type name 'Cell'
+../src/main.c:94:12: warning: 'queen' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+02:21:12 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:97:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24896	   1448	 646836	 673180	  a459c	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+02:27:07 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25484	   1448	 647860	 674792	  a4be8	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+02:43:24 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'print_board':
+../src/main.c:214:5: error: expected ';' before '}' token
+../src/main.c:223:22: error: invalid operands to binary & (have 'u8 *' and 'int')
+../src/main.c: In function 'main':
+../src/main.c:268:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+02:43:59 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'print_board':
+../src/main.c:214:5: error: expected ';' before '}' token
+../src/main.c:223:22: error: invalid operands to binary & (have 'u8 *' and 'int')
+../src/main.c: In function 'main':
+../src/main.c:268:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+02:44:23 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'print_board':
+../src/main.c:214:5: error: expected ';' before '}' token
+../src/main.c:223:24: error: invalid operands to binary & (have 'u8 *' and 'int')
+../src/main.c: In function 'main':
+../src/main.c:268:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+02:45:15 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'print_board':
+../src/main.c:214:5: error: expected ';' before '}' token
+../src/main.c:218:7: error: expected identifier or '(' before '[' token
+../src/main.c:223:11: error: 'img' undeclared (first use in this function)
+../src/main.c:223:11: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:268:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+02:45:29 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'print_board':
+../src/main.c:218:7: error: expected identifier or '(' before '[' token
+../src/main.c:223:11: error: 'img' undeclared (first use in this function)
+../src/main.c:223:11: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:268:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+02:46:45 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:268:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26648	   1448	 647860	 675956	  a5074	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+11:38:28 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:239:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c:236:9: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+../src/main.c:236:6: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'main':
+../src/main.c:257:5: warning: implicit declaration of function 'place_pices' [-Wimplicit-function-declaration]
+../src/main.c:280:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/sw/cyclone_checker/Debug/../src/main.c:257: undefined reference to `place_pices'
+collect2: error: ld returned 1 exit status
+make: *** [cyclone_checker.elf] Error 1
+11:39:16 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:239:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c:236:9: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+../src/main.c:236:6: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'main':
+../src/main.c:280:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26856	   1448	 647860	 676164	  a5144	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+11:42:25 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:241:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c:244:24: error: 'queens' undeclared (first use in this function)
+../src/main.c:244:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:284:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+11:42:41 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:241:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'main':
+../src/main.c:284:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27040	   1448	 647860	 676348	  a51fc	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+11:43:28 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:241:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'main':
+../src/main.c:263:5: warning: implicit declaration of function 'set_queen_colors' [-Wimplicit-function-declaration]
+../src/main.c:286:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/sw/cyclone_checker/Debug/../src/main.c:263: undefined reference to `set_queen_colors'
+collect2: error: ld returned 1 exit status
+make: *** [cyclone_checker.elf] Error 1
+11:47:51 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:241:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:248:1: warning: return type defaults to 'int' [-Wreturn-type]
+../src/main.c: In function 'main':
+../src/main.c:339:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:12: warning: 'queen' defined but not used [-Wunused-variable]
+../src/main.c: In function 'set_queen_colors':
+../src/main.c:299:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28128	   1448	 647860	 677436	  a563c	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+11:51:19 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:242:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'main':
+../src/main.c:365:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:106:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28200	   1448	 647892	 677540	  a56a4	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+12:21:00 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:242:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'run_step':
+../src/main.c:444:8: warning: operation on 'best' may be undefined [-Wsequence-point]
+../src/main.c:370:15: warning: unused variable 'cell2' [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:493:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:106:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30612	   1448	 647892	 679952	  a6010	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+22:01:28 **** Build of project hello_world_bsp ****
+make -k all 
+Finished building libraries
+22:01:30 **** Build of configuration Debug for project hello_world ****
 make all 
 make: Nothing to be done for `all'.
-16:53:12 **** Incremental Build of configuration Debug for project hello_world ****
+22:01:30 **** Build of project cyclone_checker_bsp ****
+make -k all 
+Finished building libraries
+22:01:32 **** Build of configuration Debug for project cyclone_checker ****
 make all 
-make: Nothing to be done for `all'.
-16:53:39 **** Incremental Build of configuration Debug for project hello_world ****
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:242:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'run_step':
+../src/main.c:444:8: warning: operation on 'best' may be undefined [-Wsequence-point]
+../src/main.c:370:15: warning: unused variable 'cell2' [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:493:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:106:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70012	   2616	 647964	 720592	  afed0	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+22:01:34 **** Build of configuration Debug for project vga_test ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/vga_test.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga_test.d" -MT"src/vga_test.d" -o "src/vga_test.o" "../src/vga_test.c"
+../src/vga_test.c:19:25: fatal error: xparameters.h: No such file or directory
+compilation terminated.
+make: *** [src/vga_test.o] Error 1
+22:01:59 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:242:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'run_step':
+../src/main.c:444:8: warning: operation on 'best' may be undefined [-Wsequence-point]
+../src/main.c:370:15: warning: unused variable 'cell2' [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:493:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:106:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70012	   2616	 647964	 720592	  afed0	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+22:03:25 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:242:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'run_step':
+../src/main.c:370:15: warning: unused variable 'cell2' [-Wunused-variable]
+../src/main.c: In function 'main':
+../src/main.c:493:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:106:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70004	   2616	 647964	 720584	  afec8	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+22:04:13 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:242:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'main':
+../src/main.c:493:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:106:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70004	   2616	 647964	 720584	  afec8	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+22:13:05 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'place_pieces':
+../src/main.c:267:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'main':
+../src/main.c:518:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:106:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70004	   2616	 647964	 720584	  afec8	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+22:13:19 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'print_board':
+../src/main.c:207:15: warning: unused variable 'j' [-Wunused-variable]
+../src/main.c:207:12: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c: In function 'place_pieces':
+../src/main.c:269:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'main':
+../src/main.c:520:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:108:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69632	   2616	 647964	 720212	  afd54	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+00:17:12 **** Auto Build of configuration Debug for project cyclone_checker ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'print_board':
+../src/main.c:207:15: warning: unused variable 'j' [-Wunused-variable]
+../src/main.c:207:12: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c: In function 'place_pieces':
+../src/main.c:269:4: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+../src/main.c: In function 'main':
+../src/main.c:522:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:108:12: warning: 'queen' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: cyclone_checker.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cyclone_checker.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69632	   2616	 647964	 720212	  afd54	cyclone_checker.elf
+Finished building: cyclone_checker.elf.size
+ 
+21:17:22 **** Auto Build of project hello_world_bsp ****
+make -k all 
+Finished building libraries
+21:17:23 **** Auto Build of project hello_world_bsp ****
+make -k all 
+Finished building libraries
+21:17:23 **** Auto Build of project hello_world_bsp ****
+make -k all 
+Finished building libraries
+21:17:24 **** Auto Build of project hello_world_bsp ****
+make -k all 
+Finished building libraries
+21:17:24 **** Auto Build of project hello_world_bsp ****
+make -k all 
+Finished building libraries
+21:17:25 **** Auto Build of project cyclone_checker_bsp ****
+make -k all 
+Finished building libraries
