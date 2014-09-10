@@ -68,7 +68,7 @@ module system_v_axi4s_vid_out_0_wrapper
       .RAM_ADDR_BITS ( 10 ),
       .HYSTERESIS_LEVEL ( 12 ),
       .FILL_GUARDBAND ( 2 ),
-      .VTG_MASTER_SLAVE ( 0 )
+      .VTG_MASTER_SLAVE ( 1 )
     )
     v_axi4s_vid_out_0 (
       .aclk ( aclk ),

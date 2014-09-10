@@ -5,7 +5,7 @@ Parameter TMPDIR set to /tmp/cpre488/MP-0/system/synthesis/xst_temp_dir/
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 
@@ -322,10 +322,8 @@ WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vh
 WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_generator.vhd" Line 268: Net <v1sync_start[11]> does not have a driver.
 WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_generator.vhd" Line 269: Net <v1bp_start[11]> does not have a driver.
 WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_generator.vhd" Line 270: Net <v1active_start[11]> does not have a driver.
-WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_generator.vhd" Line 278: Net <v1fp_start_hori[11]> does not have a driver.
 WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_generator.vhd" Line 279: Net <v1sync_start_hori[11]> does not have a driver.
 WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_generator.vhd" Line 280: Net <v1bp_start_hori[11]> does not have a driver.
-WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_generator.vhd" Line 281: Net <v1active_start_hori[11]> does not have a driver.
 WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_top.vhd" Line 285: Net <det_htotal_int[11]> does not have a driver.
 WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_top.vhd" Line 286: Net <det_hfp_start_int[11]> does not have a driver.
 WARNING:HDLCompiler:634 - "/tmp/cpre488/MP-0/system/hdl/xlpp/v_tc_v5_01_a/hdl/vhdl/tc_top.vhd" Line 287: Net <det_hsync_start_int[11]> does not have a driver.
@@ -449,25 +447,25 @@ Top Level Output File Name         : system_v_tc_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1930
+# BELS                             : 1890
 #      GND                         : 1
 #      INV                         : 30
 #      LUT1                        : 31
-#      LUT2                        : 33
+#      LUT2                        : 29
 #      LUT3                        : 55
-#      LUT4                        : 468
-#      LUT5                        : 315
-#      LUT6                        : 788
+#      LUT4                        : 472
+#      LUT5                        : 289
+#      LUT6                        : 774
 #      MUXCY                       : 51
 #      MUXF7                       : 77
 #      MUXF8                       : 24
 #      VCC                         : 1
 #      XORCY                       : 56
-# FlipFlops/Latches                : 1480
-#      FD                          : 295
-#      FDR                         : 785
-#      FDRE                        : 272
-#      FDS                         : 115
+# FlipFlops/Latches                : 1427
+#      FD                          : 294
+#      FDR                         : 791
+#      FDRE                        : 245
+#      FDS                         : 84
 #      FDSE                        : 13
 
 Device utilization summary:
@@ -477,15 +475,15 @@ Selected Device : 7z020clg484-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1480  out of  106400     1%  
- Number of Slice LUTs:                 1720  out of  53200     3%  
-    Number used as Logic:              1720  out of  53200     3%  
+ Number of Slice Registers:            1427  out of  106400     1%  
+ Number of Slice LUTs:                 1680  out of  53200     3%  
+    Number used as Logic:              1680  out of  53200     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2460
-   Number with an unused Flip Flop:     980  out of   2460    39%  
-   Number with an unused LUT:           740  out of   2460    30%  
-   Number of fully used LUT-FF pairs:   740  out of   2460    30%  
+ Number of LUT Flip Flop pairs used:   2394
+   Number with an unused Flip Flop:     967  out of   2394    40%  
+   Number with an unused LUT:           714  out of   2394    29%  
+   Number of fully used LUT-FF pairs:   713  out of   2394    29%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -515,7 +513,7 @@ Clock Information:
 -----------------------------------+----------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                  | Load  |
 -----------------------------------+----------------------------------------+-------+
-clk                                | NONE(v_tc_0/gen_v0chroma_start_0)      | 1279  |
+clk                                | NONE(v_tc_0/gen_v0chroma_start_0)      | 1226  |
 s_axi_aclk                         | NONE(v_tc_0/U_VIDEO_CTRL/proc_sync1_44)| 201   |
 -----------------------------------+----------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -529,7 +527,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 3.566ns (Maximum Frequency: 280.414MHz)
-   Minimum input arrival time before clock: 1.909ns
+   Minimum input arrival time before clock: 2.714ns
    Maximum output required time after clock: 0.847ns
    Maximum combinational path delay: No path found
 
@@ -540,7 +538,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 3.566ns (frequency: 280.414MHz)
-  Total number of paths / destination ports: 19418 / 2410
+  Total number of paths / destination ports: 19058 / 2305
 -------------------------------------------------------------------------
 Delay:               3.566ns (Levels of Logic = 6)
   Source:            sec_inst (FF)
@@ -589,9 +587,9 @@ Delay:               1.839ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1756 / 1170
+  Total number of paths / destination ports: 1680 / 1117
 -------------------------------------------------------------------------
-Offset:              1.909ns (Levels of Logic = 4)
+Offset:              2.714ns (Levels of Logic = 6)
   Source:            clken (PAD)
   Destination:       sec_inst (FF)
   Destination Clock: clk rising
@@ -601,13 +599,15 @@ Offset:              1.909ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      begin scope: 'v_tc_0:clken'
-     SEC:in->out          32   0.053   0.788  sec_inst (sec_net)
-     SEC:in->out          24   0.053   0.748  sec_inst (sec_net)
+     SEC:in->out         155   0.053   0.918  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           2   0.053   0.608  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
      SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
      SEC:in                    0.011          sec_inst
     ----------------------------------------
-    Total                      1.909ns (0.373ns logic, 1.536ns route)
-                                       (19.5% logic, 80.5% route)
+    Total                      2.714ns (0.362ns logic, 2.352ns route)
+                                       (13.3% logic, 86.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 's_axi_aclk'
@@ -651,7 +651,7 @@ Offset:              0.847ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 12 / 12
+  Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
 Offset:              0.282ns (Levels of Logic = 1)
   Source:            sec_inst (FF)
@@ -694,15 +694,15 @@ s_axi_aclk     |    1.839|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 96.00 secs
-Total CPU time to Xst completion: 54.90 secs
+Total REAL time to Xst completion: 97.00 secs
+Total CPU time to Xst completion: 55.48 secs
  
 --> 
 
 
-Total memory usage is 720632 kilobytes
+Total memory usage is 720876 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   57 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
 Number of infos    :    4 (   0 filtered)
 

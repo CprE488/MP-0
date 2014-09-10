@@ -200,12 +200,17 @@ BEGIN axi_vdma
  PARAMETER C_INCLUDE_S2MM = 0
  PARAMETER C_M_AXIS_MM2S_TDATA_WIDTH = 16
  PARAMETER C_NUM_FSTORES = 1
+ PARAMETER C_PRMRY_IS_ACLK_ASYNC = 1
+ PARAMETER C_INCLUDE_MM2S_DRE = 1
+ PARAMETER C_MM2S_LINEBUFFER_DEPTH = 8192
+ PARAMETER C_MM2S_LINEBUFFER_THRESH = 8160
  BUS_INTERFACE S_AXI_LITE = axi4lite_0
  BUS_INTERFACE M_AXI_MM2S = axi_interconnect_1
  BUS_INTERFACE M_AXIS_MM2S = axi_vdma_0_M_AXIS_MM2S
  PORT m_axis_mm2s_aclk = processing_system7_0_FCLK_CLK0
  PORT s_axi_lite_aclk = processing_system7_0_FCLK_CLK0
  PORT m_axi_mm2s_aclk = processing_system7_0_FCLK_CLK0
+ PORT mm2s_fsync = v_tc_0_fsync_out
 END
 
 BEGIN v_axi4s_vid_out
@@ -220,7 +225,6 @@ BEGIN v_axi4s_vid_out
  PORT video_vblank = v_axi4s_vid_out_0_video_vblank
  PORT video_data = v_axi4s_vid_out_0_video_data
  PORT video_vsync = v_axi4s_vid_out_0_video_vsync
- PORT video_hblank = v_axi4s_vid_out_0_video_hblank
  PORT video_out_clk = processing_system7_0_FCLK_CLK1
  PORT aclk = processing_system7_0_FCLK_CLK0
  PORT rst = net_gnd
@@ -233,7 +237,7 @@ BEGIN v_tc
  PARAMETER HW_VER = 5.01.a
  PARAMETER C_BASEADDR = 0x42001000
  PARAMETER C_HIGHADDR = 0x42001FFF
- PARAMETER C_GEN_VIDEO_FORMAT = 1
+ PARAMETER C_GEN_VIDEO_FORMAT = 2
  PARAMETER C_GEN_VBLANK_EN = 0
  PARAMETER C_GEN_HBLANK_EN = 0
  PARAMETER C_GEN_HACTIVE_SIZE = 640
@@ -258,5 +262,6 @@ BEGIN v_tc
  PORT clken = net_vcc
  PORT resetn = net_vcc
  PORT gen_clken = net_vcc
+ PORT fsync_out = v_tc_0_fsync_out
 END
 

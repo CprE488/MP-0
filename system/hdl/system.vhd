@@ -1448,6 +1448,7 @@ architecture STRUCTURE of system is
   signal axi4lite_0_S_ARADDR : std_logic_vector(31 downto 0);
   signal axi4lite_0_S_ARBURST : std_logic_vector(1 downto 0);
   signal axi4lite_0_S_ARCACHE : std_logic_vector(3 downto 0);
+  signal axi4lite_0_S_ARESETN : std_logic_vector(0 to 0);
   signal axi4lite_0_S_ARID : std_logic_vector(11 downto 0);
   signal axi4lite_0_S_ARLEN : std_logic_vector(7 downto 0);
   signal axi4lite_0_S_ARLOCK : std_logic_vector(1 downto 0);
@@ -1612,7 +1613,7 @@ begin
     port map (
       INTERCONNECT_ACLK => pgassign1(4),
       INTERCONNECT_ARESETN => processing_system7_0_FCLK_RESET0_N_0,
-      S_AXI_ARESET_OUT_N => open,
+      S_AXI_ARESET_OUT_N => axi4lite_0_S_ARESETN(0 to 0),
       M_AXI_ARESET_OUT_N => axi4lite_0_M_ARESETN,
       IRQ => open,
       S_AXI_ACLK => pgassign1(4 downto 4),
@@ -2895,7 +2896,7 @@ begin
     port map (
       aclk => pgassign1(4),
       rst => net_gnd0,
-      aresetn => net_vcc0,
+      aresetn => axi4lite_0_S_ARESETN(0),
       aclken => net_vcc0,
       s_axis_video_tdata => axi_vdma_0_M_AXIS_MM2S_TDATA,
       s_axis_video_tvalid => axi_vdma_0_M_AXIS_MM2S_TVALID,

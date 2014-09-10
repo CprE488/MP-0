@@ -59,3 +59,31 @@
 21:45:04.731 INFO  - Updating hardware inferred compiler options for hello_world. 
 21:45:04.779 INFO  - Clearing existing target manager status. 
 22:15:19.292 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:05:39.454 INFO  - Project system_hw_platform's source hardware specification located at /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:05:45.061 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml into /system_hw_platform/system.xml. 
+16:05:45.074 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+16:05:45.139 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.c into /system_hw_platform/ps7_init.c. 
+16:05:45.140 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.h into /system_hw_platform/ps7_init.h. 
+16:05:45.143 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.html into /system_hw_platform/ps7_init.html. 
+16:05:45.145 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.tcl into /system_hw_platform/ps7_init.tcl. 
+16:05:46.031 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:06:10.187 INFO  - Updating hardware inferred compiler options for cyclone_checker. 
+16:06:10.942 INFO  - Updating hardware inferred compiler options for hello_world. 
+16:06:11.693 INFO  - Updating hardware inferred compiler options for vga_test. 
+16:06:11.729 INFO  - Clearing existing target manager status. 
+16:06:12.005 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use 
+16:24:21.138 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+16:24:36.752 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+16:25:19.730 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:25:27.562 INFO  - Processing command line option -hwspec /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml. 
+16:28:02.702 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use 
+16:31:18.250 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+16:33:02.343 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:33:02.443 INFO  - PS initialization will be done as it is not done before. 
+16:33:02.444 INFO  - Running PS initialization.... 
+16:33:03.478 INFO  - ps7_init is completed. 
+16:33:03.578 INFO  - ps7_post_config is completed. 
+16:33:03.678 INFO  - PS Initialization is complete. 
+16:48:18.900 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:49:52.241 INFO  - Processor reset is completed for ps7_cortexa9_0 
