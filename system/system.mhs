@@ -37,7 +37,9 @@
  PORT processing_system7_0_DDR_VRP = processing_system7_0_DDR_VRP, DIR = IO
  PORT VGA_VS = v_axi4s_vid_out_0_video_vsync, DIR = O
  PORT VGA_HS = v_axi4s_vid_out_0_video_hsync, DIR = O
- PORT VGA_DATA = v_axi4s_vid_out_0_video_data, DIR = O, VEC = [23:0]
+ PORT VGA_DATA = v_axi4s_vid_out_0_video_data, DIR = O, VEC = [11:0]
+ PORT v_tc_0_vsync_out_pin = v_tc_0_VTIMING_OUT_vsync, DIR = O
+ PORT v_tc_0_hsync_out_pin = v_tc_0_VTIMING_OUT_hsync, DIR = O
 
 
 BEGIN axi_interconnect
@@ -196,7 +198,7 @@ BEGIN axi_vdma
  PARAMETER C_HIGHADDR = 0x00000000
  PARAMETER C_USE_FSYNC = 0
  PARAMETER C_INCLUDE_S2MM = 0
- PARAMETER C_M_AXIS_MM2S_TDATA_WIDTH = 24
+ PARAMETER C_M_AXIS_MM2S_TDATA_WIDTH = 16
  BUS_INTERFACE S_AXI_LITE = axi4lite_0
  BUS_INTERFACE M_AXI_MM2S = axi_interconnect_1
  BUS_INTERFACE M_AXIS_MM2S = axi_vdma_0_M_AXIS_MM2S
@@ -208,6 +210,8 @@ END
 BEGIN v_axi4s_vid_out
  PARAMETER INSTANCE = v_axi4s_vid_out_0
  PARAMETER HW_VER = 2.01.a
+ PARAMETER C_S_AXIS_VIDEO_DATA_WIDTH = 12
+ PARAMETER C_S_AXIS_VIDEO_FORMAT = 13
  BUS_INTERFACE S_AXIS_VIDEO = axi_vdma_0_M_AXIS_MM2S
  BUS_INTERFACE VTIMING_IN = v_tc_0_VTIMING_OUT
  PORT video_hsync = v_axi4s_vid_out_0_video_hsync
@@ -224,6 +228,7 @@ BEGIN v_tc
  PARAMETER HW_VER = 5.01.a
  PARAMETER C_BASEADDR = 0xffffffff
  PARAMETER C_HIGHADDR = 0x00000000
+ PARAMETER C_GEN_VIDEO_FORMAT = 2
  BUS_INTERFACE S_AXI = axi4lite_0
  BUS_INTERFACE VTIMING_OUT = v_tc_0_VTIMING_OUT
  PORT s_axi_aclk = processing_system7_0_FCLK_CLK0

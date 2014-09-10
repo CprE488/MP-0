@@ -33,11 +33,11 @@ entity system is
     processing_system7_0_DDR_DQS_n : inout std_logic_vector(3 downto 0);
     processing_system7_0_DDR_VRN : inout std_logic;
     processing_system7_0_DDR_VRP : inout std_logic;
-    v_axi4s_vid_out_0_video_hsync_pin : out std_logic;
-    v_axi4s_vid_out_0_video_data_pin : out std_logic_vector(23 downto 0);
-    v_axi4s_vid_out_0_video_vsync_pin : out std_logic;
-    v_axi4s_vid_out_0_video_vblank_pin : out std_logic;
-    v_axi4s_vid_out_0_video_hblank_pin : out std_logic
+    VGA_VS : out std_logic;
+    VGA_HS : out std_logic;
+    VGA_DATA : out std_logic_vector(11 downto 0);
+    v_tc_0_vsync_out_pin : out std_logic;
+    v_tc_0_hsync_out_pin : out std_logic
   );
 end system;
 
@@ -1284,8 +1284,8 @@ architecture STRUCTURE of system is
       m_axi_mm2s_rvalid : in std_logic;
       m_axi_mm2s_rready : out std_logic;
       mm2s_prmry_reset_out_n : out std_logic;
-      m_axis_mm2s_tdata : out std_logic_vector(23 downto 0);
-      m_axis_mm2s_tkeep : out std_logic_vector(2 downto 0);
+      m_axis_mm2s_tdata : out std_logic_vector(15 downto 0);
+      m_axis_mm2s_tkeep : out std_logic_vector(1 downto 0);
       m_axis_mm2s_tvalid : out std_logic;
       m_axis_mm2s_tready : in std_logic;
       m_axis_mm2s_tlast : out std_logic;
@@ -1339,7 +1339,7 @@ architecture STRUCTURE of system is
       rst : in std_logic;
       aresetn : in std_logic;
       aclken : in std_logic;
-      s_axis_video_tdata : in std_logic_vector(23 downto 0);
+      s_axis_video_tdata : in std_logic_vector(15 downto 0);
       s_axis_video_tvalid : in std_logic;
       s_axis_video_tready : out std_logic;
       s_axis_video_tuser : in std_logic;
@@ -1350,7 +1350,7 @@ architecture STRUCTURE of system is
       video_hsync : out std_logic;
       video_vblank : out std_logic;
       video_hblank : out std_logic;
-      video_data : out std_logic_vector(23 downto 0);
+      video_data : out std_logic_vector(11 downto 0);
       vtg_vsync : in std_logic;
       vtg_hsync : in std_logic;
       vtg_vblank : in std_logic;
@@ -1534,7 +1534,7 @@ architecture STRUCTURE of system is
   signal axi_interconnect_1_S_RREADY : std_logic_vector(0 to 0);
   signal axi_interconnect_1_S_RRESP : std_logic_vector(1 downto 0);
   signal axi_interconnect_1_S_RVALID : std_logic_vector(0 to 0);
-  signal axi_vdma_0_M_AXIS_MM2S_TDATA : std_logic_vector(23 downto 0);
+  signal axi_vdma_0_M_AXIS_MM2S_TDATA : std_logic_vector(15 downto 0);
   signal axi_vdma_0_M_AXIS_MM2S_TLAST : std_logic;
   signal axi_vdma_0_M_AXIS_MM2S_TREADY : std_logic;
   signal axi_vdma_0_M_AXIS_MM2S_TUSER : std_logic_vector(0 to 0);
@@ -1556,12 +1556,10 @@ architecture STRUCTURE of system is
   signal pgassign1 : std_logic_vector(4 downto 0);
   signal processing_system7_0_DDR_WEB : std_logic;
   signal processing_system7_0_FCLK_CLK0 : std_logic_vector(0 to 0);
-  signal processing_system7_0_FCLK_CLK1 : std_logic_vector(0 to 0);
+  signal processing_system7_0_FCLK_CLK1 : std_logic;
   signal processing_system7_0_FCLK_RESET0_N_0 : std_logic;
-  signal v_axi4s_vid_out_0_video_data : std_logic_vector(23 downto 0);
-  signal v_axi4s_vid_out_0_video_hblank : std_logic;
+  signal v_axi4s_vid_out_0_video_data : std_logic_vector(11 downto 0);
   signal v_axi4s_vid_out_0_video_hsync : std_logic;
-  signal v_axi4s_vid_out_0_video_vblank : std_logic;
   signal v_axi4s_vid_out_0_video_vsync : std_logic;
   signal v_tc_0_VTIMING_OUT_active_video : std_logic;
   signal v_tc_0_VTIMING_OUT_hblank : std_logic;
@@ -1585,13 +1583,13 @@ begin
   -- Internal assignments
 
   processing_system7_0_DDR_WEB_pin <= processing_system7_0_DDR_WEB;
-  v_axi4s_vid_out_0_video_hsync_pin <= v_axi4s_vid_out_0_video_hsync;
-  v_axi4s_vid_out_0_video_data_pin <= v_axi4s_vid_out_0_video_data;
-  v_axi4s_vid_out_0_video_vsync_pin <= v_axi4s_vid_out_0_video_vsync;
-  v_axi4s_vid_out_0_video_vblank_pin <= v_axi4s_vid_out_0_video_vblank;
-  v_axi4s_vid_out_0_video_hblank_pin <= v_axi4s_vid_out_0_video_hblank;
-  pgassign1(4 downto 4) <= processing_system7_0_FCLK_CLK1(0 to 0);
-  pgassign1(3 downto 3) <= processing_system7_0_FCLK_CLK1(0 to 0);
+  VGA_VS <= v_axi4s_vid_out_0_video_vsync;
+  VGA_HS <= v_axi4s_vid_out_0_video_hsync;
+  VGA_DATA <= v_axi4s_vid_out_0_video_data;
+  v_tc_0_vsync_out_pin <= v_tc_0_VTIMING_OUT_vsync;
+  v_tc_0_hsync_out_pin <= v_tc_0_VTIMING_OUT_hsync;
+  pgassign1(4 downto 4) <= processing_system7_0_FCLK_CLK0(0 to 0);
+  pgassign1(3 downto 3) <= processing_system7_0_FCLK_CLK0(0 to 0);
   pgassign1(2 downto 2) <= processing_system7_0_FCLK_CLK0(0 to 0);
   pgassign1(1 downto 1) <= processing_system7_0_FCLK_CLK0(0 to 0);
   pgassign1(0 downto 0) <= processing_system7_0_FCLK_CLK0(0 to 0);
@@ -1612,12 +1610,12 @@ begin
 
   axi4lite_0 : system_axi4lite_0_wrapper
     port map (
-      INTERCONNECT_ACLK => pgassign1(2),
+      INTERCONNECT_ACLK => pgassign1(4),
       INTERCONNECT_ARESETN => processing_system7_0_FCLK_RESET0_N_0,
       S_AXI_ARESET_OUT_N => open,
       M_AXI_ARESET_OUT_N => axi4lite_0_M_ARESETN,
       IRQ => open,
-      S_AXI_ACLK => pgassign1(2 downto 2),
+      S_AXI_ACLK => pgassign1(4 downto 4),
       S_AXI_AWID => axi4lite_0_S_AWID,
       S_AXI_AWADDR => axi4lite_0_S_AWADDR,
       S_AXI_AWLEN => axi4lite_0_S_AWLEN,
@@ -1820,7 +1818,7 @@ begin
 
   SWs_8Bits : system_sws_8bits_wrapper
     port map (
-      S_AXI_ACLK => pgassign1(2),
+      S_AXI_ACLK => pgassign1(4),
       S_AXI_ARESETN => axi4lite_0_M_ARESETN(0),
       S_AXI_AWADDR => axi4lite_0_M_AWADDR(8 downto 0),
       S_AXI_AWVALID => axi4lite_0_M_AWVALID(0),
@@ -1850,7 +1848,7 @@ begin
 
   LEDs_8Bits : system_leds_8bits_wrapper
     port map (
-      S_AXI_ACLK => pgassign1(2),
+      S_AXI_ACLK => pgassign1(4),
       S_AXI_ARESETN => axi4lite_0_M_ARESETN(1),
       S_AXI_AWADDR => axi4lite_0_M_AWADDR(40 downto 32),
       S_AXI_AWVALID => axi4lite_0_M_AWVALID(1),
@@ -1880,7 +1878,7 @@ begin
 
   BTNs_5Bits : system_btns_5bits_wrapper
     port map (
-      S_AXI_ACLK => pgassign1(2),
+      S_AXI_ACLK => pgassign1(4),
       S_AXI_ARESETN => axi4lite_0_M_ARESETN(2),
       S_AXI_AWADDR => axi4lite_0_M_AWADDR(72 downto 64),
       S_AXI_AWVALID => axi4lite_0_M_AWVALID(2),
@@ -2106,7 +2104,7 @@ begin
       M_AXI_GP0_AWLEN => axi4lite_0_S_AWLEN(3 downto 0),
       M_AXI_GP0_AWQOS => axi4lite_0_S_AWQOS,
       M_AXI_GP0_WSTRB => axi4lite_0_S_WSTRB,
-      M_AXI_GP0_ACLK => pgassign1(2),
+      M_AXI_GP0_ACLK => pgassign1(4),
       M_AXI_GP0_ARREADY => axi4lite_0_S_ARREADY(0),
       M_AXI_GP0_AWREADY => axi4lite_0_S_AWREADY(0),
       M_AXI_GP0_BVALID => axi4lite_0_S_BVALID(0),
@@ -2296,7 +2294,7 @@ begin
       S_AXI_HP0_WCOUNT => open,
       S_AXI_HP0_RACOUNT => open,
       S_AXI_HP0_WACOUNT => open,
-      S_AXI_HP0_ACLK => pgassign1(2),
+      S_AXI_HP0_ACLK => pgassign1(4),
       S_AXI_HP0_ARVALID => axi_interconnect_1_M_ARVALID(0),
       S_AXI_HP0_AWVALID => axi_interconnect_1_M_AWVALID(0),
       S_AXI_HP0_BREADY => axi_interconnect_1_M_BREADY(0),
@@ -2512,7 +2510,7 @@ begin
       FTMT_P2F_DEBUG => open,
       FCLK_CLK3 => open,
       FCLK_CLK2 => open,
-      FCLK_CLK1 => processing_system7_0_FCLK_CLK1(0),
+      FCLK_CLK1 => processing_system7_0_FCLK_CLK1,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0(0),
       FCLK_CLKTRIG3_N => net_gnd0,
       FCLK_CLKTRIG2_N => net_gnd0,
@@ -2587,7 +2585,7 @@ begin
 
   axi_interconnect_1 : system_axi_interconnect_1_wrapper
     port map (
-      INTERCONNECT_ACLK => pgassign1(2),
+      INTERCONNECT_ACLK => pgassign1(4),
       INTERCONNECT_ARESETN => processing_system7_0_FCLK_RESET0_N_0,
       S_AXI_ARESET_OUT_N => open,
       M_AXI_ARESET_OUT_N => open,
@@ -2636,7 +2634,7 @@ begin
       S_AXI_RUSER => open,
       S_AXI_RVALID => axi_interconnect_1_S_RVALID(0 to 0),
       S_AXI_RREADY => axi_interconnect_1_S_RREADY(0 to 0),
-      M_AXI_ACLK => pgassign1(2 downto 2),
+      M_AXI_ACLK => pgassign1(4 downto 4),
       M_AXI_AWID => axi_interconnect_1_M_AWID(0 to 0),
       M_AXI_AWADDR => axi_interconnect_1_M_AWADDR,
       M_AXI_AWLEN => axi_interconnect_1_M_AWLEN,
@@ -2904,12 +2902,12 @@ begin
       s_axis_video_tready => axi_vdma_0_M_AXIS_MM2S_TREADY,
       s_axis_video_tuser => axi_vdma_0_M_AXIS_MM2S_TUSER(0),
       s_axis_video_tlast => axi_vdma_0_M_AXIS_MM2S_TLAST,
-      video_out_clk => pgassign1(4),
+      video_out_clk => processing_system7_0_FCLK_CLK1,
       video_de => open,
       video_vsync => v_axi4s_vid_out_0_video_vsync,
       video_hsync => v_axi4s_vid_out_0_video_hsync,
-      video_vblank => v_axi4s_vid_out_0_video_vblank,
-      video_hblank => v_axi4s_vid_out_0_video_hblank,
+      video_vblank => open,
+      video_hblank => open,
       video_data => v_axi4s_vid_out_0_video_data,
       vtg_vsync => v_tc_0_VTIMING_OUT_vsync,
       vtg_hsync => v_tc_0_VTIMING_OUT_hsync,
@@ -2947,7 +2945,7 @@ begin
       s_axi_rready => axi4lite_0_M_RREADY(4),
       irq => open,
       intc_if => open,
-      clk => pgassign1(4),
+      clk => processing_system7_0_FCLK_CLK1,
       resetn => net_vcc0,
       clken => net_vcc0,
       det_clken => net_vcc0,

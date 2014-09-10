@@ -211,7 +211,7 @@ begin
       C_GEN_VBLANK_EN => 1,
       C_GEN_AVIDEO_EN => 1,
       C_GEN_ACHROMA_EN => 0,
-      C_GEN_VIDEO_FORMAT => 0,
+      C_GEN_VIDEO_FORMAT => 2,
       C_GEN_CPARITY => 0,
       C_SYNC_EN => 0,
       C_GEN_VBLANK_POLARITY => 1,
@@ -266,7 +266,7 @@ begin
       C_FSYNC_VSTART15 => 0,
       C_S_AXI_ADDR_WIDTH => 9,
       C_S_AXI_DATA_WIDTH => 32,
-      C_S_AXI_CLK_FREQ_HZ => 25000000,
+      C_S_AXI_CLK_FREQ_HZ => 100000000,
       C_FAMILY => "zynq"
     )
     port map (

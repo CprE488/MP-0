@@ -1,11 +1,11 @@
 Release 14.6 - xst P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
-Parameter TMPDIR set to /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/synthesis/xst_temp_dir/
+Parameter TMPDIR set to /tmp/cpre488/MP-0/system/synthesis/xst_temp_dir/
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 
@@ -37,7 +37,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_axi_vdma_0_wrapper_xst.prj"
-Verilog Include Directory          : {"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/" "/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/" }
+Verilog Include Directory          : {"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/" "/tmp/cpre488/MP-0/system/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/" }
 
 ---- Target Parameters
 Target Device                      : xc7z020clg484-1
@@ -1201,7 +1201,7 @@ Parsing architecture <implementation> of entity <axi_vdma_s2mm_axis_dwidth_conve
 Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" into library axi_vdma_v5_04_a
 Parsing entity <axi_vdma>.
 Parsing architecture <implementation> of entity <axi_vdma>.
-Parsing VHDL file "/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/hdl/system_axi_vdma_0_wrapper.vhd" into library work
+Parsing VHDL file "/tmp/cpre488/MP-0/system/hdl/system_axi_vdma_0_wrapper.vhd" into library work
 Parsing entity <system_axi_vdma_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_axi_vdma_0_wrapper>.
 
@@ -1226,40 +1226,6 @@ WARNING:HDLCompiler:1127 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcor
 Elaborating entity <axi_vdma_intrpt> (architecture <implementation>) with generics from library <axi_vdma_v5_04_a>.
 WARNING:HDLCompiler:1127 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" Line 1958: Assignment to mm2s_ftch_interr_set ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" Line 1965: Assignment to s2mm_ftch_interr_set ignored, since the identifier is never used
-
-Elaborating entity <axi_vdma_mm2s_axis_dwidth_converter> (architecture <implementation>) with generics from library <axi_vdma_v5_04_a>.
-Going to verilog side to elaborate module axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axis_dwidth_converter
-
-Elaborating module <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axis_dwidth_converter(C_FAMILY="zynq",C_S_AXIS_TDATA_WIDTH=32,C_M_AXIS_TDATA_WIDTH=24,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_S_AXIS_TUSER_WIDTH=4,C_M_AXIS_TUSER_WIDTH=3)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_register_slice_v1_0_axis_register_slice(C_FAMILY="zynq",C_AXIS_TDATA_WIDTH=32,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TUSER_WIDTH=4,C_AXIS_SIGNAL_SET=32'b011111111,C_REG_CONFIG=0)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_axis2vector(C_TDATA_WIDTH=32,C_TID_WIDTH=1,C_TDEST_WIDTH=1,C_TUSER_WIDTH=4,C_TPAYLOAD_WIDTH=32'sb0101111,C_SIGNAL_SET=32'b011111111)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_register_slice_v1_0_axisc_register_slice(C_FAMILY="zynq",C_DATA_WIDTH=32'sb0101111,C_REG_CONFIG=0)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_vector2axis(C_TDATA_WIDTH=32,C_TID_WIDTH=1,C_TDEST_WIDTH=1,C_TUSER_WIDTH=4,C_TPAYLOAD_WIDTH=32'sb0101111,C_SIGNAL_SET=32'b011111111)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer(C_FAMILY="zynq",C_S_AXIS_TDATA_WIDTH=32,C_M_AXIS_TDATA_WIDTH=32'sb01100000,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_S_AXIS_TUSER_WIDTH=4,C_M_AXIS_TUSER_WIDTH=32'sb01100,C_AXIS_SIGNAL_SET=32'b011111111,C_RATIO=32'sb011)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer(C_FAMILY="zynq",C_S_AXIS_TDATA_WIDTH=32'sb01100000,C_M_AXIS_TDATA_WIDTH=24,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_S_AXIS_TUSER_WIDTH=32'sb01100,C_M_AXIS_TUSER_WIDTH=32'sb011,C_AXIS_SIGNAL_SET=32'b011111111,C_RATIO=32'sb0100)>.
-WARNING:HDLCompiler:413 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v" Line 286: Result of 96-bit expression is truncated to fit in 24-bit target.
-WARNING:HDLCompiler:413 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v" Line 287: Result of 12-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v" Line 288: Result of 12-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v" Line 292: Result of 12-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v" Line 321: Result of 96-bit expression is truncated to fit in 24-bit target.
-WARNING:HDLCompiler:413 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v" Line 322: Result of 12-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v" Line 323: Result of 12-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v" Line 327: Result of 12-bit expression is truncated to fit in 3-bit target.
-
-Elaborating module <axi_vdma_v5_04_a_axis_register_slice_v1_0_axis_register_slice(C_FAMILY="zynq",C_AXIS_TDATA_WIDTH=24,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TUSER_WIDTH=32'sb011,C_AXIS_SIGNAL_SET=32'b011111111,C_REG_CONFIG=0)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_axis2vector(C_TDATA_WIDTH=24,C_TID_WIDTH=1,C_TDEST_WIDTH=1,C_TUSER_WIDTH=32'sb011,C_TPAYLOAD_WIDTH=32'sb0100100,C_SIGNAL_SET=32'b011111111)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_register_slice_v1_0_axisc_register_slice(C_FAMILY="zynq",C_DATA_WIDTH=32'sb0100100,C_REG_CONFIG=0)>.
-
-Elaborating module <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_vector2axis(C_TDATA_WIDTH=24,C_TID_WIDTH=1,C_TDEST_WIDTH=1,C_TUSER_WIDTH=32'sb011,C_TPAYLOAD_WIDTH=32'sb0100100,C_SIGNAL_SET=32'b011111111)>.
-Back to vhdl to continue elaboration
 
 Elaborating entity <axi_vdma_reg_module> (architecture <implementation>) with generics from library <axi_vdma_v5_04_a>.
 
@@ -1399,7 +1365,7 @@ WARNING:HDLCompiler:634 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcore
 =========================================================================
 
 Synthesizing Unit <system_axi_vdma_0_wrapper>.
-    Related source file is "/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/hdl/system_axi_vdma_0_wrapper.vhd".
+    Related source file is "/tmp/cpre488/MP-0/system/hdl/system_axi_vdma_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_axi_vdma_0_wrapper> synthesized.
@@ -1431,7 +1397,7 @@ Synthesizing Unit <axi_vdma>.
         C_MM2S_MAX_BURST_LENGTH = 16
         C_M_AXI_MM2S_ADDR_WIDTH = 32
         C_M_AXI_MM2S_DATA_WIDTH = 32
-        C_M_AXIS_MM2S_TDATA_WIDTH = 24
+        C_M_AXIS_MM2S_TDATA_WIDTH = 16
         C_M_AXIS_MM2S_TUSER_BITS = 1
         C_INCLUDE_S2MM = 0
         C_S2MM_GENLOCK_MODE = 0
@@ -1473,9 +1439,6 @@ INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 1597: Output port <ch2_irqthresh_status> of the instance <I_AXI_DMA_INTRPT> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 1597: Output port <ch2_ioc_irq_set> of the instance <I_AXI_DMA_INTRPT> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 1597: Output port <ch2_dly_irq_set> of the instance <I_AXI_DMA_INTRPT> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2058: Output port <M_AXIS_TSTRB> of the instance <GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2058: Output port <M_AXIS_TID> of the instance <GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2058: Output port <M_AXIS_TDEST> of the instance <GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2137: Output port <reg_index> of the instance <GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2137: Output port <curdesc> of the instance <GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2137: Output port <taildesc> of the instance <GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I> is unconnected or connected to loadless signal.
@@ -1486,7 +1449,12 @@ INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2237: Output port <update_frmstore> of the instance <GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2237: Output port <m_axis_ftch_tready> of the instance <GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2425: Output port <cdc2othrchnl_fsync> of the instance <GEN_SPRT_FOR_MM2S.MM2S_VID_CDC_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2490: Output port <crnt_vsize_d2_out> of the instance <GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2490: Output port <mm2s_axis_linebuf_reset_out> of the instance <GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2490: Output port <mm2s_vsize_cntr_clr_flag> of the instance <GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2490: Output port <MM2S_DROP_RESIDUAL_OF_FSIZE_ERR_FRAME_S> of the instance <GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2490: Output port <dm_halt_reg_out> of the instance <GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2490: Output port <stop_reg_out> of the instance <GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 2490: Output port <mm2s_all_lines_xfred_s> of the instance <GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 3987: Output port <m_axi_mm2s_arid> of the instance <I_PRMRY_DATAMOVER> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma.vhd" line 3987: Output port <m_axi_mm2s_aruser> of the instance <I_PRMRY_DATAMOVER> is unconnected or connected to loadless signal.
@@ -1677,389 +1645,6 @@ WARNING:Xst:647 - Input <ch2_packet_eof_mask> is never used. This port will be p
 	inferred   4 Multiplexer(s).
 Unit <axi_vdma_intrpt> synthesized.
 
-Synthesizing Unit <axi_vdma_mm2s_axis_dwidth_converter>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma_mm2s_axis_dwidth_converter.vhd".
-        C_M_AXIS_MM2S_TDATA_WIDTH_CALCULATED = 32
-        C_M_AXIS_MM2S_TDATA_WIDTH = 24
-        C_M_AXIS_MM2S_TDATA_WIDTH_div_by_8 = 3
-        C_MM2S_SOF_ENABLE = 1
-        ENABLE_FLUSH_ON_FSYNC = 0
-        C_M_AXIS_MM2S_TDATA_WIDTH_CALCULATED_div_by_8 = 4
-        C_AXIS_TID_WIDTH = 1
-        C_AXIS_TDEST_WIDTH = 1
-        C_FAMILY = "zynq"
-WARNING:Xst:647 - Input <mm2s_vsize_cntr_clr_flag> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <stop_reg> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <M_AXIS_TVALID_D1>.
-    Found 1-bit register for signal <M_AXIS_TREADY_D1>.
-    Found 13-bit register for signal <vsize_counter>.
-    Found 1-bit register for signal <all_lines_xfred>.
-    Found 1-bit register for signal <M_AXIS_TLAST_D1>.
-    Found 13-bit subtractor for signal <GND_18_o_GND_18_o_sub_3_OUT<12:0>> created at line 1308.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  17 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
-Unit <axi_vdma_mm2s_axis_dwidth_converter> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axis_dwidth_converter>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axis_dwidth_converter.v".
-        C_FAMILY = "zynq"
-        C_S_AXIS_TDATA_WIDTH = 32
-        C_M_AXIS_TDATA_WIDTH = 24
-        C_AXIS_TID_WIDTH = 1
-        C_AXIS_TDEST_WIDTH = 1
-        C_S_AXIS_TUSER_WIDTH = 4
-        C_M_AXIS_TUSER_WIDTH = 3
-        C_AXIS_SIGNAL_SET = 32'b00000000000000000000000011111111
-    Found 1-bit register for signal <areset_r>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axis_dwidth_converter> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_register_slice_v1_0_axis_register_slice_1>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_register_slice_v1_0_axis_register_slice.v".
-        C_FAMILY = "zynq"
-        C_AXIS_TDATA_WIDTH = 32
-        C_AXIS_TID_WIDTH = 1
-        C_AXIS_TDEST_WIDTH = 1
-        C_AXIS_TUSER_WIDTH = 4
-        C_AXIS_SIGNAL_SET = 32'b00000000000000000000000011111111
-        C_REG_CONFIG = 0
-    Found 1-bit register for signal <areset_r>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <axi_vdma_v5_04_a_axis_register_slice_v1_0_axis_register_slice_1> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_axis2vector_1>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_axis2vector.v".
-        C_TDATA_WIDTH = 32
-        C_TID_WIDTH = 1
-        C_TDEST_WIDTH = 1
-        C_TUSER_WIDTH = 4
-        C_TPAYLOAD_WIDTH = 47
-        C_SIGNAL_SET = 32'b00000000000000000000000011111111
-    Summary:
-	no macro.
-Unit <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_axis2vector_1> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_register_slice_v1_0_axisc_register_slice_1>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_register_slice_v1_0_axisc_register_slice.v".
-        C_FAMILY = "zynq"
-        C_DATA_WIDTH = 47
-        C_REG_CONFIG = 0
-WARNING:Xst:647 - Input <ACLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ARESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ACLKEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <axi_vdma_v5_04_a_axis_register_slice_v1_0_axisc_register_slice_1> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_vector2axis_1>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_vector2axis.v".
-        C_TDATA_WIDTH = 32
-        C_TID_WIDTH = 1
-        C_TDEST_WIDTH = 1
-        C_TUSER_WIDTH = 4
-        C_TPAYLOAD_WIDTH = 47
-        C_SIGNAL_SET = 32'b00000000000000000000000011111111
-    Summary:
-	no macro.
-Unit <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_vector2axis_1> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer.v".
-        C_FAMILY = "zynq"
-        C_S_AXIS_TDATA_WIDTH = 32
-        C_M_AXIS_TDATA_WIDTH = 96
-        C_AXIS_TID_WIDTH = 1
-        C_AXIS_TDEST_WIDTH = 1
-        C_S_AXIS_TUSER_WIDTH = 4
-        C_M_AXIS_TUSER_WIDTH = 12
-        C_AXIS_SIGNAL_SET = 32'b00000000000000000000000011111111
-        C_RATIO = 3
-    Found 1-bit register for signal <acc_data<31>>.
-    Found 1-bit register for signal <acc_data<30>>.
-    Found 1-bit register for signal <acc_data<29>>.
-    Found 1-bit register for signal <acc_data<28>>.
-    Found 1-bit register for signal <acc_data<27>>.
-    Found 1-bit register for signal <acc_data<26>>.
-    Found 1-bit register for signal <acc_data<25>>.
-    Found 1-bit register for signal <acc_data<24>>.
-    Found 1-bit register for signal <acc_data<23>>.
-    Found 1-bit register for signal <acc_data<22>>.
-    Found 1-bit register for signal <acc_data<21>>.
-    Found 1-bit register for signal <acc_data<20>>.
-    Found 1-bit register for signal <acc_data<19>>.
-    Found 1-bit register for signal <acc_data<18>>.
-    Found 1-bit register for signal <acc_data<17>>.
-    Found 1-bit register for signal <acc_data<16>>.
-    Found 1-bit register for signal <acc_data<15>>.
-    Found 1-bit register for signal <acc_data<14>>.
-    Found 1-bit register for signal <acc_data<13>>.
-    Found 1-bit register for signal <acc_data<12>>.
-    Found 1-bit register for signal <acc_data<11>>.
-    Found 1-bit register for signal <acc_data<10>>.
-    Found 1-bit register for signal <acc_data<9>>.
-    Found 1-bit register for signal <acc_data<8>>.
-    Found 1-bit register for signal <acc_data<7>>.
-    Found 1-bit register for signal <acc_data<6>>.
-    Found 1-bit register for signal <acc_data<5>>.
-    Found 1-bit register for signal <acc_data<4>>.
-    Found 1-bit register for signal <acc_data<3>>.
-    Found 1-bit register for signal <acc_data<2>>.
-    Found 1-bit register for signal <acc_data<1>>.
-    Found 1-bit register for signal <acc_data<0>>.
-    Found 1-bit register for signal <acc_user<3>>.
-    Found 1-bit register for signal <acc_user<2>>.
-    Found 1-bit register for signal <acc_user<1>>.
-    Found 1-bit register for signal <acc_user<0>>.
-    Found 1-bit register for signal <acc_strb<3>>.
-    Found 1-bit register for signal <acc_strb<2>>.
-    Found 1-bit register for signal <acc_strb<1>>.
-    Found 1-bit register for signal <acc_strb<0>>.
-    Found 1-bit register for signal <acc_keep<3>>.
-    Found 1-bit register for signal <acc_keep<2>>.
-    Found 1-bit register for signal <acc_keep<1>>.
-    Found 1-bit register for signal <acc_keep<0>>.
-    Found 1-bit register for signal <acc_data<63>>.
-    Found 1-bit register for signal <acc_data<62>>.
-    Found 1-bit register for signal <acc_data<61>>.
-    Found 1-bit register for signal <acc_data<60>>.
-    Found 1-bit register for signal <acc_data<59>>.
-    Found 1-bit register for signal <acc_data<58>>.
-    Found 1-bit register for signal <acc_data<57>>.
-    Found 1-bit register for signal <acc_data<56>>.
-    Found 1-bit register for signal <acc_data<55>>.
-    Found 1-bit register for signal <acc_data<54>>.
-    Found 1-bit register for signal <acc_data<53>>.
-    Found 1-bit register for signal <acc_data<52>>.
-    Found 1-bit register for signal <acc_data<51>>.
-    Found 1-bit register for signal <acc_data<50>>.
-    Found 1-bit register for signal <acc_data<49>>.
-    Found 1-bit register for signal <acc_data<48>>.
-    Found 1-bit register for signal <acc_data<47>>.
-    Found 1-bit register for signal <acc_data<46>>.
-    Found 1-bit register for signal <acc_data<45>>.
-    Found 1-bit register for signal <acc_data<44>>.
-    Found 1-bit register for signal <acc_data<43>>.
-    Found 1-bit register for signal <acc_data<42>>.
-    Found 1-bit register for signal <acc_data<41>>.
-    Found 1-bit register for signal <acc_data<40>>.
-    Found 1-bit register for signal <acc_data<39>>.
-    Found 1-bit register for signal <acc_data<38>>.
-    Found 1-bit register for signal <acc_data<37>>.
-    Found 1-bit register for signal <acc_data<36>>.
-    Found 1-bit register for signal <acc_data<35>>.
-    Found 1-bit register for signal <acc_data<34>>.
-    Found 1-bit register for signal <acc_data<33>>.
-    Found 1-bit register for signal <acc_data<32>>.
-    Found 1-bit register for signal <acc_user<7>>.
-    Found 1-bit register for signal <acc_user<6>>.
-    Found 1-bit register for signal <acc_user<5>>.
-    Found 1-bit register for signal <acc_user<4>>.
-    Found 1-bit register for signal <acc_strb<7>>.
-    Found 1-bit register for signal <acc_strb<6>>.
-    Found 1-bit register for signal <acc_strb<5>>.
-    Found 1-bit register for signal <acc_strb<4>>.
-    Found 1-bit register for signal <acc_keep<7>>.
-    Found 1-bit register for signal <acc_keep<6>>.
-    Found 1-bit register for signal <acc_keep<5>>.
-    Found 1-bit register for signal <acc_keep<4>>.
-    Found 1-bit register for signal <acc_data<95>>.
-    Found 1-bit register for signal <acc_data<94>>.
-    Found 1-bit register for signal <acc_data<93>>.
-    Found 1-bit register for signal <acc_data<92>>.
-    Found 1-bit register for signal <acc_data<91>>.
-    Found 1-bit register for signal <acc_data<90>>.
-    Found 1-bit register for signal <acc_data<89>>.
-    Found 1-bit register for signal <acc_data<88>>.
-    Found 1-bit register for signal <acc_data<87>>.
-    Found 1-bit register for signal <acc_data<86>>.
-    Found 1-bit register for signal <acc_data<85>>.
-    Found 1-bit register for signal <acc_data<84>>.
-    Found 1-bit register for signal <acc_data<83>>.
-    Found 1-bit register for signal <acc_data<82>>.
-    Found 1-bit register for signal <acc_data<81>>.
-    Found 1-bit register for signal <acc_data<80>>.
-    Found 1-bit register for signal <acc_data<79>>.
-    Found 1-bit register for signal <acc_data<78>>.
-    Found 1-bit register for signal <acc_data<77>>.
-    Found 1-bit register for signal <acc_data<76>>.
-    Found 1-bit register for signal <acc_data<75>>.
-    Found 1-bit register for signal <acc_data<74>>.
-    Found 1-bit register for signal <acc_data<73>>.
-    Found 1-bit register for signal <acc_data<72>>.
-    Found 1-bit register for signal <acc_data<71>>.
-    Found 1-bit register for signal <acc_data<70>>.
-    Found 1-bit register for signal <acc_data<69>>.
-    Found 1-bit register for signal <acc_data<68>>.
-    Found 1-bit register for signal <acc_data<67>>.
-    Found 1-bit register for signal <acc_data<66>>.
-    Found 1-bit register for signal <acc_data<65>>.
-    Found 1-bit register for signal <acc_data<64>>.
-    Found 1-bit register for signal <acc_user<11>>.
-    Found 1-bit register for signal <acc_user<10>>.
-    Found 1-bit register for signal <acc_user<9>>.
-    Found 1-bit register for signal <acc_user<8>>.
-    Found 1-bit register for signal <acc_strb<11>>.
-    Found 1-bit register for signal <acc_strb<10>>.
-    Found 1-bit register for signal <acc_strb<9>>.
-    Found 1-bit register for signal <acc_strb<8>>.
-    Found 1-bit register for signal <acc_keep<11>>.
-    Found 1-bit register for signal <acc_keep<10>>.
-    Found 1-bit register for signal <acc_keep<9>>.
-    Found 1-bit register for signal <acc_keep<8>>.
-    Found 3-bit register for signal <r0_reg_sel>.
-    Found 32-bit register for signal <r0_data>.
-    Found 4-bit register for signal <r0_strb>.
-    Found 4-bit register for signal <r0_keep>.
-    Found 1-bit register for signal <r0_last>.
-    Found 1-bit register for signal <r0_id>.
-    Found 1-bit register for signal <r0_dest>.
-    Found 4-bit register for signal <r0_user>.
-    Found 1-bit register for signal <acc_last>.
-    Found 1-bit register for signal <acc_id>.
-    Found 1-bit register for signal <acc_dest>.
-    Found 3-bit register for signal <state>.
-    Found finite state machine <FSM_0> for signal <state>.
-    -----------------------------------------------------------------------
-    | States             | 5                                              |
-    | Transitions        | 19                                             |
-    | Inputs             | 7                                              |
-    | Outputs            | 6                                              |
-    | Clock              | ACLK (rising_edge)                             |
-    | Reset              | ARESET (positive)                              |
-    | Reset type         | synchronous                                    |
-    | Reset State        | 000                                            |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 1-bit comparator not equal for signal <id_match> created at line 357
-    Found 1-bit comparator not equal for signal <dest_match> created at line 358
-    Summary:
-	inferred 185 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred   4 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer.v".
-        C_FAMILY = "zynq"
-        C_S_AXIS_TDATA_WIDTH = 96
-        C_M_AXIS_TDATA_WIDTH = 24
-        C_AXIS_TID_WIDTH = 1
-        C_AXIS_TDEST_WIDTH = 1
-        C_S_AXIS_TUSER_WIDTH = 12
-        C_M_AXIS_TUSER_WIDTH = 3
-        C_AXIS_SIGNAL_SET = 32'b00000000000000000000000011111111
-        C_RATIO = 4
-    Found 96-bit register for signal <r0_data>.
-    Found 12-bit register for signal <r0_strb>.
-    Found 12-bit register for signal <r0_keep>.
-    Found 1-bit register for signal <r0_last>.
-    Found 1-bit register for signal <r0_id>.
-    Found 1-bit register for signal <r0_dest>.
-    Found 12-bit register for signal <r0_user>.
-    Found 4-bit register for signal <r0_is_null_r>.
-    Found 24-bit register for signal <r1_data>.
-    Found 3-bit register for signal <r1_strb>.
-    Found 3-bit register for signal <r1_keep>.
-    Found 1-bit register for signal <r1_last>.
-    Found 1-bit register for signal <r1_id>.
-    Found 1-bit register for signal <r1_dest>.
-    Found 3-bit register for signal <r1_user>.
-    Found 2-bit register for signal <r0_out_sel_r>.
-    Found 2-bit register for signal <r0_out_sel_next_r>.
-    Found 3-bit register for signal <state>.
-    Found finite state machine <FSM_1> for signal <state>.
-    -----------------------------------------------------------------------
-    | States             | 5                                              |
-    | Transitions        | 13                                             |
-    | Inputs             | 4                                              |
-    | Outputs            | 6                                              |
-    | Clock              | ACLK (rising_edge)                             |
-    | Reset              | ARESET (positive)                              |
-    | Reset type         | synchronous                                    |
-    | Reset State        | 000                                            |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 2-bit adder for signal <r0_out_sel_next_r[1]_GND_26_o_add_91_OUT> created at line 359.
-    Found 5x2-bit multiplier for signal <PWR_28_o_r0_out_sel_r[1]_MuLt_22_OUT> created at line 286.
-    Found 96-bit shifter logical right for signal <n0139> created at line 286
-    Found 2x2-bit multiplier for signal <PWR_28_o_r0_out_sel_r[1]_MuLt_24_OUT> created at line 287.
-    Found 12-bit shifter logical right for signal <n0140> created at line 287
-    Found 12-bit shifter logical right for signal <n0141> created at line 288
-    Found 12-bit shifter logical right for signal <n0142> created at line 292
-    Found 5x2-bit multiplier for signal <PWR_28_o_r0_out_sel_next_r[1]_MuLt_57_OUT> created at line 321.
-    Found 96-bit shifter logical right for signal <r0_data[95]_PWR_28_o_shift_right_58_OUT> created at line 321
-    Found 2x2-bit multiplier for signal <PWR_28_o_r0_out_sel_next_r[1]_MuLt_60_OUT> created at line 322.
-    Found 12-bit shifter logical right for signal <r0_strb[11]_PWR_28_o_shift_right_61_OUT> created at line 322
-    Found 12-bit shifter logical right for signal <r0_keep[11]_PWR_28_o_shift_right_64_OUT> created at line 323
-    Found 12-bit shifter logical right for signal <r0_user[11]_PWR_28_o_shift_right_67_OUT> created at line 327
-    Found 1-bit 4-to-1 multiplexer for signal <xfer_is_end> created at line 363.
-    Found 1-bit 4-to-1 multiplexer for signal <next_xfer_is_end> created at line 367.
-    Summary:
-	inferred   4 Multiplier(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred 179 D-type flip-flop(s).
-	inferred   8 Multiplexer(s).
-	inferred   8 Combinational logic shifter(s).
-	inferred   1 Finite State Machine(s).
-Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_register_slice_v1_0_axis_register_slice_2>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_register_slice_v1_0_axis_register_slice.v".
-        C_FAMILY = "zynq"
-        C_AXIS_TDATA_WIDTH = 24
-        C_AXIS_TID_WIDTH = 1
-        C_AXIS_TDEST_WIDTH = 1
-        C_AXIS_TUSER_WIDTH = 3
-        C_AXIS_SIGNAL_SET = 32'b00000000000000000000000011111111
-        C_REG_CONFIG = 0
-    Found 1-bit register for signal <areset_r>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <axi_vdma_v5_04_a_axis_register_slice_v1_0_axis_register_slice_2> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_axis2vector_2>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_axis2vector.v".
-        C_TDATA_WIDTH = 24
-        C_TID_WIDTH = 1
-        C_TDEST_WIDTH = 1
-        C_TUSER_WIDTH = 3
-        C_TPAYLOAD_WIDTH = 36
-        C_SIGNAL_SET = 32'b00000000000000000000000011111111
-    Summary:
-	no macro.
-Unit <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_axis2vector_2> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_register_slice_v1_0_axisc_register_slice_2>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_register_slice_v1_0_axisc_register_slice.v".
-        C_FAMILY = "zynq"
-        C_DATA_WIDTH = 36
-        C_REG_CONFIG = 0
-WARNING:Xst:647 - Input <ACLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ARESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ACLKEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <axi_vdma_v5_04_a_axis_register_slice_v1_0_axisc_register_slice_2> synthesized.
-
-Synthesizing Unit <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_vector2axis_2>.
-    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_vector2axis.v".
-        C_TDATA_WIDTH = 24
-        C_TID_WIDTH = 1
-        C_TDEST_WIDTH = 1
-        C_TUSER_WIDTH = 3
-        C_TPAYLOAD_WIDTH = 36
-        C_SIGNAL_SET = 32'b00000000000000000000000011111111
-    Summary:
-	no macro.
-Unit <axi_vdma_v5_04_a_axis_infrastructure_v1_0_util_vector2axis_2> synthesized.
-
 Synthesizing Unit <axi_vdma_reg_module>.
     Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma_reg_module.vhd".
         C_TOTAL_NUM_REGISTER = 62
@@ -2156,9 +1741,9 @@ WARNING:Xst:2935 - Signal 's2mm_fsize_more_or_sof_late_bit', unconnected in bloc
     Found 8-bit comparator not equal for signal <n0034> created at line 417
     Found 8-bit comparator not equal for signal <n0074> created at line 472
     Summary:
-	inferred  74 D-type flip-flop(s).
+	inferred  75 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred  12 Multiplexer(s).
+	inferred   2 Multiplexer(s).
 Unit <axi_vdma_register> synthesized.
 
 Synthesizing Unit <axi_vdma_regdirect>.
@@ -2287,7 +1872,7 @@ WARNING:Xst:2935 - Signal 'flag_to_repeat_after_fsize_less_err', unconnected in 
     Found 1-bit register for signal <err_d1>.
     Found 1-bit register for signal <tstvect_err>.
     Found 1-bit register for signal <initial_frame>.
-    Found 5-bit adder for signal <frame_number_i[4]_GND_41_o_add_30_OUT> created at line 1241.
+    Found 5-bit adder for signal <frame_number_i[4]_GND_24_o_add_30_OUT> created at line 1241.
     Found 6-bit subtractor for signal <num_fstore_minus1_cmb> created at line 564.
     Found 7-bit subtractor for signal <SLAVE_MODE_FRAME_CNT.ext_frame_number_lesr> created at line 1022.
     Found 7-bit adder for signal <SLAVE_MODE_FRAME_CNT.ext_frame_number_grtr> created at line 1021.
@@ -2297,7 +1882,7 @@ WARNING:Xst:2935 - Signal 'flag_to_repeat_after_fsize_less_err', unconnected in 
 	inferred   4 Adder/Subtractor(s).
 	inferred  50 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred   6 Multiplexer(s).
+	inferred   5 Multiplexer(s).
 Unit <axi_vdma_mngr> synthesized.
 
 Synthesizing Unit <axi_vdma_sm>.
@@ -2339,14 +1924,14 @@ WARNING:Xst:653 - Signal <s2mm_fsize_mismatch_err_s> is used but never assigned.
     Found 1-bit register for signal <all_lines_xfred_d1>.
     Found 1-bit register for signal <xfred_started>.
     Found 1-bit register for signal <frame_sync_d1>.
-    Found finite state machine <FSM_2> for signal <dmacntrl_cs>.
+    Found finite state machine <FSM_0> for signal <dmacntrl_cs>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 17                                             |
     | Inputs             | 9                                              |
     | Outputs            | 3                                              |
     | Clock              | prmry_aclk (rising_edge)                       |
-    | Reset              | prmry_resetn_INV_268_o (positive)              |
+    | Reset              | prmry_resetn_INV_228_o (positive)              |
     | Reset type         | synchronous                                    |
     | Reset State        | idle                                           |
     | Power Up State     | idle                                           |
@@ -2354,9 +1939,9 @@ WARNING:Xst:653 - Signal <s2mm_fsize_mismatch_err_s> is used but never assigned.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 32-bit adder for signal <dm_address[31]_extend_crnt_stride[31]_add_16_OUT> created at line 622.
-    Found 8-bit adder for signal <cmnds_queued[7]_GND_42_o_add_32_OUT> created at line 1241.
-    Found 13-bit subtractor for signal <GND_42_o_GND_42_o_sub_22_OUT<12:0>> created at line 1308.
-    Found 8-bit subtractor for signal <GND_42_o_GND_42_o_sub_34_OUT<7:0>> created at line 1308.
+    Found 8-bit adder for signal <cmnds_queued[7]_GND_25_o_add_32_OUT> created at line 1241.
+    Found 13-bit subtractor for signal <GND_25_o_GND_25_o_sub_22_OUT<12:0>> created at line 1308.
+    Found 8-bit subtractor for signal <GND_25_o_GND_25_o_sub_34_OUT<7:0>> created at line 1308.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred 134 D-type flip-flop(s).
@@ -2469,7 +2054,7 @@ INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma
     Found 1-bit register for signal <mstr_reverse_order_d1>.
     Found 5-bit register for signal <slv_frame_ref_out>.
     Found 5-bit register for signal <binary_frame_ptr>.
-    Found 5-bit subtractor for signal <GND_75_o_GND_75_o_sub_12_OUT<4:0>> created at line 567.
+    Found 5-bit subtractor for signal <GND_58_o_GND_58_o_sub_12_OUT<4:0>> created at line 567.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  11 D-type flip-flop(s).
@@ -2544,8 +2129,8 @@ Unit <axi_vdma_sof_gen> synthesized.
 
 Synthesizing Unit <axi_vdma_mm2s_linebuf>.
     Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma_mm2s_linebuf.vhd".
-        C_DATA_WIDTH = 32
-        C_M_AXIS_MM2S_TDATA_WIDTH = 24
+        C_DATA_WIDTH = 16
+        C_M_AXIS_MM2S_TDATA_WIDTH = 16
         C_INCLUDE_S2MM = 0
         C_INCLUDE_MM2S_SF = 1
         C_INCLUDE_MM2S_DRE = 0
@@ -2558,8 +2143,8 @@ Synthesizing Unit <axi_vdma_mm2s_linebuf>.
         ENABLE_FLUSH_ON_FSYNC = 0
         C_FAMILY = "zynq"
 WARNING:Xst:647 - Input <fsync_src_select> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <linebuf_threshold<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <linebuf_threshold<16:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <linebuf_threshold<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <linebuf_threshold<16:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <s_axis_tkeep> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <s2mm_axis_resetn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <s_axis_s2mm_aclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -2567,6 +2152,7 @@ WARNING:Xst:647 - Input <s2mm_fsync> is never used. This port will be preserved 
 WARNING:Xst:647 - Input <run_stop> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <cmdsts_idle> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <mm2s_fsize_mismatch_err_flag> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dwidth_fifo_pipe_empty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <mm2s_all_lines_xfred_s_dwidth> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma_mm2s_linebuf.vhd" line 875: Output port <M_STRB> of the instance <GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <mm2s_fsize_mismatch_err_m> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -2586,9 +2172,9 @@ WARNING:Xst:653 - Signal <mm2s_all_lines_xfred_s> is used but never assigned. Th
     Found 1-bit register for signal <dm_xfred_all_lines>.
     Found 1-bit register for signal <m_skid_reset>.
     Found 1-bit register for signal <sof_flag>.
-    Found 13-bit subtractor for signal <GND_91_o_GND_91_o_sub_15_OUT<12:0>> created at line 1308.
-    Found 13-bit subtractor for signal <GND_91_o_GND_91_o_sub_23_OUT<12:0>> created at line 1308.
-    Found 7-bit comparator lessequal for signal <n0030> created at line 781
+    Found 13-bit subtractor for signal <GND_74_o_GND_74_o_sub_15_OUT<12:0>> created at line 1308.
+    Found 13-bit subtractor for signal <GND_74_o_GND_74_o_sub_23_OUT<12:0>> created at line 1308.
+    Found 7-bit comparator lessequal for signal <n0031> created at line 781
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  37 D-type flip-flop(s).
@@ -2599,7 +2185,7 @@ Unit <axi_vdma_mm2s_linebuf> synthesized.
 Synthesizing Unit <axi_vdma_sfifo>.
     Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma_sfifo.vhd".
         C_FAMILY = "zynq"
-        UW_DATA_WIDTH = 34
+        UW_DATA_WIDTH = 18
         UW_FIFO_DEPTH = 128
     Set property "GENERATOR_DEFAULT = generatecore com.xilinx.ip.fifo_generator_v9_1.fifo_generator_v9_1 -a map_qvirtex_to=virtex map_qrvirtex_to=virtex map_virtexe_to=virtex map_qvirtex2_to=virtex2 map_qrvirtex2_to=virtex2 map_spartan2_to=virtex map_spartan2e_to=virtex map_virtex5_to=virtex4 map_spartan3a_to=spartan3e spartan3an_to=spartan3e spartan3adsp_to=spartan3e " for instance <fg91_inst>.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma_sfifo.vhd" line 128: Output port <RD_DATA_COUNT> of the instance <fg91_inst> is unconnected or connected to loadless signal.
@@ -2728,7 +2314,7 @@ Unit <axi_vdma_sfifo> synthesized.
 
 Synthesizing Unit <axi_vdma_skid_buf>.
     Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/vhdl/axi_vdma_skid_buf.vhd".
-        C_WDATA_WIDTH = 32
+        C_WDATA_WIDTH = 16
         C_TUSER_WIDTH = 1
     Set property "KEEP = TRUE" for signal <sig_m_valid_out>.
     Set property "equivalent_register_removal = no" for signal <sig_m_valid_out>.
@@ -2742,21 +2328,21 @@ Synthesizing Unit <axi_vdma_skid_buf>.
     Found 1-bit register for signal <sig_s_ready_dup>.
     Found 1-bit register for signal <sig_m_valid_out>.
     Found 1-bit register for signal <sig_m_valid_dup>.
-    Found 32-bit register for signal <sig_data_skid_reg>.
-    Found 4-bit register for signal <sig_strb_skid_reg>.
+    Found 16-bit register for signal <sig_data_skid_reg>.
+    Found 2-bit register for signal <sig_strb_skid_reg>.
     Found 1-bit register for signal <sig_last_skid_reg>.
     Found 1-bit register for signal <sig_user_skid_reg>.
-    Found 32-bit register for signal <sig_data_reg_out>.
-    Found 4-bit register for signal <sig_strb_reg_out>.
+    Found 16-bit register for signal <sig_data_reg_out>.
+    Found 2-bit register for signal <sig_strb_reg_out>.
     Found 1-bit register for signal <sig_last_reg_out>.
     Found 1-bit register for signal <sig_user_reg_out>.
     Found 1-bit register for signal <sig_stop_request>.
-    Found 4-bit register for signal <sig_sstrb_stop_mask>.
+    Found 2-bit register for signal <sig_sstrb_stop_mask>.
     Found 1-bit register for signal <sig_sready_stop_reg>.
     Found 1-bit register for signal <sig_mvalid_stop_reg>.
     Found 1-bit register for signal <sig_reset_reg>.
     Summary:
-	inferred  88 D-type flip-flop(s).
+	inferred  50 D-type flip-flop(s).
 	inferred   7 Multiplexer(s).
 Unit <axi_vdma_skid_buf> synthesized.
 
@@ -2767,7 +2353,7 @@ Synthesizing Unit <axi_datamover>.
         C_M_AXI_MM2S_ID_WIDTH = 4
         C_M_AXI_MM2S_ADDR_WIDTH = 32
         C_M_AXI_MM2S_DATA_WIDTH = 32
-        C_M_AXIS_MM2S_TDATA_WIDTH = 32
+        C_M_AXIS_MM2S_TDATA_WIDTH = 16
         C_INCLUDE_MM2S_STSFIFO = 1
         C_MM2S_STSCMD_FIFO_DEPTH = 4
         C_MM2S_STSCMD_IS_ASYNC = 0
@@ -2809,7 +2395,7 @@ Synthesizing Unit <axi_datamover_mm2s_full_wrap>.
         C_MM2S_ID_WIDTH = 4
         C_MM2S_ADDR_WIDTH = 32
         C_MM2S_MDATA_WIDTH = 32
-        C_MM2S_SDATA_WIDTH = 32
+        C_MM2S_SDATA_WIDTH = 16
         C_INCLUDE_MM2S_STSFIFO = 1
         C_MM2S_STSCMD_FIFO_DEPTH = 4
         C_MM2S_STSCMD_IS_ASYNC = 0
@@ -3087,7 +2673,7 @@ Synthesizing Unit <axi_datamover_pcc>.
         C_DRE_ALIGN_WIDTH = 1
         C_SEL_ADDR_WIDTH = 2
         C_ADDR_WIDTH = 32
-        C_STREAM_DWIDTH = 32
+        C_STREAM_DWIDTH = 16
         C_MAX_BURST_LEN = 16
         C_CMD_WIDTH = 68
         C_TAG_WIDTH = 4
@@ -3156,7 +2742,7 @@ WARNING:Xst:647 - Input <cmd2mstr_command<22:16>> is never used. This port will 
     Found 1-bit register for signal <sig_ld_xfer_reg>.
     Found 1-bit register for signal <sig_parent_done>.
     Found 1-bit register for signal <sig_mmap_reset_reg>.
-    Found finite state machine <FSM_3> for signal <sig_pcc_sm_state>.
+    Found finite state machine <FSM_1> for signal <sig_pcc_sm_state>.
     -----------------------------------------------------------------------
     | States             | 8                                              |
     | Transitions        | 16                                             |
@@ -3173,14 +2759,14 @@ WARNING:Xst:647 - Input <cmd2mstr_command<22:16>> is never used. This port will 
     Found 16-bit adder for signal <sig_adjusted_addr_incr_im1> created at line 1420.
     Found 16-bit adder for signal <sig_predict_addr_lsh_im1> created at line 1619.
     Found 16-bit adder for signal <sig_predict_addr_lsh_im2> created at line 1656.
-    Found 16-bit adder for signal <sig_addr_cntr_im0_msh[15]_GND_541_o_add_131_OUT> created at line 1818.
+    Found 16-bit adder for signal <sig_addr_cntr_im0_msh[15]_GND_524_o_add_131_OUT> created at line 1818.
     Found 2-bit subtractor for signal <sig_last_addr_offset_im2> created at line 767.
-    Found 16-bit subtractor for signal <GND_541_o_GND_541_o_sub_82_OUT<15:0>> created at line 1372.
+    Found 16-bit subtractor for signal <GND_524_o_GND_524_o_sub_82_OUT<15:0>> created at line 1372.
     Found 16-bit subtractor for signal <sig_byte_change_minus1_im2> created at line 698.
     Found 16-bit subtractor for signal <sig_bytes_to_mbaa_im0> created at line 724.
     Found 16-bit comparator lessequal for signal <n0211> created at line 1497
-    Found 16-bit comparator greater for signal <GND_541_o_sig_bytes_to_mbaa_im0[15]_LessThan_104_o> created at line 1542
-    Found 16-bit comparator equal for signal <GND_541_o_sig_bytes_to_mbaa_im0[15]_equal_105_o> created at line 1549
+    Found 16-bit comparator greater for signal <GND_524_o_sig_bytes_to_mbaa_im0[15]_LessThan_104_o> created at line 1542
+    Found 16-bit comparator equal for signal <GND_524_o_sig_bytes_to_mbaa_im0[15]_equal_105_o> created at line 1549
     Summary:
 	inferred   8 Adder/Subtractor(s).
 	inferred 292 D-type flip-flop(s).
@@ -3405,9 +2991,9 @@ INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_data
     Found 1-bit register for signal <sig_halt_reg_dly1>.
     Found 1-bit register for signal <sig_halt_reg_dly2>.
     Found 1-bit register for signal <sig_halt_reg_dly3>.
-    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_727_o_add_29_OUT> created at line 1215.
-    Found 3-bit subtractor for signal <GND_727_o_GND_727_o_sub_31_OUT<2:0>> created at line 1221.
-    Found 8-bit subtractor for signal <GND_727_o_GND_727_o_sub_40_OUT<7:0>> created at line 1308.
+    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_710_o_add_29_OUT> created at line 1215.
+    Found 3-bit subtractor for signal <GND_710_o_GND_710_o_sub_31_OUT<2:0>> created at line 1221.
+    Found 8-bit subtractor for signal <GND_710_o_GND_710_o_sub_40_OUT<7:0>> created at line 1308.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  40 D-type flip-flop(s).
@@ -3513,7 +3099,7 @@ Synthesizing Unit <axi_datamover_rd_sf>.
         C_DRE_CNTL_FIFO_DEPTH = 4
         C_DRE_ALIGN_WIDTH = 1
         C_MMAP_DWIDTH = 32
-        C_STREAM_DWIDTH = 32
+        C_STREAM_DWIDTH = 16
         C_STRT_SF_OFFSET_WIDTH = 1
         C_ENABLE_MM2S_TKEEP = 0
         C_TAG_WIDTH = 4
@@ -3529,19 +3115,22 @@ INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_data
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_datamover_v4_02_a/hdl/vhdl/axi_datamover_rd_sf.vhd" line 1917: Output port <SFIFO_Almost_full> of the instance <I_DATA_FIFO> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_datamover_v4_02_a/hdl/vhdl/axi_datamover_rd_sf.vhd" line 1917: Output port <SFIFO_Almost_empty> of the instance <I_DATA_FIFO> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_datamover_v4_02_a/hdl/vhdl/axi_datamover_rd_sf.vhd" line 1917: Output port <SFIFO_Rd_ack> of the instance <I_DATA_FIFO> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <INCLUDE_UNPACKING.lsig_0ffset_cntr>.
     Found 4-bit register for signal <sig_token_cntr>.
     Found 1-bit register for signal <sig_ok_to_post_rd_addr>.
-    Found 1-bit register for signal <OMIT_UNPACKING.lsig_cmd_loaded>.
-    Found 4-bit adder for signal <sig_token_cntr[3]_GND_735_o_add_10_OUT> created at line 1736.
+    Found 1-bit register for signal <INCLUDE_UNPACKING.lsig_cmd_loaded>.
+    Found 2-bit adder for signal <n0149> created at line 1026.
+    Found 1-bit adder for signal <INCLUDE_UNPACKING.lsig_0ffset_cntr[0]_PWR_81_o_add_7_OUT<0>> created at line 1158.
+    Found 4-bit adder for signal <sig_token_cntr[3]_GND_718_o_add_21_OUT> created at line 1736.
     Found 6-bit adder for signal <sig_commit_plus_actual> created at line 1857.
-    Found 4-bit subtractor for signal <n0096[3:0]> created at line 1857.
-    Found 4-bit subtractor for signal <GND_735_o_GND_735_o_sub_12_OUT<3:0>> created at line 1741.
+    Found 4-bit subtractor for signal <n0120[3:0]> created at line 1857.
+    Found 4-bit subtractor for signal <GND_718_o_GND_718_o_sub_23_OUT<3:0>> created at line 1741.
     Found 6-bit comparator lessequal for signal <sig_stall_rd_addr_posts> created at line 1865
     Summary:
-	inferred   3 Adder/Subtractor(s).
-	inferred   6 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred   1 Multiplexer(s).
+	inferred   3 Multiplexer(s).
 Unit <axi_datamover_rd_sf> synthesized.
 
 Synthesizing Unit <axi_datamover_sfifo_autord>.
@@ -3753,11 +3342,9 @@ Unit <axi_datamover_s2mm_omit_wrap> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 4
- 2x2-bit multiplier                                    : 2
- 5x2-bit multiplier                                    : 2
 # Adders/Subtractors                                   : 31
- 13-bit subtractor                                     : 4
+ 1-bit adder                                           : 1
+ 13-bit subtractor                                     : 3
  16-bit adder                                          : 4
  16-bit subtractor                                     : 3
  2-bit adder                                           : 1
@@ -3777,26 +3364,22 @@ Macro Statistics
  8-bit adder                                           : 1
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 2
-# Registers                                            : 516
- 1-bit register                                        : 412
- 12-bit register                                       : 3
- 13-bit register                                       : 6
- 16-bit register                                       : 12
+# Registers                                            : 350
+ 1-bit register                                        : 263
+ 13-bit register                                       : 5
+ 16-bit register                                       : 14
  17-bit register                                       : 1
- 2-bit register                                        : 6
- 24-bit register                                       : 1
- 3-bit register                                        : 7
- 32-bit register                                       : 13
- 4-bit register                                        : 24
+ 2-bit register                                        : 7
+ 3-bit register                                        : 3
+ 32-bit register                                       : 10
+ 4-bit register                                        : 17
  5-bit register                                        : 14
  6-bit register                                        : 4
  7-bit register                                        : 1
  72-bit register                                       : 2
  8-bit register                                        : 7
  9-bit register                                        : 2
- 96-bit register                                       : 1
-# Comparators                                          : 19
- 1-bit comparator not equal                            : 2
+# Comparators                                          : 17
  16-bit comparator equal                               : 1
  16-bit comparator greater                             : 1
  16-bit comparator lessequal                           : 1
@@ -3808,27 +3391,22 @@ Macro Statistics
  7-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
  8-bit comparator not equal                            : 2
-# Multiplexers                                         : 173
- 1-bit 2-to-1 multiplexer                              : 112
- 1-bit 4-to-1 multiplexer                              : 2
- 13-bit 2-to-1 multiplexer                             : 6
- 16-bit 2-to-1 multiplexer                             : 5
- 17-bit 2-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 3
- 3-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 151
+ 1-bit 2-to-1 multiplexer                              : 99
+ 13-bit 2-to-1 multiplexer                             : 5
+ 16-bit 2-to-1 multiplexer                             : 7
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
  31-bit 2-to-1 multiplexer                             : 2
- 32-bit 2-to-1 multiplexer                             : 13
+ 32-bit 2-to-1 multiplexer                             : 12
  32-bit 3-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 7
- 5-bit 2-to-1 multiplexer                              : 10
- 6-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 6
+ 5-bit 2-to-1 multiplexer                              : 9
+ 6-bit 2-to-1 multiplexer                              : 1
  7-bit 2-to-1 multiplexer                              : 3
  72-bit 2-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 3
-# Logic shifters                                       : 8
- 12-bit shifter logical right                          : 6
- 96-bit shifter logical right                          : 2
-# FSMs                                                 : 4
+# FSMs                                                 : 2
 # Xors                                                 : 16
  1-bit xor2                                            : 16
 
@@ -3902,6 +3480,7 @@ The following registers are absorbed into counter <sig_addr_cntr_im0_msh>: 1 reg
 Unit <axi_datamover_pcc> synthesized (advanced).
 
 Synthesizing (advanced) Unit <axi_datamover_rd_sf>.
+The following registers are absorbed into counter <INCLUDE_UNPACKING.lsig_0ffset_cntr_0>: 1 register on signal <INCLUDE_UNPACKING.lsig_0ffset_cntr_0>.
 The following registers are absorbed into counter <sig_token_cntr>: 1 register on signal <sig_token_cntr>.
 Unit <axi_datamover_rd_sf> synthesized (advanced).
 
@@ -3914,10 +3493,6 @@ Synthesizing (advanced) Unit <axi_vdma_intrpt>.
 The following registers are absorbed into counter <ch1_dly_fast_cnt>: 1 register on signal <ch1_dly_fast_cnt>.
 The following registers are absorbed into counter <ch1_delay_count>: 1 register on signal <ch1_delay_count>.
 Unit <axi_vdma_intrpt> synthesized (advanced).
-
-Synthesizing (advanced) Unit <axi_vdma_mm2s_axis_dwidth_converter>.
-The following registers are absorbed into counter <vsize_counter>: 1 register on signal <vsize_counter>.
-Unit <axi_vdma_mm2s_axis_dwidth_converter> synthesized (advanced).
 
 Synthesizing (advanced) Unit <axi_vdma_sm>.
 The following registers are absorbed into counter <vert_count>: 1 register on signal <vert_count>.
@@ -3947,15 +3522,11 @@ WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_ireg2_12> of sequential type is 
 WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_ireg2_13> of sequential type is unconnected in block <axi_datamover_pcc>.
 WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_ireg2_14> of sequential type is unconnected in block <axi_datamover_pcc>.
 WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_ireg2_15> of sequential type is unconnected in block <axi_datamover_pcc>.
-WARNING:Xst:2677 - Node <r0_is_null_r_0> of sequential type is unconnected in block <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 4
- 2x2-bit multiplier                                    : 2
- 5x2-bit multiplier                                    : 2
 # Adders/Subtractors                                   : 20
  13-bit subtractor                                     : 2
  16-bit adder                                          : 2
@@ -3974,7 +3545,8 @@ Macro Statistics
  7-bit subtractor                                      : 1
  8-bit subtractor                                      : 1
 # Counters                                             : 9
- 13-bit down counter                                   : 2
+ 1-bit up counter                                      : 1
+ 13-bit down counter                                   : 1
  16-bit up counter                                     : 1
  3-bit updown counter                                  : 1
  4-bit updown counter                                  : 1
@@ -3985,10 +3557,9 @@ Macro Statistics
 # Accumulators                                         : 2
  16-bit down loadable accumulator                      : 1
  32-bit up loadable accumulator                        : 1
-# Registers                                            : 1576
- Flip-Flops                                            : 1576
-# Comparators                                          : 19
- 1-bit comparator not equal                            : 2
+# Registers                                            : 1169
+ Flip-Flops                                            : 1169
+# Comparators                                          : 17
  16-bit comparator equal                               : 1
  16-bit comparator greater                             : 1
  16-bit comparator lessequal                           : 1
@@ -4000,27 +3571,22 @@ Macro Statistics
  7-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
  8-bit comparator not equal                            : 2
-# Multiplexers                                         : 209
- 1-bit 2-to-1 multiplexer                              : 158
- 1-bit 4-to-1 multiplexer                              : 2
+# Multiplexers                                         : 188
+ 1-bit 2-to-1 multiplexer                              : 145
  13-bit 2-to-1 multiplexer                             : 4
- 16-bit 2-to-1 multiplexer                             : 2
- 17-bit 2-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 3
- 3-bit 2-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
  31-bit 2-to-1 multiplexer                             : 2
- 32-bit 2-to-1 multiplexer                             : 11
+ 32-bit 2-to-1 multiplexer                             : 10
  32-bit 3-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 6
- 5-bit 2-to-1 multiplexer                              : 10
- 6-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 5
+ 5-bit 2-to-1 multiplexer                              : 9
+ 6-bit 2-to-1 multiplexer                              : 1
  7-bit 2-to-1 multiplexer                              : 2
  72-bit 2-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 2
-# Logic shifters                                       : 8
- 12-bit shifter logical right                          : 6
- 96-bit shifter logical right                          : 2
-# FSMs                                                 : 4
+# FSMs                                                 : 2
 # Xors                                                 : 16
  1-bit xor2                                            : 16
 
@@ -4033,6 +3599,7 @@ WARNING:Xst:1293 - FF/Latch <sig_xfer_len_reg_4> has a constant value of 0 in bl
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_xfer_len_reg_5> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_xfer_len_reg_6> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_xfer_len_reg_7> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <dmacr_i_15> has a constant value of 0 in block <axi_vdma_register>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cmnd_data_16> (without init value) has a constant value of 0 in block <axi_vdma_sm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmnd_data_17> (without init value) has a constant value of 0 in block <axi_vdma_sm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmnd_data_18> (without init value) has a constant value of 0 in block <axi_vdma_sm>. This FF/Latch will be trimmed during the optimization process.
@@ -4050,36 +3617,12 @@ WARNING:Xst:1293 - FF/Latch <sig_sready_stop_reg> has a constant value of 0 in b
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_stop_request> has a constant value of 0 in block <axi_vdma_skid_buf>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_sstrb_stop_mask_0> has a constant value of 0 in block <axi_vdma_skid_buf>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_sstrb_stop_mask_1> has a constant value of 0 in block <axi_vdma_skid_buf>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_sstrb_stop_mask_2> has a constant value of 0 in block <axi_vdma_skid_buf>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_sstrb_stop_mask_3> has a constant value of 0 in block <axi_vdma_skid_buf>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <sig_mvalid_stop_reg> has a constant value of 0 in block <axi_vdma_skid_buf>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <sig_coelsc_cmd_cmplt_reg> in Unit <axi_datamover_rddata_cntl> is equivalent to the following FF/Latch, which will be removed : <sig_coelsc_reg_full> 
 INFO:Xst:2261 - The FF/Latch <cmnd_pending> in Unit <axi_vdma_cmdsts_if> is equivalent to the following FF/Latch, which will be removed : <s_axis_cmd_tvalid> 
 INFO:Xst:2261 - The FF/Latch <cmnd_data_23> in Unit <axi_vdma_sm> is equivalent to the following 4 FFs/Latches, which will be removed : <cmnd_data_30> <cmnd_data_31> <cmnd_data_64> <cmnd_data_65> 
 INFO:Xst:2261 - The FF/Latch <sig_input_cache_type_reg_0> in Unit <axi_datamover_pcc> is equivalent to the following 7 FFs/Latches, which will be removed : <sig_input_cache_type_reg_1> <sig_input_cache_type_reg_2> <sig_input_cache_type_reg_3> <sig_input_user_type_reg_0> <sig_input_user_type_reg_1> <sig_input_user_type_reg_2> <sig_input_user_type_reg_3> 
-INFO:Xst:2261 - The FF/Latch <sig_strb_skid_reg_0> in Unit <axi_vdma_skid_buf> is equivalent to the following 3 FFs/Latches, which will be removed : <sig_strb_skid_reg_1> <sig_strb_skid_reg_2> <sig_strb_skid_reg_3> 
-INFO:Xst:2261 - The FF/Latch <GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/areset_r> in Unit <axi_vdma_mm2s_axis_dwidth_converter> is equivalent to the following 2 FFs/Latches, which will be removed : <GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/axis_register_slice_0/areset_r> <GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/axis_register_slice_1/areset_r> 
-INFO:Xst:2261 - The FF/Latch <r0_keep_2> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <r0_strb_2> 
-INFO:Xst:2261 - The FF/Latch <r0_keep_3> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <r0_strb_3> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_10> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_10> 
-INFO:Xst:2261 - The FF/Latch <r0_user_1> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following 2 FFs/Latches, which will be removed : <r0_user_2> <r0_user_3> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_11> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_11> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_9> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_9> 
-INFO:Xst:2261 - The FF/Latch <acc_user_11> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following 2 FFs/Latches, which will be removed : <acc_user_10> <acc_user_9> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_8> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_8> 
-INFO:Xst:2261 - The FF/Latch <r0_keep_0> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <r0_strb_0> 
-INFO:Xst:2261 - The FF/Latch <r0_keep_1> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <r0_strb_1> 
-INFO:Xst:2261 - The FF/Latch <r0_id_0> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <r0_dest_0> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_4> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_4> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_6> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_6> 
-INFO:Xst:2261 - The FF/Latch <acc_user_5> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following 2 FFs/Latches, which will be removed : <acc_user_7> <acc_user_6> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_0> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_0> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_1> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_1> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_2> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_2> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_3> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_3> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_5> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_5> 
-INFO:Xst:2261 - The FF/Latch <acc_strb_7> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following FF/Latch, which will be removed : <acc_keep_7> 
-INFO:Xst:2261 - The FF/Latch <acc_user_3> in Unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> is equivalent to the following 2 FFs/Latches, which will be removed : <acc_user_2> <acc_user_1> 
+INFO:Xst:2261 - The FF/Latch <sig_strb_skid_reg_0> in Unit <axi_vdma_skid_buf> is equivalent to the following FF/Latch, which will be removed : <sig_strb_skid_reg_1> 
 WARNING:Xst:2677 - Node <sig_ls_addr_cntr_0> of sequential type is unconnected in block <axi_datamover_rddata_cntl>.
 WARNING:Xst:2677 - Node <sig_ls_addr_cntr_1> of sequential type is unconnected in block <axi_datamover_rddata_cntl>.
 WARNING:Xst:1293 - FF/Latch <sig_input_cache_type_reg_0> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
@@ -4091,15 +3634,8 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_xfer_user_reg_0
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_xfer_user_reg_1> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_xfer_user_reg_2> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_xfer_user_reg_3> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <r0_id_0> (without init value) has a constant value of 0 in block <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <acc_user_11> (without init value) has a constant value of 0 in block <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r0_user_1> (without init value) has a constant value of 0 in block <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <acc_user_3> (without init value) has a constant value of 0 in block <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <acc_user_5> (without init value) has a constant value of 0 in block <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <acc_id_0> (without init value) has a constant value of 0 in block <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <acc_dest_0> (without init value) has a constant value of 0 in block <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/FSM_3> on signal <sig_pcc_sm_state[1:3]> with user encoding.
+Optimizing FSM <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/FSM_1> on signal <sig_pcc_sm_state[1:3]> with user encoding.
 -------------------------------
  State             | Encoding
 -------------------------------
@@ -4113,7 +3649,7 @@ Optimizing FSM <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I
  error_trap        | 111
 -------------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_SM/FSM_2> on signal <dmacntrl_cs[1:3]> with user encoding.
+Optimizing FSM <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_SM/FSM_0> on signal <dmacntrl_cs[1:3]> with user encoding.
 ---------------------------
  State         | Encoding
 ---------------------------
@@ -4124,28 +3660,6 @@ Optimizing FSM <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_SM/FSM_2> on sign
  execute_xfer  | 100
  check_done    | 101
 ---------------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/FSM_0> on signal <state[1:3]> with user encoding.
--------------------
- State | Encoding
--------------------
- 000   | 000
- 001   | 001
- 101   | 101
- 011   | 011
- 010   | 010
--------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/FSM_1> on signal <state[1:3]> with user encoding.
--------------------
- State | Encoding
--------------------
- 000   | 000
- 001   | 001
- 010   | 010
- 011   | 011
- 110   | 110
--------------------
 WARNING:Xst:1293 - FF/Latch <sig_addr_cntr_incr_ireg2_15> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_ireg2_14> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_ireg2_13> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
@@ -4164,7 +3678,7 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_bytes_to_mbaa_i
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_bytes_to_mbaa_ireg1_9> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_bytes_to_mbaa_ireg1_8> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_bytes_to_mbaa_ireg1_7> has a constant value of 0 in block <axi_datamover_pcc>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <sig_strb_reg_out_0> in Unit <axi_vdma_skid_buf> is equivalent to the following 3 FFs/Latches, which will be removed : <sig_strb_reg_out_1> <sig_strb_reg_out_2> <sig_strb_reg_out_3> 
+INFO:Xst:2261 - The FF/Latch <sig_strb_reg_out_0> in Unit <axi_vdma_skid_buf> is equivalent to the following FF/Latch, which will be removed : <sig_strb_reg_out_1> 
 
 Optimizing unit <system_axi_vdma_0_wrapper> ...
 
@@ -4240,25 +3754,8 @@ Optimizing unit <axi_vdma_fsync_gen> ...
 Optimizing unit <axi_vdma_mm2s_linebuf> ...
 
 Optimizing unit <axi_vdma_skid_buf> ...
-
-Optimizing unit <axi_vdma_mm2s_axis_dwidth_converter> ...
-
-Optimizing unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_upsizer> ...
-
-Optimizing unit <axi_vdma_v5_04_a_axis_dwidth_converter_v1_0_axisc_downsizer> ...
 WARNING:Xst:2716 - In unit system_axi_vdma_0_wrapper, both signals axi_vdma_0/I_RST_MODULE/GEN_RESET_FOR_MM2S.sig_mm2s_prmry_resetn and axi_vdma_0/I_RST_MODULE/GEN_RESET_FOR_MM2S.sig_mm2s_axis_resetn have a KEEP attribute, signal axi_vdma_0/I_RST_MODULE/GEN_RESET_FOR_MM2S.sig_mm2s_axis_resetn will be lost.
-WARNING:Xst:1710 - FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_7> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_9> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_is_null_r_1> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/r0_keep_0> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/r0_keep_1> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/r0_keep_2> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/r0_keep_3> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_6> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_5> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_3> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_2> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_16> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_16> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_17> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_18> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_19> (without init value) has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
@@ -4277,14 +3774,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/I_DMA_REGISTER/lsize_err> has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/I_DMA_REGISTER/lsize_more_err> has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/I_AXI_DMA_INTRPT/ch1_irqthresh_decr_mask_sig> has a constant value of 0 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_3> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_2> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_1> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_0> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_3> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_2> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_1> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_0> (without init value) has a constant value of 1 in block <system_axi_vdma_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <axi_vdma_0/I_RST_MODULE/mm2s_hrd_resetn_d1_cdc_tig> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
 WARNING:Xst:2677 - Node <axi_vdma_0/I_RST_MODULE/s2mm_hrd_resetn_d1_cdc_tig> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
 WARNING:Xst:2677 - Node <axi_vdma_0/I_RST_MODULE/mm2s_hrd_resetn> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
@@ -4342,50 +3831,20 @@ WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/d
 WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_STS_MNGR/ftch_idle_d1> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
 WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_strb_reg_out_0> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
 WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_strb_skid_reg_0> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_user_8> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r1_user_2> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r1_user_1> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r1_dest_0> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r1_id_0> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r1_strb_2> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r1_strb_1> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r1_strb_0> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_11> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_10> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_8> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_1> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_dest_0> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_id_0> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_11> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_10> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_9> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_8> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_7> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_6> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_5> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_4> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_3> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_2> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_1> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_strb_0> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
 INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/tstvect_fsync_d1> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 2 FFs/Latches, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_SM/frame_sync_d1> <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_FSYNC_I/GEN_FREE_RUN_MODE.frame_sync_aligned> 
 INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/tstvect_fsync_d2> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_SM/frame_sync_d2> 
 INFO:Xst:2261 - The FF/Latch <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 5 FFs/Latches, which will be removed : <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_mmap_reset_reg> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_init_reg> 
 INFO:Xst:2261 - The FF/Latch <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_done> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_done> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_done> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_done> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_init_done> 
 INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/GEN_REG_DIRECT_MODE.REGDIRECT_I/run_stop_d1> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_STS_MNGR/halted_clr> 
 INFO:Xst:2261 - The FF/Latch <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_inhibit_rdy_n> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_inhibit_rdy_n> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_inhibit_rdy_n> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_inhibit_rdy_n> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_inhibit_rdy_n> 
-INFO:Xst:2261 - The FF/Latch <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg2> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_init_reg2> 
-INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_11> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 3 FFs/Latches, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_10> <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_9> <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_8> 
-INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_7> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 3 FFs/Latches, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_6> <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_5> <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_keep_4> 
-INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_4> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 3 FFs/Latches, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_5> <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_6> <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_7> 
-INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_8> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 3 FFs/Latches, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_9> <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_10> <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_strb_11> 
 INFO:Xst:2261 - The FF/Latch <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_adjusted_addr_incr_ireg2_0> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_finish_addr_offset_ireg2_0> 
 INFO:Xst:2261 - The FF/Latch <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_adjusted_addr_incr_ireg2_1> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_finish_addr_offset_ireg2_1> 
-INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_65> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_64> <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_31> <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_30> <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_23> 
+INFO:Xst:2261 - The FF/Latch <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_65> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 5 FFs/Latches, which will be removed : <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_64> <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_31> <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_30> <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_23> <axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/cmnd_pending> 
+INFO:Xst:2261 - The FF/Latch <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg2> in Unit <system_axi_vdma_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2> <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_init_reg2> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block system_axi_vdma_0_wrapper, actual ratio is 4.
+Found area constraint ratio of 100 (+ 0) on block system_axi_vdma_0_wrapper, actual ratio is 3.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/V6.I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb> in Unit <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/V6.I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/V6.I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
@@ -4397,11 +3856,9 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/V6.I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb> in Unit <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/V6.I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> in Unit <axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/V6.I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.V6.I_LINEBUFFER_FIFO/fg91_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.V6.I_LINEBUFFER_FIFO/fg91_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> in Unit <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.V6.I_LINEBUFFER_FIFO/fg91_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> 
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_upsizer_conversion.axisc_upsizer_0/acc_user_4> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
-WARNING:Xst:2677 - Node <axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_user_4> of sequential type is unconnected in block <system_axi_vdma_0_wrapper>.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.V6.I_LINEBUFFER_FIFO/fg91_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 FlipFlop axi_vdma_0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/halt_i has been replicated 1 time(s)
 FlipFlop axi_vdma_0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/prmry_resetn_i has been replicated 1 time(s)
 
@@ -4415,8 +3872,8 @@ Unit <system_axi_vdma_0_wrapper> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1449
- Flip-Flops                                            : 1449
+# Registers                                            : 1121
+ Flip-Flops                                            : 1121
 
 =========================================================================
 
@@ -4439,27 +3896,27 @@ Top Level Output File Name         : system_axi_vdma_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1666
+# BELS                             : 1517
 #      GND                         : 5
-#      INV                         : 47
+#      INV                         : 46
 #      LUT1                        : 19
-#      LUT2                        : 186
-#      LUT3                        : 249
-#      LUT4                        : 192
-#      LUT5                        : 212
-#      LUT6                        : 385
-#      MUXCY                       : 161
+#      LUT2                        : 161
+#      LUT3                        : 229
+#      LUT4                        : 178
+#      LUT5                        : 203
+#      LUT6                        : 331
+#      MUXCY                       : 149
 #      MUXCY_L                     : 15
-#      MUXF7                       : 4
+#      MUXF7                       : 3
 #      VCC                         : 1
-#      XORCY                       : 190
-# FlipFlops/Latches                : 1540
-#      FD                          : 82
-#      FDE                         : 289
-#      FDR                         : 146
-#      FDRE                        : 983
+#      XORCY                       : 177
+# FlipFlops/Latches                : 1212
+#      FD                          : 79
+#      FDE                         : 4
+#      FDR                         : 133
+#      FDRE                        : 954
 #      FDS                         : 29
-#      FDSE                        : 11
+#      FDSE                        : 13
 # RAMS                             : 2
 #      RAMB18E1                    : 2
 # Shift Registers                  : 172
@@ -4472,21 +3929,21 @@ Selected Device : 7z020clg484-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1540  out of  106400     1%  
- Number of Slice LUTs:                 1462  out of  53200     2%  
-    Number used as Logic:              1290  out of  53200     2%  
+ Number of Slice Registers:            1212  out of  106400     1%  
+ Number of Slice LUTs:                 1339  out of  53200     2%  
+    Number used as Logic:              1167  out of  53200     2%  
     Number used as Memory:              172  out of  17400     0%  
        Number used as SRL:              172
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2020
-   Number with an unused Flip Flop:     480  out of   2020    23%  
-   Number with an unused LUT:           558  out of   2020    27%  
-   Number of fully used LUT-FF pairs:   982  out of   2020    48%  
-   Number of unique control sets:        83
+ Number of LUT Flip Flop pairs used:   1673
+   Number with an unused Flip Flop:     461  out of   1673    27%  
+   Number with an unused LUT:           334  out of   1673    19%  
+   Number of fully used LUT-FF pairs:   878  out of   1673    52%  
+   Number of unique control sets:        72
 
 IO Utilization: 
- Number of IOs:                         555
+ Number of IOs:                         546
  Number of bonded IOBs:                   0  out of    200     0%  
 
 Specific Feature Utilization:
@@ -4516,7 +3973,7 @@ Clock Signal                       | Clock buffer(FF name)                      
 -----------------------------------+--------------------------------------------------------------------------------------------------------+-------+
 s_axi_lite_aclk                    | NONE(axi_vdma_0/I_RST_MODULE/hrd_resetn_i)                                                             | 29    |
 m_axi_mm2s_aclk                    | NONE(axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_int_reg_n)| 1292  |
-m_axis_mm2s_aclk                   | NONE(axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_12)                                  | 393   |
+m_axis_mm2s_aclk                   | NONE(axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_12)                                  | 65    |
 -----------------------------------+--------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -4528,7 +3985,7 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.511ns (Maximum Frequency: 284.819MHz)
+   Minimum period: 3.518ns (Maximum Frequency: 284.252MHz)
    Minimum input arrival time before clock: 2.309ns
    Maximum output required time after clock: 3.397ns
    Maximum combinational path delay: No path found
@@ -4539,10 +3996,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'm_axi_mm2s_aclk'
-  Clock period: 3.511ns (frequency: 284.819MHz)
-  Total number of paths / destination ports: 29931 / 3421
+  Clock period: 3.518ns (frequency: 284.252MHz)
+  Total number of paths / destination ports: 30068 / 3381
 -------------------------------------------------------------------------
-Delay:               3.511ns (Levels of Logic = 6)
+Delay:               3.518ns (Levels of Logic = 6)
   Source:            axi_vdma_0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/halt_i_1 (FF)
   Destination:       axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/V6.I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_3 (FF)
   Source Clock:      m_axi_mm2s_aclk rising
@@ -4553,15 +4010,15 @@ Delay:               3.511ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.282   0.635  axi_vdma_0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/halt_i_1 (axi_vdma_0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/halt_i_1)
-     LUT4:I0->O            6   0.053   0.446  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/s_axis_tready_i1 (axi_vdma_0/linebuf2dm_mm2s_tready)
-     LUT4:I3->O           16   0.053   0.823  axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/sig_cntl_fifo_has_data_OMIT_UNPACKING.lsig_cmd_cmplt_dbeat_AND_467_o11 (axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/sig_cntl_fifo_has_data_OMIT_UNPACKING.lsig_cmd_cmplt_dbeat_AND_467_o1)
+     LUT4:I0->O            7   0.053   0.453  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/s_axis_tready_i1 (axi_vdma_0/linebuf2dm_mm2s_tready)
+     LUT5:I4->O           16   0.053   0.823  axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/sig_pop_data_fifo1 (axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/sig_pop_data_fifo)
      begin scope: 'axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/V6.I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM:RD_EN'
      LUT5:I0->O            3   0.053   0.616  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_lut<1>1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_lut<1>)
      LUT6:I3->O            4   0.053   0.433  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<5>11_SW0 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_cy<2>)
      LUT6:I5->O            1   0.053   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/Mcount_count_xor<3>11 (Result<3>)
      FDRE:D                    0.011          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.gdc.dc/dc/count_3
     ----------------------------------------
-    Total                      3.511ns (0.558ns logic, 2.953ns route)
+    Total                      3.518ns (0.558ns logic, 2.960ns route)
                                        (15.9% logic, 84.1% route)
 
 =========================================================================
@@ -4588,27 +4045,27 @@ Delay:               1.682ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'm_axis_mm2s_aclk'
-  Clock period: 2.847ns (frequency: 351.247MHz)
-  Total number of paths / destination ports: 2361 / 811
+  Clock period: 2.763ns (frequency: 361.925MHz)
+  Total number of paths / destination ports: 685 / 131
 -------------------------------------------------------------------------
-Delay:               2.847ns (Levels of Logic = 3)
-  Source:            axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/vsize_counter_2 (FF)
-  Destination:       axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/vsize_counter_11 (FF)
+Delay:               2.763ns (Levels of Logic = 3)
+  Source:            axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_2 (FF)
+  Destination:       axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_12 (FF)
   Source Clock:      m_axis_mm2s_aclk rising
   Destination Clock: m_axis_mm2s_aclk rising
 
-  Data Path: axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/vsize_counter_2 to axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/vsize_counter_11
+  Data Path: axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_2 to axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.282   0.745  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/vsize_counter_2 (axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/vsize_counter_2)
-     LUT6:I0->O            2   0.053   0.491  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GND_18_o_vsize_counter[12]_equal_1_o<12>11 (axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GND_18_o_vsize_counter[12]_equal_1_o<12>11)
-     LUT2:I0->O            2   0.053   0.491  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GND_18_o_vsize_counter[12]_equal_1_o<12>13 (axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GND_18_o_vsize_counter[12]_equal_1_o<12>1)
-     LUT6:I4->O           13   0.053   0.479  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/_n0064_inv1 (axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/_n0064_inv)
-     FDRE:CE                   0.200          axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/vsize_counter_0
+     FDRE:C->Q             3   0.282   0.739  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_2 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_2)
+     LUT5:I0->O            1   0.053   0.485  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/_n0186_inv12 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/_n0186_inv12)
+     LUT4:I2->O            2   0.053   0.419  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/_n0186_inv13 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/_n0186_inv1)
+     LUT5:I4->O           13   0.053   0.479  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/_n0186_inv2 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/_n0186_inv)
+     FDRE:CE                   0.200          axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/vsize_counter_0
     ----------------------------------------
-    Total                      2.847ns (0.641ns logic, 2.206ns route)
-                                       (22.5% logic, 77.5% route)
+    Total                      2.763ns (0.641ns logic, 2.122ns route)
+                                       (23.2% logic, 76.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 's_axi_lite_aclk'
@@ -4631,7 +4088,7 @@ Offset:              0.300ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'm_axi_mm2s_aclk'
-  Total number of paths / destination ports: 453 / 383
+  Total number of paths / destination ports: 509 / 390
 -------------------------------------------------------------------------
 Offset:              2.309ns (Levels of Logic = 5)
   Source:            m_axi_mm2s_rvalid (PAD)
@@ -4654,24 +4111,22 @@ Offset:              2.309ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'm_axis_mm2s_aclk'
-  Total number of paths / destination ports: 19 / 11
+  Total number of paths / destination ports: 24 / 24
 -------------------------------------------------------------------------
-Offset:              1.773ns (Levels of Logic = 3)
+Offset:              0.850ns (Levels of Logic = 1)
   Source:            m_axis_mm2s_tready (PAD)
-  Destination:       axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_1 (FF)
+  Destination:       axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_user_reg_out_0 (FF)
   Destination Clock: m_axis_mm2s_aclk rising
 
-  Data Path: m_axis_mm2s_tready to axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_1
+  Data Path: m_axis_mm2s_tready to axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_user_reg_out_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT6:I0->O            6   0.053   0.772  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/xfer_is_end_state[2]_OR_74_o (axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/xfer_is_end_state[2]_OR_74_o)
-     LUT6:I0->O            2   0.053   0.491  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/_n02131 (axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/_n0213)
-     LUT5:I3->O            1   0.053   0.000  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_1_glue_set (axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_1_glue_set)
-     FDR:D                     0.011          axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_1
+     LUT2:I0->O           18   0.053   0.511  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_data_reg_out_en1 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_data_reg_out_en)
+     FDRE:CE                   0.200          axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_last_reg_out
     ----------------------------------------
-    Total                      1.773ns (0.510ns logic, 1.263ns route)
-                                       (28.8% logic, 71.2% route)
+    Total                      0.850ns (0.339ns logic, 0.511ns route)
+                                       (39.9% logic, 60.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 's_axi_lite_aclk'
@@ -4687,8 +4142,8 @@ Offset:              3.397ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q            22   0.282   0.771  axi_vdma_0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/axi2ip_rdaddr_captured_5 (axi_vdma_0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/axi2ip_rdaddr_captured_5)
-     LUT4:I0->O           26   0.053   0.786  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/LITE_READ_MUX_I/GND_38_o_read_addr[7]_equal_10_o<7>11 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/LITE_READ_MUX_I/GND_38_o_read_addr[7]_equal_10_o<7>1)
-     LUT4:I0->O           22   0.053   0.861  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/LITE_READ_MUX_I/GND_38_o_read_addr[7]_equal_3_o<7>11 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/LITE_READ_MUX_I/GND_38_o_read_addr[7]_equal_3_o<7>1)
+     LUT4:I0->O           26   0.053   0.786  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/LITE_READ_MUX_I/GND_21_o_read_addr[7]_equal_10_o<7>11 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/LITE_READ_MUX_I/GND_21_o_read_addr[7]_equal_10_o<7>1)
+     LUT4:I0->O           22   0.053   0.861  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/LITE_READ_MUX_I/GND_21_o_read_addr[7]_equal_3_o<7>11 (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/LITE_READ_MUX_I/GND_21_o_read_addr[7]_equal_3_o<7>1)
      LUT6:I1->O            1   0.053   0.485  axi_vdma_0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/Mmux_ip2axi_rddata_captured93 (axi_vdma_0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/Mmux_ip2axi_rddata_captured92)
      LUT5:I3->O            0   0.053   0.000  axi_vdma_0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/Mmux_ip2axi_rddata_captured95 (s_axi_lite_rdata<17>)
     ----------------------------------------
@@ -4718,22 +4173,22 @@ Offset:              2.294ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'm_axis_mm2s_aclk'
-  Total number of paths / destination ports: 173 / 33
+  Total number of paths / destination ports: 26 / 22
 -------------------------------------------------------------------------
-Offset:              1.226ns (Levels of Logic = 1)
-  Source:            axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_0 (FF)
-  Destination:       m_axis_mm2s_tdata<23> (PAD)
+Offset:              0.970ns (Levels of Logic = 1)
+  Source:            axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_m_valid_out (FF)
+  Destination:       mm2s_buffer_almost_empty (PAD)
   Source Clock:      m_axis_mm2s_aclk rising
 
-  Data Path: axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_0 to m_axis_mm2s_tdata<23>
+  Data Path: axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_m_valid_out to mm2s_buffer_almost_empty
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             30   0.282   0.891  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_0 (axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/r0_out_sel_r_0)
-     LUT6:I0->O            0   0.053   0.000  axi_vdma_0/GEN_SPRT_FOR_MM2S.GEN_AXIS_MM2S_DWIDTH_CONV.AXIS_MM2S_DWIDTH_CONVERTER_I/GEN_DWIDTH_NO_SOF.MM2S_AXIS_DWIDTH_CONVERTER_I/gen_downsizer_conversion.axisc_downsizer_0/Sh7593 (m_axis_mm2s_tdata<15>)
+     FD:C->Q               6   0.282   0.635  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_m_valid_out (axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID/sig_m_valid_out)
+     LUT3:I0->O            0   0.053   0.000  axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/mm2s_fifo_almost_empty1 (mm2s_buffer_almost_empty)
     ----------------------------------------
-    Total                      1.226ns (0.335ns logic, 0.891ns route)
-                                       (27.3% logic, 72.7% route)
+    Total                      0.970ns (0.335ns logic, 0.635ns route)
+                                       (34.5% logic, 65.5% route)
 
 =========================================================================
 
@@ -4745,9 +4200,9 @@ Clock to Setup on destination clock m_axi_mm2s_aclk
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-m_axi_mm2s_aclk |    3.511|         |         |         |
+m_axi_mm2s_aclk |    3.518|         |         |         |
 m_axis_mm2s_aclk|    3.510|         |         |         |
-s_axi_lite_aclk |    3.249|         |         |         |
+s_axi_lite_aclk |    3.697|         |         |         |
 ----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock m_axis_mm2s_aclk
@@ -4755,8 +4210,8 @@ Clock to Setup on destination clock m_axis_mm2s_aclk
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-m_axi_mm2s_aclk |    2.900|         |         |         |
-m_axis_mm2s_aclk|    2.847|         |         |         |
+m_axi_mm2s_aclk |    2.972|         |         |         |
+m_axis_mm2s_aclk|    2.763|         |         |         |
 ----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock s_axi_lite_aclk
@@ -4770,15 +4225,15 @@ s_axi_lite_aclk|    1.682|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 276.00 secs
-Total CPU time to Xst completion: 182.72 secs
+Total REAL time to Xst completion: 232.00 secs
+Total CPU time to Xst completion: 167.44 secs
  
 --> 
 
 
-Total memory usage is 706400 kilobytes
+Total memory usage is 692232 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  471 (   0 filtered)
-Number of infos    :  554 (   0 filtered)
+Number of warnings :  400 (   0 filtered)
+Number of infos    :  530 (   0 filtered)
 

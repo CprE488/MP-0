@@ -1,97 +1,91 @@
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: SWs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53 
+   /tmp/cpre488/MP-0/system/system.mhs line 53 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: LEDs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67 
+   /tmp/cpre488/MP-0/system/system.mhs line 67 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: BTNs_5Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81 
+   /tmp/cpre488/MP-0/system/system.mhs line 81 
 WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
    Pre-Production version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95 
+   /tmp/cpre488/MP-0/system/system.mhs line 95 
 WARNING:EDK:4107 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - base address
    C_BASEADDR (0xffffffff) is greater than high address C_HIGHADDR (0x00000000)
-   - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line
-   197 
+   - /tmp/cpre488/MP-0/system/system.mhs line 197 
 WARNING:EDK:4092 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:4107 - IPNAME: v_tc, INSTANCE: v_tc_0 - base address C_BASEADDR
    (0xffffffff) is greater than high address C_HIGHADDR (0x00000000) -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 228 
+   /tmp/cpre488/MP-0/system/system.mhs line 229 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: SWs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53 
+   /tmp/cpre488/MP-0/system/system.mhs line 53 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: LEDs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67 
+   /tmp/cpre488/MP-0/system/system.mhs line 67 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: BTNs_5Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81 
+   /tmp/cpre488/MP-0/system/system.mhs line 81 
 WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
    Pre-Production version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95 
+   /tmp/cpre488/MP-0/system/system.mhs line 95 
 WARNING:EDK:4107 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - base address
    C_BASEADDR (0xffffffff) is greater than high address C_HIGHADDR (0x00000000)
-   - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line
-   197 
+   - /tmp/cpre488/MP-0/system/system.mhs line 197 
 WARNING:EDK:4092 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:4107 - IPNAME: v_tc, INSTANCE: v_tc_0 - base address C_BASEADDR
    (0xffffffff) is greater than high address C_HIGHADDR (0x00000000) -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 228 
+   /tmp/cpre488/MP-0/system/system.mhs line 229 
 WARNING:EDK:3967 - axi_vdma (axi_vdma_0) - ADDRESS specified by PARAMETER
-   C_BASEADDR is ignored -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   C_BASEADDR is ignored - /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:3967 - v_tc (v_tc_0) - ADDRESS specified by PARAMETER C_BASEADDR is
-   ignored - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs
-   line 225 
+   ignored - /tmp/cpre488/MP-0/system/system.mhs line 226 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: SWs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53 
+   /tmp/cpre488/MP-0/system/system.mhs line 53 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: LEDs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67 
+   /tmp/cpre488/MP-0/system/system.mhs line 67 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: BTNs_5Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81 
+   /tmp/cpre488/MP-0/system/system.mhs line 81 
 WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
    Pre-Production version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95 
+   /tmp/cpre488/MP-0/system/system.mhs line 95 
 WARNING:EDK:4107 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - base address
    C_BASEADDR (0xffffffff) is greater than high address C_HIGHADDR (0x00000000)
-   - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line
-   197 
+   - /tmp/cpre488/MP-0/system/system.mhs line 197 
 WARNING:EDK:4092 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:4107 - IPNAME: v_tc, INSTANCE: v_tc_0 - base address C_BASEADDR
    (0xffffffff) is greater than high address C_HIGHADDR (0x00000000) -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 228 
+   /tmp/cpre488/MP-0/system/system.mhs line 229 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: SWs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53 
+   /tmp/cpre488/MP-0/system/system.mhs line 53 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: LEDs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67 
+   /tmp/cpre488/MP-0/system/system.mhs line 67 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: BTNs_5Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81 
+   /tmp/cpre488/MP-0/system/system.mhs line 81 
 WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
    Pre-Production version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95 
+   /tmp/cpre488/MP-0/system/system.mhs line 95 
 WARNING:EDK:4107 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - base address
    C_BASEADDR (0xffffffff) is greater than high address C_HIGHADDR (0x00000000)
-   - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line
-   197 
+   - /tmp/cpre488/MP-0/system/system.mhs line 197 
 WARNING:EDK:4092 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:4107 - IPNAME: v_tc, INSTANCE: v_tc_0 - base address C_BASEADDR
    (0xffffffff) is greater than high address C_HIGHADDR (0x00000000) -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 228 
+   /tmp/cpre488/MP-0/system/system.mhs line 229 
 WARNING:EDK:2486 - The bitwidth 52 of new value 0xc00000000fe81 is greater than
    32
 WARNING:EDK:4131 - IPNAME: ps7_usb_0, PROPERTY: C_INTERCONNECT_M_AXI_BASE_ID -
@@ -321,11 +315,9 @@ WARNING:EDK:4131 - IPNAME: ps7_qspi_0, PROPERTY: SCK - Failure in evaluting
    /remote/Xilinx/14.6/ISE/data/zynqconfig/ps7_internals/pcores/ps7_qspi_v1_00_a
    /data/ps7_qspi_v2_1_0.mpd line 122 
 WARNING:EDK:3967 - axi_vdma (axi_vdma_0) - ADDRESS specified by PARAMETER
-   C_BASEADDR is ignored -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   C_BASEADDR is ignored - /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:3967 - v_tc (v_tc_0) - ADDRESS specified by PARAMETER C_BASEADDR is
-   ignored - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs
-   line 225 
+   ignored - /tmp/cpre488/MP-0/system/system.mhs line 226 
 
 Overriding IP level properties ...
 WARNING:EDK:4131 - IPNAME: ps7_usb_0, PROPERTY: C_INTERCONNECT_M_AXI_BASE_ID -
@@ -555,11 +547,9 @@ WARNING:EDK:4131 - IPNAME: ps7_qspi_0, PROPERTY: SCK - Failure in evaluting
    /remote/Xilinx/14.6/ISE/data/zynqconfig/ps7_internals/pcores/ps7_qspi_v1_00_a
    /data/ps7_qspi_v2_1_0.mpd line 122 
 WARNING:EDK:3967 - axi_vdma (axi_vdma_0) - ADDRESS specified by PARAMETER
-   C_BASEADDR is ignored -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   C_BASEADDR is ignored - /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:3967 - v_tc (v_tc_0) - ADDRESS specified by PARAMETER C_BASEADDR is
-   ignored - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs
-   line 225 
+   ignored - /tmp/cpre488/MP-0/system/system.mhs line 226 
 
 Computing clock values...
 

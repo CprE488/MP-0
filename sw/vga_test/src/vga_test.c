@@ -58,6 +58,8 @@ int main() {
     // Set up VDMA config registers
 	#define CHANGE_ME 0
 
+
+
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_CR_OFFSET,  CHANGE_ME);  // Circular Mode and Start bits set, VDMA MM2S Control
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_HI_FRMBUF_OFFSET, CHANGE_ME);  // VDMA MM2S Reg_Index
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_FRMSTORE_OFFSET, CHANGE_ME);  // VDMA MM2S Number FRM_Stores

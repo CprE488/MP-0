@@ -34,20 +34,20 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   1.061ns.
+ Maximum delay is   1.958ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: PATH "TS_axi_interconnect_1_reset_resync_path" TIG;
 
- 6 paths analyzed, 6 endpoints analyzed, 0 failing endpoints
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: PATH "TS_axi4lite_0_reset_resync_path" TIG;
 
- 10 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
@@ -55,9 +55,9 @@ Timing constraint: PATH "TS_axi4lite_0_reset_resync_path" TIG;
 Timing constraint: TS_clk_fpga_1 = PERIOD TIMEGRP "clk_fpga_1" 25 MHz HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 52069 paths analyzed, 9884 endpoints analyzed, 0 failing endpoints
+ 7008 paths analyzed, 2222 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.135ns.
+ Minimum period is   5.884ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -65,9 +65,9 @@ Timing constraint: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH
 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 7620 paths analyzed, 2262 endpoints analyzed, 0 failing endpoints
+ 50399 paths analyzed, 8147 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   8.177ns.
+ Minimum period is   8.100ns.
 --------------------------------------------------------------------------------
 
 
@@ -85,21 +85,21 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 59706 paths, 0 nets, and 12568 connections
+Constraints cover 57412 paths, 0 nets, and 11046 connections
 
 Design statistics:
-   Minimum period:   8.177ns   (Maximum frequency: 122.294MHz)
-   Maximum path delay from/to any node:   1.061ns
+   Minimum period:   8.100ns   (Maximum frequency: 123.457MHz)
+   Maximum path delay from/to any node:   1.958ns
 
 
-Analysis completed Mon Sep  8 21:16:13 2014 
+Analysis completed Tue Sep  9 21:42:24 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 814 MB
+Peak Memory Usage: 806 MB
 
 
 

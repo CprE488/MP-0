@@ -3,58 +3,49 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: /remote/Xilinx/14.6/ISE/bin/lin64/unwrapped/ngdbuild -p
 xc7z020clg484-1 -nt timestamp -bm system.bmm
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system.n
-gc -uc system.ucf system.ngd
+/tmp/cpre488/MP-0/system/implementation/system.ngc -uc system.ucf system.ngd
 
-Reading NGO file
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system.
-ngc" ...
+Reading NGO file "/tmp/cpre488/MP-0/system/implementation/system.ngc" ...
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-processing_system7_0_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_processing_system7_0_wrapper.ngc
+"...
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-axi4lite_0_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_axi4lite_0_wrapper.ngc"...
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-axi_interconnect_1_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_axi_interconnect_1_wrapper.ngc".
+..
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-axi_vdma_0_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_v_axi4s_vid_out_0_wrapper.ngc"..
+.
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-v_axi4s_vid_out_0_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_v_tc_0_wrapper.ngc"...
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-v_tc_0_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_axi_vdma_0_wrapper.ngc"...
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-sws_8bits_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_sws_8bits_wrapper.ngc"...
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-leds_8bits_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_leds_8bits_wrapper.ngc"...
 Loading design module
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-btns_5bits_wrapper.ngc"...
+"/tmp/cpre488/MP-0/system/implementation/system_btns_5bits_wrapper.ngc"...
 Applying constraints in
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-processing_system7_0_wrapper.ncf" to module "processing_system7_0"...
+"/tmp/cpre488/MP-0/system/implementation/system_processing_system7_0_wrapper.ncf
+" to module "processing_system7_0"...
 Checking Constraint Associations...
 Applying constraints in
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-axi4lite_0_wrapper.ncf" to module "axi4lite_0"...
+"/tmp/cpre488/MP-0/system/implementation/system_axi4lite_0_wrapper.ncf" to
+module "axi4lite_0"...
 Checking Constraint Associations...
 Applying constraints in
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-axi_interconnect_1_wrapper.ncf" to module "axi_interconnect_1"...
+"/tmp/cpre488/MP-0/system/implementation/system_axi_interconnect_1_wrapper.ncf"
+to module "axi_interconnect_1"...
 Checking Constraint Associations...
 Applying constraints in
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-axi_vdma_0_wrapper.ncf" to module "axi_vdma_0"...
+"/tmp/cpre488/MP-0/system/implementation/system_v_tc_0_wrapper.ncf" to module
+"v_tc_0"...
 Checking Constraint Associations...
 Applying constraints in
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_
-v_tc_0_wrapper.ncf" to module "v_tc_0"...
+"/tmp/cpre488/MP-0/system/implementation/system_axi_vdma_0_wrapper.ncf" to
+module "axi_vdma_0"...
 Checking Constraint Associations...
 Gathering constraint information from source properties...
 Done.
@@ -120,50 +111,6 @@ WARNING:ConstraintSystem:135 - Constraint <INST
    ck_conv_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
 
 WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/si_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/m_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/si_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/s_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi4lite_0/axi4lite_0\/mi_converter_bank\/gen_conv_sl
-   ot[4].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM =
-   FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under block
-   "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[4].clock_conv_inst/s_a
-   xi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi4lite_0/axi4lite_0\/mi_converter_bank\/gen_conv_sl
-   ot[4].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM =
-   FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under block
-   "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[4].clock_conv_inst/m_a
-   xi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi4lite_0/axi4lite_0\/mi_converter_bank\/gen_conv_sl
-   ot[3].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM =
-   FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under block
-   "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[3].clock_conv_inst/s_a
-   xi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi4lite_0/axi4lite_0\/mi_converter_bank\/gen_conv_sl
-   ot[3].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM =
-   FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under block
-   "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[3].clock_conv_inst/m_a
-   xi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
    /system/EXPANDED/system/axi4lite_0/axi4lite_0\/si_converter_bank\/gen_conv_sl
    ot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_INV_0 TNM =
    FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under block
@@ -192,30 +139,6 @@ WARNING:ConstraintSystem:58 - Constraint <TIMEGRP
 WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
    not directly or indirectly drive any flip-flops, latches and/or RAMs and is
    not actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
-   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
-   not actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
-   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
-   not actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
-   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
-   actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
-   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
-   actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
-   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
-   actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
-   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
-   actively used by any referencing constraint.
 
 WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
    directly or indirectly drive any flip-flops, latches and/or RAMs and is not
@@ -365,12 +288,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 147
+  Number of warnings: 135
 
-Total memory usage is 679512 kilobytes
+Total memory usage is 673004 kilobytes
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion: 2 min  16 sec
-Total CPU time to NGDBUILD completion:   53 sec
+Total REAL time to NGDBUILD completion: 2 min  5 sec
+Total CPU time to NGDBUILD completion:   44 sec
 
 Writing NGDBUILD log file "system.bld"...

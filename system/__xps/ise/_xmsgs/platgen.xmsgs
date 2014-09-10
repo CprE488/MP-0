@@ -18,46 +18,46 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 </arg>
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">SWs_8Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">SWs_8Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 53</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">LEDs_8Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">LEDs_8Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 67</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">BTNs_5Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">BTNs_5Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 81</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE: <arg fmt="%s" index="2">processing_system7_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE: <arg fmt="%s" index="2">processing_system7_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 95</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4107" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE: <arg fmt="%s" index="2">axi_vdma_0</arg> - base address <arg fmt="%s" index="3">C_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 197</arg> 
+<msg type="warning" file="EDK" num="4107" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE: <arg fmt="%s" index="2">axi_vdma_0</arg> - base address <arg fmt="%s" index="3">C_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">/tmp/cpre488/MP-0/system/system.mhs line 197</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE: <arg fmt="%s" index="2">axi_vdma_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE: <arg fmt="%s" index="2">axi_vdma_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 194</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4107" delta="old" >IPNAME: <arg fmt="%s" index="1">v_tc</arg>, INSTANCE: <arg fmt="%s" index="2">v_tc_0</arg> - base address <arg fmt="%s" index="3">C_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 228</arg> 
+<msg type="warning" file="EDK" num="4107" delta="old" >IPNAME: <arg fmt="%s" index="1">v_tc</arg>, INSTANCE: <arg fmt="%s" index="2">v_tc_0</arg> - base address <arg fmt="%s" index="3">C_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">/tmp/cpre488/MP-0/system/system.mhs line 229</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">SWs_8Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">SWs_8Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 53</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">LEDs_8Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">LEDs_8Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 67</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">BTNs_5Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_gpio</arg>, INSTANCE: <arg fmt="%s" index="2">BTNs_5Bits</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 81</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE: <arg fmt="%s" index="2">processing_system7_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE: <arg fmt="%s" index="2">processing_system7_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 95</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4107" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE: <arg fmt="%s" index="2">axi_vdma_0</arg> - base address <arg fmt="%s" index="3">C_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 197</arg> 
+<msg type="warning" file="EDK" num="4107" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE: <arg fmt="%s" index="2">axi_vdma_0</arg> - base address <arg fmt="%s" index="3">C_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">/tmp/cpre488/MP-0/system/system.mhs line 197</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE: <arg fmt="%s" index="2">axi_vdma_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194</arg> 
+<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE: <arg fmt="%s" index="2">axi_vdma_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">/tmp/cpre488/MP-0/system/system.mhs line 194</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4107" delta="old" >IPNAME: <arg fmt="%s" index="1">v_tc</arg>, INSTANCE: <arg fmt="%s" index="2">v_tc_0</arg> - base address <arg fmt="%s" index="3">C_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 228</arg> 
+<msg type="warning" file="EDK" num="4107" delta="old" >IPNAME: <arg fmt="%s" index="1">v_tc</arg>, INSTANCE: <arg fmt="%s" index="2">v_tc_0</arg> - base address <arg fmt="%s" index="3">C_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">/tmp/cpre488/MP-0/system/system.mhs line 229</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4lite_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_BASEFAMILY</arg> value to <arg fmt="%s" index="6">zynq</arg> - <arg fmt="%s" index="7">/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 81</arg> 
@@ -81,10 +81,19 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi_interconnect_1</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_BASEFAMILY</arg> value to <arg fmt="%s" index="6">zynq</arg> - <arg fmt="%s" index="7">/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 81</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="3967" delta="old" ><arg fmt="%s" index="1">axi_vdma</arg> (<arg fmt="%s" index="2">axi_vdma_0</arg>) - ADDRESS specified by PARAMETER <arg fmt="%s" index="3">C_BASEADDR</arg> is ignored - <arg fmt="%s" index="4">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194</arg> 
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_vdma</arg>, INSTANCE:<arg fmt="%s" index="2">axi_vdma_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PRMRY_IS_ACLK_ASYNC</arg> value to <arg fmt="%s" index="6">0</arg> - <arg fmt="%s" index="7">/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/data/axi_vdma_v2_1_0.mpd line 86</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="3967" delta="old" ><arg fmt="%s" index="1">v_tc</arg> (<arg fmt="%s" index="2">v_tc_0</arg>) - ADDRESS specified by PARAMETER <arg fmt="%s" index="3">C_BASEADDR</arg> is ignored - <arg fmt="%s" index="4">/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 225</arg> 
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">v_axi4s_vid_out</arg>, INSTANCE:<arg fmt="%s" index="2">v_axi4s_vid_out_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">VID_OUT_DATA_WIDTH</arg> value to <arg fmt="%s" index="6">12</arg> - <arg fmt="%s" index="7">/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_01_a/data/v_axi4s_vid_out_v2_1_0.mpd line 79</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">v_axi4s_vid_out</arg>, INSTANCE:<arg fmt="%s" index="2">v_axi4s_vid_out_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_S_AXIS_VIDEO_TDATA_WIDTH</arg> value to <arg fmt="%s" index="6">16</arg> - <arg fmt="%s" index="7">/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_01_a/data/v_axi4s_vid_out_v2_1_0.mpd line 80</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="3967" delta="old" ><arg fmt="%s" index="1">axi_vdma</arg> (<arg fmt="%s" index="2">axi_vdma_0</arg>) - ADDRESS specified by PARAMETER <arg fmt="%s" index="3">C_BASEADDR</arg> is ignored - <arg fmt="%s" index="4">/tmp/cpre488/MP-0/system/system.mhs line 194</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="3967" delta="old" ><arg fmt="%s" index="1">v_tc</arg> (<arg fmt="%s" index="2">v_tc_0</arg>) - ADDRESS specified by PARAMETER <arg fmt="%s" index="3">C_BASEADDR</arg> is ignored - <arg fmt="%s" index="4">/tmp/cpre488/MP-0/system/system.mhs line 226</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="1432" delta="old" >Frequency for Top-Level Input Clock &apos;<arg fmt="%s" index="1">processing_system7_0_PS_CLK</arg>&apos; is not specified. Clock DRCs will not be performed for IPs connected to that clock port, unless they are connected through the clock generator IP. 
@@ -98,6 +107,12 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 </msg>
 
 <msg type="warning" file="EDK" num="4181" delta="old" >PORT: <arg fmt="%s" index="1">m_axis_mm2s_tkeep</arg>, CONNECTOR: <arg fmt="%s" index="2">axi_vdma_0_M_AXIS_MM2S_TKEEP</arg> - floating connection - <arg fmt="%s" index="3">/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/data/axi_vdma_v2_1_0.mpd line 208</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="4181" delta="old" >PORT: <arg fmt="%s" index="1">video_vblank</arg>, CONNECTOR: <arg fmt="%s" index="2">v_axi4s_vid_out_0_video_vblank</arg> - floating connection - <arg fmt="%s" index="3">/tmp/cpre488/MP-0/system/system.mhs line 218</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="4181" delta="old" >PORT: <arg fmt="%s" index="1">video_hblank</arg>, CONNECTOR: <arg fmt="%s" index="2">v_axi4s_vid_out_0_video_hblank</arg> - floating connection - <arg fmt="%s" index="3">/tmp/cpre488/MP-0/system/system.mhs line 221</arg> 
 </msg>
 
 <msg type="warning" file="EDK" num="4181" delta="old" >PORT: <arg fmt="%s" index="1">active_chroma_out</arg>, CONNECTOR: <arg fmt="%s" index="2">v_tc_0_VTIMING_OUT_active_chroma</arg> - floating connection - <arg fmt="%s" index="3">/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_tc_v5_01_a/data/v_tc_v2_1_0.mpd line 205</arg> 

@@ -46,3 +46,16 @@
 21:17:30.542 INFO  - Updating hardware inferred compiler options for hello_world. 
 21:17:30.561 INFO  - Clearing existing target manager status. 
 21:18:24.277 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:44:41.416 INFO  - Processing command line option -hwspec /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml. 
+21:44:43.322 INFO  - The hardware specification for project 'system_hw_platform' is different from /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml. 
+21:44:43.336 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml into /system_hw_platform/system.xml. 
+21:44:43.345 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+21:44:43.430 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.c into /system_hw_platform/ps7_init.c. 
+21:44:43.431 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.h into /system_hw_platform/ps7_init.h. 
+21:44:43.433 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.html into /system_hw_platform/ps7_init.html. 
+21:44:43.433 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.tcl into /system_hw_platform/ps7_init.tcl. 
+21:44:44.216 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:45:03.976 INFO  - Updating hardware inferred compiler options for cyclone_checker. 
+21:45:04.731 INFO  - Updating hardware inferred compiler options for hello_world. 
+21:45:04.779 INFO  - Clearing existing target manager status. 
+22:15:19.292 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

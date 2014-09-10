@@ -23,53 +23,51 @@ WARNING:EDK - INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable
    qualify for Xilinx software updates or new releases.
 
 
-Parse /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs ...
+Parse /tmp/cpre488/MP-0/system/system.mhs ...
 
 Read MPD definitions ...
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: SWs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53 
+   /tmp/cpre488/MP-0/system/system.mhs line 53 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: LEDs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67 
+   /tmp/cpre488/MP-0/system/system.mhs line 67 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: BTNs_5Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81 
+   /tmp/cpre488/MP-0/system/system.mhs line 81 
 WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
    Pre-Production version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95 
+   /tmp/cpre488/MP-0/system/system.mhs line 95 
 WARNING:EDK:4107 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - base address
    C_BASEADDR (0xffffffff) is greater than high address C_HIGHADDR (0x00000000)
-   - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line
-   197 
+   - /tmp/cpre488/MP-0/system/system.mhs line 197 
 WARNING:EDK:4092 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:4107 - IPNAME: v_tc, INSTANCE: v_tc_0 - base address C_BASEADDR
    (0xffffffff) is greater than high address C_HIGHADDR (0x00000000) -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 228 
+   /tmp/cpre488/MP-0/system/system.mhs line 229 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: SWs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53 
+   /tmp/cpre488/MP-0/system/system.mhs line 53 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: LEDs_8Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67 
+   /tmp/cpre488/MP-0/system/system.mhs line 67 
 WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: BTNs_5Bits - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81 
+   /tmp/cpre488/MP-0/system/system.mhs line 81 
 WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
    Pre-Production version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95 
+   /tmp/cpre488/MP-0/system/system.mhs line 95 
 WARNING:EDK:4107 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - base address
    C_BASEADDR (0xffffffff) is greater than high address C_HIGHADDR (0x00000000)
-   - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line
-   197 
+   - /tmp/cpre488/MP-0/system/system.mhs line 197 
 WARNING:EDK:4092 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Pre-Production
    version not verified on hardware for architecture 'zynq' -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:4107 - IPNAME: v_tc, INSTANCE: v_tc_0 - base address C_BASEADDR
    (0xffffffff) is greater than high address C_HIGHADDR (0x00000000) -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 228 
+   /tmp/cpre488/MP-0/system/system.mhs line 229 
 
 Overriding IP level properties ...
 INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
@@ -100,12 +98,22 @@ INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
    overriding PARAMETER C_BASEFAMILY value to zynq -
    /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06
    _a/data/axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_vdma, INSTANCE:axi_vdma_0 - tcl is overriding
+   PARAMETER C_PRMRY_IS_ACLK_ASYNC value to 0 -
+   /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/data/
+   axi_vdma_v2_1_0.mpd line 86 
+INFO:EDK:4130 - IPNAME: v_axi4s_vid_out, INSTANCE:v_axi4s_vid_out_0 - tcl is
+   overriding PARAMETER VID_OUT_DATA_WIDTH value to 12 -
+   /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_01_
+   a/data/v_axi4s_vid_out_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: v_axi4s_vid_out, INSTANCE:v_axi4s_vid_out_0 - tcl is
+   overriding PARAMETER C_S_AXIS_VIDEO_TDATA_WIDTH value to 16 -
+   /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_01_
+   a/data/v_axi4s_vid_out_v2_1_0.mpd line 80 
 WARNING:EDK:3967 - axi_vdma (axi_vdma_0) - ADDRESS specified by PARAMETER
-   C_BASEADDR is ignored -
-   /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 
+   C_BASEADDR is ignored - /tmp/cpre488/MP-0/system/system.mhs line 194 
 WARNING:EDK:3967 - v_tc (v_tc_0) - ADDRESS specified by PARAMETER C_BASEADDR is
-   ignored - /home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs
-   line 225 
+   ignored - /tmp/cpre488/MP-0/system/system.mhs line 226 
 
 Computing clock values...
 INFO:EDK:1432 - Frequency for Top-Level Input Clock
@@ -142,6 +150,10 @@ WARNING:EDK:4181 - PORT: m_axis_mm2s_tkeep, CONNECTOR:
    axi_vdma_0_M_AXIS_MM2S_TKEEP - floating connection -
    /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/data/
    axi_vdma_v2_1_0.mpd line 208 
+WARNING:EDK:4181 - PORT: video_vblank, CONNECTOR: v_axi4s_vid_out_0_video_vblank
+   - floating connection - /tmp/cpre488/MP-0/system/system.mhs line 218 
+WARNING:EDK:4181 - PORT: video_hblank, CONNECTOR: v_axi4s_vid_out_0_video_hblank
+   - floating connection - /tmp/cpre488/MP-0/system/system.mhs line 221 
 WARNING:EDK:4181 - PORT: active_chroma_out, CONNECTOR:
    v_tc_0_VTIMING_OUT_active_chroma - floating connection -
    /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_tc_v5_01_a/data/v_tc
@@ -207,8 +219,7 @@ Modify defaults ...
 Creating stub ...
 
 Processing licensed instances ...
-IPNAME:v_tc INSTANCE:v_tc_0 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 225 -
+IPNAME:v_tc INSTANCE:v_tc_0 - /tmp/cpre488/MP-0/system/system.mhs line 226 -
 processing license
 Completion time: 42.00 seconds
 
@@ -217,25 +228,31 @@ Creating hardware output directories ...
 Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
-IPNAME:axi_gpio INSTANCE:sws_8bits -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 53 -
-Copying cache implementation netlist
-IPNAME:axi_gpio INSTANCE:leds_8bits -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 67 -
-Copying cache implementation netlist
-IPNAME:axi_gpio INSTANCE:btns_5bits -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 81 -
-Copying cache implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+/tmp/cpre488/MP-0/system/system.mhs line 45 - Copying cache implementation
+netlist
+IPNAME:axi_gpio INSTANCE:sws_8bits - /tmp/cpre488/MP-0/system/system.mhs line 53
+- Copying cache implementation netlist
+IPNAME:axi_gpio INSTANCE:leds_8bits - /tmp/cpre488/MP-0/system/system.mhs line
+67 - Copying cache implementation netlist
+IPNAME:axi_gpio INSTANCE:btns_5bits - /tmp/cpre488/MP-0/system/system.mhs line
+81 - Copying cache implementation netlist
+IPNAME:processing_system7 INSTANCE:processing_system7_0 -
+/tmp/cpre488/MP-0/system/system.mhs line 95 - Copying cache implementation
+netlist
+IPNAME:axi_interconnect INSTANCE:axi_interconnect_1 -
+/tmp/cpre488/MP-0/system/system.mhs line 186 - Copying cache implementation
+netlist
 
 Elaborating instances ...
 
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Constructing platform-level connectivity ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Writing (top-level) BMM ...
 
@@ -248,39 +265,20 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:axi4lite_0 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 45 -
+INSTANCE:axi_vdma_0 - /tmp/cpre488/MP-0/system/system.mhs line 194 - Running XST
+synthesis
+INSTANCE:v_axi4s_vid_out_0 - /tmp/cpre488/MP-0/system/system.mhs line 210 -
 Running XST synthesis
-INSTANCE:processing_system7_0 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 95 -
-Running XST synthesis
-INSTANCE:axi_interconnect_1 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 186 -
-Running XST synthesis
-INSTANCE:axi_vdma_0 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 -
-Running XST synthesis
-INSTANCE:v_axi4s_vid_out_0 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 211 -
-Running XST synthesis
-INSTANCE:v_tc_0 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 225 -
-Running XST synthesis
+INSTANCE:v_tc_0 - /tmp/cpre488/MP-0/system/system.mhs line 226 - Running XST
+synthesis
 
 Running NGCBUILD ...
-IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 45 -
-Running NGCBUILD
-IPNAME:system_axi_interconnect_1_wrapper INSTANCE:axi_interconnect_1 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 186 -
-Running NGCBUILD
 IPNAME:system_axi_vdma_0_wrapper INSTANCE:axi_vdma_0 -
-/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/system.mhs line 194 -
-Running NGCBUILD
+/tmp/cpre488/MP-0/system/system.mhs line 194 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 849.00 seconds
+Total run time: 477.00 seconds

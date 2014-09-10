@@ -6,8 +6,8 @@ xc7z020clg484-1 -intstyle silent -i -sd .. system_axi_vdma_0_wrapper.ngc
 ../system_axi_vdma_0_wrapper
 
 Reading NGO file
-"/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/axi_vdm
-a_0_wrapper/system_axi_vdma_0_wrapper.ngc" ...
+"/tmp/cpre488/MP-0/system/implementation/axi_vdma_0_wrapper/system_axi_vdma_0_wr
+apper.ngc" ...
 Loading design module "../system_axi_vdma_0_wrapper_fifo_generator_v9_3.ngc"...
 Loading design module "../system_axi_vdma_0_wrapper_fifo_generator_v9_1.ngc"...
 
@@ -22,10 +22,10 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 539764 kilobytes
+Total memory usage is 539012 kilobytes
 
 Writing NGC file "../system_axi_vdma_0_wrapper.ngc" ...
-Total REAL time to NGCBUILD completion:  7 sec
+Total REAL time to NGCBUILD completion:  6 sec
 Total CPU time to NGCBUILD completion:   6 sec
 
 Writing NGCBUILD log file "../system_axi_vdma_0_wrapper.blc"...

@@ -1,4 +1,4 @@
-00:17:12 **** Auto Build of configuration Debug for project cyclone_checker ****
+21:45:21 **** Auto Build of configuration Debug for project cyclone_checker ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
@@ -14,6 +14,11 @@ arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_
 ../src/main.c:108:12: warning: 'queen' defined but not used [-Wunused-variable]
 Finished building: ../src/main.c
  
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../cyclone_checker_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
 Building target: cyclone_checker.elf
 Invoking: ARM gcc linker
 arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cyclone_checker_bsp/ps7_cortexa9_0/lib -o "cyclone_checker.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -26,5 +31,5 @@ arm-xilinx-eabi-size cyclone_checker.elf  |tee "cyclone_checker.elf.size"
 Finished building: cyclone_checker.elf.size
  
 
-00:17:14 Build Finished (took 1s.783ms)
+21:45:21 Build Finished (took 261ms)
 

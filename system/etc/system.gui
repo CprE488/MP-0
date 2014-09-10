@@ -19,9 +19,7 @@
     <SET ID="v_axi4s_vid_out_0" IS_EXPANDED="TRUE"/>
     <SET ID="v_tc_0" IS_EXPANDED="TRUE"/>
     <STATUS>
-      <SELECTIONS>
-        <VARIABLE ID="axi_interconnect_1"/>
-      </SELECTIONS>
+      <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
       <VARIABLE ID="axi4lite_0" ROW_INDEX="0"/>
@@ -94,17 +92,12 @@
       <VARIABLE COL_INDEX="11" COL_WIDTH="340" IS_VISIBLE="TRUE" VIEWDISP="Differential Polarity" VIEWTYPE="HEADER"/>
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="115,1171,200" VERSION="0"/>
-    <SET ID="v_axi4s_vid_out_0" IS_EXPANDED="TRUE">
-      <SET ID="S_AXIS_VIDEO" IS_EXPANDED="TRUE"/>
-      <SET ID="VTIMING_IN" IS_EXPANDED="TRUE"/>
-    </SET>
     <SET ID="v_tc_0" IS_EXPANDED="TRUE">
-      <SET ID="S_AXI" IS_EXPANDED="TRUE"/>
       <SET ID="VTIMING_OUT" IS_EXPANDED="TRUE"/>
     </SET>
     <STATUS>
       <SELECTIONS>
-        <VARIABLE ID="axi_vdma_0"/>
+        <VARIABLE ID="v_axi4s_vid_out_0"/>
       </SELECTIONS>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
@@ -116,7 +109,7 @@
       <VARIABLE ID="processing_system7_0" ROW_INDEX="3"/>
       <VARIABLE ID="axi_interconnect_1" ROW_INDEX="2"/>
       <VARIABLE ID="axi_vdma_0" ROW_INDEX="7"/>
-      <VARIABLE ID="v_axi4s_vid_out_0" IS_EXPANDED="TRUE" ROW_INDEX="8"/>
+      <VARIABLE ID="v_axi4s_vid_out_0" ROW_INDEX="8"/>
       <VARIABLE ID="v_tc_0" IS_EXPANDED="TRUE" ROW_INDEX="9"/>
     </SEQUENCES>
   </SET>
