@@ -229,8 +229,8 @@ module system_axi_interconnect_1_wrapper
   input [0:0] S_AXI_AWVALID;
   output [0:0] S_AXI_AWREADY;
   input [0:0] S_AXI_WID;
-  input [63:0] S_AXI_WDATA;
-  input [7:0] S_AXI_WSTRB;
+  input [31:0] S_AXI_WDATA;
+  input [3:0] S_AXI_WSTRB;
   input [0:0] S_AXI_WLAST;
   input [0:0] S_AXI_WUSER;
   input [0:0] S_AXI_WVALID;
@@ -253,7 +253,7 @@ module system_axi_interconnect_1_wrapper
   input [0:0] S_AXI_ARVALID;
   output [0:0] S_AXI_ARREADY;
   output [0:0] S_AXI_RID;
-  output [63:0] S_AXI_RDATA;
+  output [31:0] S_AXI_RDATA;
   output [1:0] S_AXI_RRESP;
   output [0:0] S_AXI_RLAST;
   output [0:0] S_AXI_RUSER;
@@ -274,8 +274,8 @@ module system_axi_interconnect_1_wrapper
   output [0:0] M_AXI_AWVALID;
   input [0:0] M_AXI_AWREADY;
   output [0:0] M_AXI_WID;
-  output [63:0] M_AXI_WDATA;
-  output [7:0] M_AXI_WSTRB;
+  output [31:0] M_AXI_WDATA;
+  output [3:0] M_AXI_WSTRB;
   output [0:0] M_AXI_WLAST;
   output [0:0] M_AXI_WUSER;
   output [0:0] M_AXI_WVALID;
@@ -299,7 +299,7 @@ module system_axi_interconnect_1_wrapper
   output [0:0] M_AXI_ARVALID;
   input [0:0] M_AXI_ARREADY;
   input [0:0] M_AXI_RID;
-  input [63:0] M_AXI_RDATA;
+  input [31:0] M_AXI_RDATA;
   input [1:0] M_AXI_RRESP;
   input [0:0] M_AXI_RLAST;
   input [0:0] M_AXI_RUSER;
@@ -356,64 +356,64 @@ module system_axi_interconnect_1_wrapper
   output [31:0] DEBUG_SR_SC_AWADDR;
   output [23:0] DEBUG_SR_SC_AWADDRCONTROL;
   output [4:0] DEBUG_SR_SC_BRESP;
-  output [63:0] DEBUG_SR_SC_RDATA;
+  output [31:0] DEBUG_SR_SC_RDATA;
   output [5:0] DEBUG_SR_SC_RDATACONTROL;
-  output [63:0] DEBUG_SR_SC_WDATA;
-  output [10:0] DEBUG_SR_SC_WDATACONTROL;
+  output [31:0] DEBUG_SR_SC_WDATA;
+  output [6:0] DEBUG_SR_SC_WDATACONTROL;
   output [31:0] DEBUG_SC_SF_ARADDR;
   output [23:0] DEBUG_SC_SF_ARADDRCONTROL;
   output [31:0] DEBUG_SC_SF_AWADDR;
   output [23:0] DEBUG_SC_SF_AWADDRCONTROL;
   output [4:0] DEBUG_SC_SF_BRESP;
-  output [63:0] DEBUG_SC_SF_RDATA;
+  output [31:0] DEBUG_SC_SF_RDATA;
   output [5:0] DEBUG_SC_SF_RDATACONTROL;
-  output [63:0] DEBUG_SC_SF_WDATA;
-  output [10:0] DEBUG_SC_SF_WDATACONTROL;
+  output [31:0] DEBUG_SC_SF_WDATA;
+  output [6:0] DEBUG_SC_SF_WDATACONTROL;
   output [31:0] DEBUG_SF_CB_ARADDR;
   output [23:0] DEBUG_SF_CB_ARADDRCONTROL;
   output [31:0] DEBUG_SF_CB_AWADDR;
   output [23:0] DEBUG_SF_CB_AWADDRCONTROL;
   output [4:0] DEBUG_SF_CB_BRESP;
-  output [63:0] DEBUG_SF_CB_RDATA;
+  output [31:0] DEBUG_SF_CB_RDATA;
   output [5:0] DEBUG_SF_CB_RDATACONTROL;
-  output [63:0] DEBUG_SF_CB_WDATA;
-  output [10:0] DEBUG_SF_CB_WDATACONTROL;
+  output [31:0] DEBUG_SF_CB_WDATA;
+  output [6:0] DEBUG_SF_CB_WDATACONTROL;
   output [31:0] DEBUG_CB_MF_ARADDR;
   output [23:0] DEBUG_CB_MF_ARADDRCONTROL;
   output [31:0] DEBUG_CB_MF_AWADDR;
   output [23:0] DEBUG_CB_MF_AWADDRCONTROL;
   output [4:0] DEBUG_CB_MF_BRESP;
-  output [63:0] DEBUG_CB_MF_RDATA;
+  output [31:0] DEBUG_CB_MF_RDATA;
   output [5:0] DEBUG_CB_MF_RDATACONTROL;
-  output [63:0] DEBUG_CB_MF_WDATA;
-  output [10:0] DEBUG_CB_MF_WDATACONTROL;
+  output [31:0] DEBUG_CB_MF_WDATA;
+  output [6:0] DEBUG_CB_MF_WDATACONTROL;
   output [31:0] DEBUG_MF_MC_ARADDR;
   output [23:0] DEBUG_MF_MC_ARADDRCONTROL;
   output [31:0] DEBUG_MF_MC_AWADDR;
   output [23:0] DEBUG_MF_MC_AWADDRCONTROL;
   output [4:0] DEBUG_MF_MC_BRESP;
-  output [63:0] DEBUG_MF_MC_RDATA;
+  output [31:0] DEBUG_MF_MC_RDATA;
   output [5:0] DEBUG_MF_MC_RDATACONTROL;
-  output [63:0] DEBUG_MF_MC_WDATA;
-  output [10:0] DEBUG_MF_MC_WDATACONTROL;
+  output [31:0] DEBUG_MF_MC_WDATA;
+  output [6:0] DEBUG_MF_MC_WDATACONTROL;
   output [31:0] DEBUG_MC_MP_ARADDR;
   output [23:0] DEBUG_MC_MP_ARADDRCONTROL;
   output [31:0] DEBUG_MC_MP_AWADDR;
   output [23:0] DEBUG_MC_MP_AWADDRCONTROL;
   output [4:0] DEBUG_MC_MP_BRESP;
-  output [63:0] DEBUG_MC_MP_RDATA;
+  output [31:0] DEBUG_MC_MP_RDATA;
   output [5:0] DEBUG_MC_MP_RDATACONTROL;
-  output [63:0] DEBUG_MC_MP_WDATA;
-  output [10:0] DEBUG_MC_MP_WDATACONTROL;
+  output [31:0] DEBUG_MC_MP_WDATA;
+  output [6:0] DEBUG_MC_MP_WDATACONTROL;
   output [31:0] DEBUG_MP_MR_ARADDR;
   output [23:0] DEBUG_MP_MR_ARADDRCONTROL;
   output [31:0] DEBUG_MP_MR_AWADDR;
   output [23:0] DEBUG_MP_MR_AWADDRCONTROL;
   output [4:0] DEBUG_MP_MR_BRESP;
-  output [63:0] DEBUG_MP_MR_RDATA;
+  output [31:0] DEBUG_MP_MR_RDATA;
   output [5:0] DEBUG_MP_MR_RDATACONTROL;
-  output [63:0] DEBUG_MP_MR_WDATA;
-  output [10:0] DEBUG_MP_MR_WDATACONTROL;
+  output [31:0] DEBUG_MP_MR_WDATA;
+  output [6:0] DEBUG_MP_MR_WDATACONTROL;
 
   axi_interconnect
     #(
@@ -422,10 +422,10 @@ module system_axi_interconnect_1_wrapper
       .C_NUM_MASTER_SLOTS ( 1 ),
       .C_AXI_ID_WIDTH ( 1 ),
       .C_AXI_ADDR_WIDTH ( 32 ),
-      .C_AXI_DATA_MAX_WIDTH ( 64 ),
+      .C_AXI_DATA_MAX_WIDTH ( 32 ),
       .C_S_AXI_DATA_WIDTH ( 512'h00000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020 ),
-      .C_M_AXI_DATA_WIDTH ( 512'h00000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000040 ),
-      .C_INTERCONNECT_DATA_WIDTH ( 64 ),
+      .C_M_AXI_DATA_WIDTH ( 512'h00000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020 ),
+      .C_INTERCONNECT_DATA_WIDTH ( 32 ),
       .C_S_AXI_PROTOCOL ( 512'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ),
       .C_M_AXI_PROTOCOL ( 512'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 ),
       .C_M_AXI_BASE_ADDR ( 16384'hffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000 ),

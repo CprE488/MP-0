@@ -217,6 +217,8 @@ proc ps7_post_config_1_0 {} {
     mask_write 0XF8000900 0x0000000F 0x0000000F
     mask_write 0XF8000240 0xFFFFFFFF 0xFFFFFFFF
     mask_write 0XF8000240 0xFFFFFFFF 0x00000000
+    mask_write 0XF8008000 0x00000001 0x00000001
+    mask_write 0XF8008014 0x00000001 0x00000001
     mask_write 0XF8000004 0x0000FFFF 0x0000767B
 }
 proc ps7_pll_init_data_2_0 {} {
@@ -441,6 +443,8 @@ proc ps7_post_config_2_0 {} {
     mask_write 0XF8000900 0x0000000F 0x0000000F
     mask_write 0XF8000240 0xFFFFFFFF 0xFFFFFFFF
     mask_write 0XF8000240 0xFFFFFFFF 0x00000000
+    mask_write 0XF8008000 0x00000001 0x00000001
+    mask_write 0XF8008014 0x00000001 0x00000001
     mask_write 0XF8000004 0x0000FFFF 0x0000767B
 }
 proc ps7_pll_init_data_3_0 {} {
@@ -660,6 +664,8 @@ proc ps7_post_config_3_0 {} {
     mask_write 0XF8000900 0x0000000F 0x0000000F
     mask_write 0XF8000240 0xFFFFFFFF 0xFFFFFFFF
     mask_write 0XF8000240 0xFFFFFFFF 0x00000000
+    mask_write 0XF8008000 0x00000001 0x00000001
+    mask_write 0XF8008014 0x00000001 0x00000001
     mask_write 0XF8000004 0x0000FFFF 0x0000767B
 }
 set PCW_SILICON_VER_1_0 "0x0"

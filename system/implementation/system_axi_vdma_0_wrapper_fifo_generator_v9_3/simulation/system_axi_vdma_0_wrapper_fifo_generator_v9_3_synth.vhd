@@ -102,13 +102,13 @@ ARCHITECTURE simulation_arch OF system_axi_vdma_0_wrapper_fifo_generator_v9_3_sy
     SIGNAL srst                           :   STD_LOGIC;
     SIGNAL wr_en                          :   STD_LOGIC;
     SIGNAL rd_en                          :   STD_LOGIC;
-    SIGNAL din                            :   STD_LOGIC_VECTOR(35-1 DOWNTO 0);
-    SIGNAL dout                           :   STD_LOGIC_VECTOR(35-1 DOWNTO 0);
+    SIGNAL din                            :   STD_LOGIC_VECTOR(39-1 DOWNTO 0);
+    SIGNAL dout                           :   STD_LOGIC_VECTOR(39-1 DOWNTO 0);
     SIGNAL full                           :   STD_LOGIC;
     SIGNAL empty                          :   STD_LOGIC;
    -- TB Signals
-    SIGNAL wr_data                        :   STD_LOGIC_VECTOR(35-1 DOWNTO 0);
-    SIGNAL dout_i                         :   STD_LOGIC_VECTOR(35-1 DOWNTO 0);
+    SIGNAL wr_data                        :   STD_LOGIC_VECTOR(39-1 DOWNTO 0);
+    SIGNAL dout_i                         :   STD_LOGIC_VECTOR(39-1 DOWNTO 0);
     SIGNAL wr_en_i                        :   STD_LOGIC := '0';
     SIGNAL rd_en_i                        :   STD_LOGIC := '0';
     SIGNAL full_i                         :   STD_LOGIC := '0';
@@ -199,8 +199,8 @@ ARCHITECTURE simulation_arch OF system_axi_vdma_0_wrapper_fifo_generator_v9_3_sy
 
     fg_dg_nv: system_axi_vdma_0_wrapper_fifo_generator_v9_3_dgen
       GENERIC MAP (
-          	C_DIN_WIDTH       => 35,
-		C_DOUT_WIDTH      => 35,
+          	C_DIN_WIDTH       => 39,
+		C_DOUT_WIDTH      => 39,
 		TB_SEED           => TB_SEED, 
  		C_CH_TYPE         => 0	
                  )
@@ -215,8 +215,8 @@ ARCHITECTURE simulation_arch OF system_axi_vdma_0_wrapper_fifo_generator_v9_3_sy
 
    fg_dv_nv: system_axi_vdma_0_wrapper_fifo_generator_v9_3_dverif
     GENERIC MAP (  
-	       C_DOUT_WIDTH       => 35,
-	       C_DIN_WIDTH        => 35,
+	       C_DOUT_WIDTH       => 39,
+	       C_DIN_WIDTH        => 39,
 	       C_USE_EMBEDDED_REG => 1,
 	       TB_SEED            => TB_SEED, 
  	       C_CH_TYPE          => 0
@@ -235,8 +235,8 @@ ARCHITECTURE simulation_arch OF system_axi_vdma_0_wrapper_fifo_generator_v9_3_sy
     GENERIC MAP ( 
               AXI_CHANNEL         => "Native",
               C_APPLICATION_TYPE  => 0,
-	      C_DOUT_WIDTH        => 35,
-	      C_DIN_WIDTH         => 35,
+	      C_DOUT_WIDTH        => 39,
+	      C_DIN_WIDTH         => 39,
 	      C_WR_PNTR_WIDTH     => 7,
     	      C_RD_PNTR_WIDTH     => 7,
  	      C_CH_TYPE           => 0,

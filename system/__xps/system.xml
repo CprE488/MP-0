@@ -103,9 +103,7 @@
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="axi4lite_0_S_ARESETN" DIR="O" MPD_INDEX="2" NAME="S_AXI_ARESET_OUT_N" SIGIS="RST" SIGNAME="axi4lite_0_S_ARESETN" VECFORMULA="[(C_NUM_SLAVE_SLOTS-1):0]">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="aresetn"/>
-          </CONNECTIONS>
+          <CONNECTIONS/>
         </PORT>
         <PORT DEF_SIGNAME="axi4lite_0_M_ARESETN" DIR="O" ENDIAN="LITTLE" LEFT="4" LSB="0" MPD_INDEX="3" MSB="4" NAME="M_AXI_ARESET_OUT_N" RIGHT="0" SIGIS="RST" SIGNAME="axi4lite_0_M_ARESETN" VECFORMULA="[(C_NUM_MASTER_SLOTS-1):0]">
           <CONNECTIONS>
@@ -1650,7 +1648,7 @@
         <PARAMETER ASSIGNMENT="CONSTANT" MPD_INDEX="143" NAME="C_S_AXI_HP0_PROTOCOL" TYPE="STRING" VALUE="AXI3"/>
         <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="SYSTEM" MPD_INDEX="144" NAME="C_S_AXI_HP0_ID_WIDTH" TYPE="INTEGER" VALUE="1"/>
         <PARAMETER ASSIGNMENT="CONSTANT" MPD_INDEX="145" NAME="C_S_AXI_HP0_ADDR_WIDTH" TYPE="INTEGER" VALUE="32"/>
-        <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="146" NAME="C_S_AXI_HP0_DATA_WIDTH" TYPE="INTEGER" VALUE="64"/>
+        <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="60" MPD_INDEX="146" NAME="C_S_AXI_HP0_DATA_WIDTH" TYPE="INTEGER" VALUE="32"/>
         <PARAMETER ASSIGNMENT="OPTIONAL_UPDATE" MPD_INDEX="147" NAME="C_INTERCONNECT_S_AXI_HP0_WRITE_ACCEPTANCE" TYPE="INTEGER" VALUE="8"/>
         <PARAMETER ASSIGNMENT="OPTIONAL_UPDATE" MPD_INDEX="148" NAME="C_INTERCONNECT_S_AXI_HP0_READ_ACCEPTANCE" TYPE="INTEGER" VALUE="8"/>
         <PARAMETER ASSIGNMENT="CONSTANT" MPD_INDEX="149" NAME="C_S_AXI_HP1_PROTOCOL" TYPE="STRING" VALUE="AXI3"/>
@@ -1857,6 +1855,7 @@
             <CONNECTION BUSINTERFACE="[S_AXI_CTRL]" INSTANCE="axi_interconnect_1" PORT="INTERCONNECT_ACLK"/>
             <CONNECTION BUSINTERFACE="[S_AXI_LITE]" INSTANCE="axi_vdma_0" PORT="s_axi_lite_aclk"/>
             <CONNECTION BUSINTERFACE="[M_AXI_MM2S]" INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_aclk"/>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_aclk"/>
             <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axis_mm2s_aclk"/>
             <CONNECTION BUSINTERFACE="[S_AXIS_VIDEO]" INSTANCE="v_axi4s_vid_out_0" PORT="aclk"/>
             <CONNECTION BUSINTERFACE="[S_AXI]" INSTANCE="v_tc_0" PORT="s_axi_aclk"/>
@@ -2804,7 +2803,7 @@
             <CONNECTION INSTANCE="axi_interconnect_1" PORT="M_AXI_RID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT BUS="S_AXI_HP0" DEF_SIGNAME="axi_interconnect_1_M_RDATA" DIR="O" ENDIAN="LITTLE" LEFT="63" LSB="0" MPD_INDEX="381" MSB="63" NAME="S_AXI_HP0_RDATA" RIGHT="0" SIGNAME="axi_interconnect_1_M_RDATA" VECFORMULA="[(C_S_AXI_HP0_DATA_WIDTH - 1) :0]">
+        <PORT BUS="S_AXI_HP0" DEF_SIGNAME="axi_interconnect_1_M_RDATA" DIR="O" ENDIAN="LITTLE" LEFT="31" LSB="0" MPD_INDEX="381" MSB="31" NAME="S_AXI_HP0_RDATA" RIGHT="0" SIGNAME="axi_interconnect_1_M_RDATA" VECFORMULA="[(C_S_AXI_HP0_DATA_WIDTH - 1) :0]">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_1" PORT="M_AXI_RDATA"/>
           </CONNECTIONS>
@@ -2952,12 +2951,12 @@
             <CONNECTION INSTANCE="axi_interconnect_1" PORT="M_AXI_WID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT BUS="S_AXI_HP0" DEF_SIGNAME="axi_interconnect_1_M_WDATA" DIR="I" ENDIAN="LITTLE" LEFT="63" LSB="0" MPD_INDEX="414" MSB="63" NAME="S_AXI_HP0_WDATA" RIGHT="0" SIGNAME="axi_interconnect_1_M_WDATA" VECFORMULA="[(C_S_AXI_HP0_DATA_WIDTH - 1) :0]">
+        <PORT BUS="S_AXI_HP0" DEF_SIGNAME="axi_interconnect_1_M_WDATA" DIR="I" ENDIAN="LITTLE" LEFT="31" LSB="0" MPD_INDEX="414" MSB="31" NAME="S_AXI_HP0_WDATA" RIGHT="0" SIGNAME="axi_interconnect_1_M_WDATA" VECFORMULA="[(C_S_AXI_HP0_DATA_WIDTH - 1) :0]">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_1" PORT="M_AXI_WDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT BUS="S_AXI_HP0" DEF_SIGNAME="axi_interconnect_1_M_WSTRB" DIR="I" ENDIAN="LITTLE" LEFT="7" LSB="0" MPD_INDEX="415" MSB="7" NAME="S_AXI_HP0_WSTRB" RIGHT="0" SIGNAME="axi_interconnect_1_M_WSTRB" VECFORMULA="[((C_S_AXI_HP0_DATA_WIDTH/8)-1):0]">
+        <PORT BUS="S_AXI_HP0" DEF_SIGNAME="axi_interconnect_1_M_WSTRB" DIR="I" ENDIAN="LITTLE" LEFT="3" LSB="0" MPD_INDEX="415" MSB="3" NAME="S_AXI_HP0_WSTRB" RIGHT="0" SIGNAME="axi_interconnect_1_M_WSTRB" VECFORMULA="[((C_S_AXI_HP0_DATA_WIDTH/8)-1):0]">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_1" PORT="M_AXI_WSTRB"/>
           </CONNECTIONS>
@@ -4424,10 +4423,10 @@
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="3" NAME="C_NUM_MASTER_SLOTS" TYPE="INTEGER" VALUE="1"/>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="4" NAME="C_AXI_ID_WIDTH" TYPE="INTEGER" VALUE="1"/>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="5" NAME="C_AXI_ADDR_WIDTH" TYPE="INTEGER" VALUE="32"/>
-        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="6" NAME="C_AXI_DATA_MAX_WIDTH" TYPE="INTEGER" VALUE="64"/>
+        <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="6" NAME="C_AXI_DATA_MAX_WIDTH" TYPE="INTEGER" VALUE="32"/>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="7" NAME="C_S_AXI_DATA_WIDTH" TYPE="STD_LOGIC_VECTOR" VALUE="0x00000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020"/>
-        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="8" NAME="C_M_AXI_DATA_WIDTH" TYPE="STD_LOGIC_VECTOR" VALUE="0x00000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000040"/>
-        <PARAMETER ASSIGNMENT="OPTIONAL_UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="9" NAME="C_INTERCONNECT_DATA_WIDTH" TYPE="INTEGER" VALUE="64"/>
+        <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="8" NAME="C_M_AXI_DATA_WIDTH" TYPE="STD_LOGIC_VECTOR" VALUE="0x00000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020"/>
+        <PARAMETER ASSIGNMENT="OPTIONAL_UPDATE" MPD_INDEX="9" NAME="C_INTERCONNECT_DATA_WIDTH" TYPE="INTEGER" VALUE="32"/>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="10" NAME="C_S_AXI_PROTOCOL" TYPE="STD_LOGIC_VECTOR" VALUE="0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
         <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="11" NAME="C_M_AXI_PROTOCOL" TYPE="STD_LOGIC_VECTOR" VALUE="0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"/>
         <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_M_AXI_BASE_ADDR" TYPE="STD_LOGIC_VECTOR" VALUE="0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000"/>
@@ -4560,10 +4559,10 @@
         <PORT DEF_SIGNAME="axi_interconnect_1_S_WID" DIR="I" MPD_INDEX="18" NAME="S_AXI_WID" SIGNAME="axi_interconnect_1_S_WID" VECFORMULA="[((C_NUM_SLAVE_SLOTS*C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DEF_SIGNAME="axi_interconnect_1_S_WDATA" DIR="I" ENDIAN="LITTLE" LEFT="63" LSB="0" MPD_INDEX="19" MSB="63" NAME="S_AXI_WDATA" RIGHT="0" SIGNAME="axi_interconnect_1_S_WDATA" VECFORMULA="[((C_NUM_SLAVE_SLOTS*C_AXI_DATA_MAX_WIDTH)-1):0]">
+        <PORT DEF_SIGNAME="axi_interconnect_1_S_WDATA" DIR="I" ENDIAN="LITTLE" LEFT="31" LSB="0" MPD_INDEX="19" MSB="31" NAME="S_AXI_WDATA" RIGHT="0" SIGNAME="axi_interconnect_1_S_WDATA" VECFORMULA="[((C_NUM_SLAVE_SLOTS*C_AXI_DATA_MAX_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DEF_SIGNAME="axi_interconnect_1_S_WSTRB" DIR="I" ENDIAN="LITTLE" LEFT="7" LSB="0" MPD_INDEX="20" MSB="7" NAME="S_AXI_WSTRB" RIGHT="0" SIGNAME="axi_interconnect_1_S_WSTRB" VECFORMULA="[(((C_NUM_SLAVE_SLOTS*C_AXI_DATA_MAX_WIDTH)/8)-1):0]">
+        <PORT DEF_SIGNAME="axi_interconnect_1_S_WSTRB" DIR="I" ENDIAN="LITTLE" LEFT="3" LSB="0" MPD_INDEX="20" MSB="3" NAME="S_AXI_WSTRB" RIGHT="0" SIGNAME="axi_interconnect_1_S_WSTRB" VECFORMULA="[(((C_NUM_SLAVE_SLOTS*C_AXI_DATA_MAX_WIDTH)/8)-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DEF_SIGNAME="axi_interconnect_1_S_WLAST" DIR="I" MPD_INDEX="21" NAME="S_AXI_WLAST" SIGNAME="axi_interconnect_1_S_WLAST" VECFORMULA="[(C_NUM_SLAVE_SLOTS-1):0]">
@@ -4648,7 +4647,7 @@
         <PORT DEF_SIGNAME="axi_interconnect_1_S_RID" DIR="O" MPD_INDEX="42" NAME="S_AXI_RID" SIGNAME="axi_interconnect_1_S_RID" VECFORMULA="[((C_NUM_SLAVE_SLOTS*C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DEF_SIGNAME="axi_interconnect_1_S_RDATA" DIR="O" ENDIAN="LITTLE" LEFT="63" LSB="0" MPD_INDEX="43" MSB="63" NAME="S_AXI_RDATA" RIGHT="0" SIGNAME="axi_interconnect_1_S_RDATA" VECFORMULA="[((C_NUM_SLAVE_SLOTS*C_AXI_DATA_MAX_WIDTH)-1):0]">
+        <PORT DEF_SIGNAME="axi_interconnect_1_S_RDATA" DIR="O" ENDIAN="LITTLE" LEFT="31" LSB="0" MPD_INDEX="43" MSB="31" NAME="S_AXI_RDATA" RIGHT="0" SIGNAME="axi_interconnect_1_S_RDATA" VECFORMULA="[((C_NUM_SLAVE_SLOTS*C_AXI_DATA_MAX_WIDTH)-1):0]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[M_AXI_MM2S]" INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rdata"/>
           </CONNECTIONS>
@@ -4745,12 +4744,12 @@
             <CONNECTION BUSINTERFACE="[S_AXI_HP0]" INSTANCE="processing_system7_0" PORT="S_AXI_HP0_WID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="axi_interconnect_1_M_WDATA" DIR="O" ENDIAN="LITTLE" LEFT="63" LSB="0" MPD_INDEX="64" MSB="63" NAME="M_AXI_WDATA" RIGHT="0" SIGNAME="axi_interconnect_1_M_WDATA" VECFORMULA="[((C_NUM_MASTER_SLOTS*C_AXI_DATA_MAX_WIDTH)-1):0]">
+        <PORT DEF_SIGNAME="axi_interconnect_1_M_WDATA" DIR="O" ENDIAN="LITTLE" LEFT="31" LSB="0" MPD_INDEX="64" MSB="31" NAME="M_AXI_WDATA" RIGHT="0" SIGNAME="axi_interconnect_1_M_WDATA" VECFORMULA="[((C_NUM_MASTER_SLOTS*C_AXI_DATA_MAX_WIDTH)-1):0]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[S_AXI_HP0]" INSTANCE="processing_system7_0" PORT="S_AXI_HP0_WDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="axi_interconnect_1_M_WSTRB" DIR="O" ENDIAN="LITTLE" LEFT="7" LSB="0" MPD_INDEX="65" MSB="7" NAME="M_AXI_WSTRB" RIGHT="0" SIGNAME="axi_interconnect_1_M_WSTRB" VECFORMULA="[(((C_NUM_MASTER_SLOTS*C_AXI_DATA_MAX_WIDTH)/8)-1):0]">
+        <PORT DEF_SIGNAME="axi_interconnect_1_M_WSTRB" DIR="O" ENDIAN="LITTLE" LEFT="3" LSB="0" MPD_INDEX="65" MSB="3" NAME="M_AXI_WSTRB" RIGHT="0" SIGNAME="axi_interconnect_1_M_WSTRB" VECFORMULA="[(((C_NUM_MASTER_SLOTS*C_AXI_DATA_MAX_WIDTH)/8)-1):0]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[S_AXI_HP0]" INSTANCE="processing_system7_0" PORT="S_AXI_HP0_WSTRB"/>
           </CONNECTIONS>
@@ -4862,7 +4861,7 @@
             <CONNECTION BUSINTERFACE="[S_AXI_HP0]" INSTANCE="processing_system7_0" PORT="S_AXI_HP0_RID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="axi_interconnect_1_M_RDATA" DIR="I" ENDIAN="LITTLE" LEFT="63" LSB="0" MPD_INDEX="89" MSB="63" NAME="M_AXI_RDATA" RIGHT="0" SIGNAME="axi_interconnect_1_M_RDATA" VECFORMULA="[((C_NUM_MASTER_SLOTS*C_AXI_DATA_MAX_WIDTH)-1):0]">
+        <PORT DEF_SIGNAME="axi_interconnect_1_M_RDATA" DIR="I" ENDIAN="LITTLE" LEFT="31" LSB="0" MPD_INDEX="89" MSB="31" NAME="M_AXI_RDATA" RIGHT="0" SIGNAME="axi_interconnect_1_M_RDATA" VECFORMULA="[((C_NUM_MASTER_SLOTS*C_AXI_DATA_MAX_WIDTH)-1):0]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[S_AXI_HP0]" INSTANCE="processing_system7_0" PORT="S_AXI_HP0_RDATA"/>
           </CONNECTIONS>
@@ -5011,16 +5010,16 @@
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="4" LSB="0" MPD_INDEX="145" MSB="4" NAME="DEBUG_SR_SC_BRESP" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="146" MSB="63" NAME="DEBUG_SR_SC_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="146" MSB="31" NAME="DEBUG_SR_SC_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="5" LSB="0" MPD_INDEX="147" MSB="5" NAME="DEBUG_SR_SC_RDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(((((1+1)+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="148" MSB="63" NAME="DEBUG_SR_SC_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="148" MSB="31" NAME="DEBUG_SR_SC_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="10" LSB="0" MPD_INDEX="149" MSB="10" NAME="DEBUG_SR_SC_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="6" LSB="0" MPD_INDEX="149" MSB="6" NAME="DEBUG_SR_SC_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="150" MSB="31" NAME="DEBUG_SC_SF_ARADDR" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_ADDR_WIDTH-1):0]">
@@ -5038,16 +5037,16 @@
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="4" LSB="0" MPD_INDEX="154" MSB="4" NAME="DEBUG_SC_SF_BRESP" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="155" MSB="63" NAME="DEBUG_SC_SF_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="155" MSB="31" NAME="DEBUG_SC_SF_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="5" LSB="0" MPD_INDEX="156" MSB="5" NAME="DEBUG_SC_SF_RDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(((((1+1)+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="157" MSB="63" NAME="DEBUG_SC_SF_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="157" MSB="31" NAME="DEBUG_SC_SF_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="10" LSB="0" MPD_INDEX="158" MSB="10" NAME="DEBUG_SC_SF_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="6" LSB="0" MPD_INDEX="158" MSB="6" NAME="DEBUG_SC_SF_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="159" MSB="31" NAME="DEBUG_SF_CB_ARADDR" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_ADDR_WIDTH-1):0]">
@@ -5065,16 +5064,16 @@
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="4" LSB="0" MPD_INDEX="163" MSB="4" NAME="DEBUG_SF_CB_BRESP" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="164" MSB="63" NAME="DEBUG_SF_CB_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="164" MSB="31" NAME="DEBUG_SF_CB_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="5" LSB="0" MPD_INDEX="165" MSB="5" NAME="DEBUG_SF_CB_RDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(((((1+1)+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="166" MSB="63" NAME="DEBUG_SF_CB_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="166" MSB="31" NAME="DEBUG_SF_CB_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="10" LSB="0" MPD_INDEX="167" MSB="10" NAME="DEBUG_SF_CB_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="6" LSB="0" MPD_INDEX="167" MSB="6" NAME="DEBUG_SF_CB_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="168" MSB="31" NAME="DEBUG_CB_MF_ARADDR" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_ADDR_WIDTH-1):0]">
@@ -5092,16 +5091,16 @@
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="4" LSB="0" MPD_INDEX="172" MSB="4" NAME="DEBUG_CB_MF_BRESP" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="173" MSB="63" NAME="DEBUG_CB_MF_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="173" MSB="31" NAME="DEBUG_CB_MF_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="5" LSB="0" MPD_INDEX="174" MSB="5" NAME="DEBUG_CB_MF_RDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(((((1+1)+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="175" MSB="63" NAME="DEBUG_CB_MF_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="175" MSB="31" NAME="DEBUG_CB_MF_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="10" LSB="0" MPD_INDEX="176" MSB="10" NAME="DEBUG_CB_MF_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="6" LSB="0" MPD_INDEX="176" MSB="6" NAME="DEBUG_CB_MF_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="177" MSB="31" NAME="DEBUG_MF_MC_ARADDR" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_ADDR_WIDTH-1):0]">
@@ -5119,16 +5118,16 @@
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="4" LSB="0" MPD_INDEX="181" MSB="4" NAME="DEBUG_MF_MC_BRESP" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="182" MSB="63" NAME="DEBUG_MF_MC_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="182" MSB="31" NAME="DEBUG_MF_MC_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="5" LSB="0" MPD_INDEX="183" MSB="5" NAME="DEBUG_MF_MC_RDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(((((1+1)+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="184" MSB="63" NAME="DEBUG_MF_MC_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="184" MSB="31" NAME="DEBUG_MF_MC_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="10" LSB="0" MPD_INDEX="185" MSB="10" NAME="DEBUG_MF_MC_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="6" LSB="0" MPD_INDEX="185" MSB="6" NAME="DEBUG_MF_MC_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="186" MSB="31" NAME="DEBUG_MC_MP_ARADDR" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_ADDR_WIDTH-1):0]">
@@ -5146,16 +5145,16 @@
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="4" LSB="0" MPD_INDEX="190" MSB="4" NAME="DEBUG_MC_MP_BRESP" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="191" MSB="63" NAME="DEBUG_MC_MP_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="191" MSB="31" NAME="DEBUG_MC_MP_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="5" LSB="0" MPD_INDEX="192" MSB="5" NAME="DEBUG_MC_MP_RDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(((((1+1)+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="193" MSB="63" NAME="DEBUG_MC_MP_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="193" MSB="31" NAME="DEBUG_MC_MP_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="10" LSB="0" MPD_INDEX="194" MSB="10" NAME="DEBUG_MC_MP_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="6" LSB="0" MPD_INDEX="194" MSB="6" NAME="DEBUG_MC_MP_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="195" MSB="31" NAME="DEBUG_MP_MR_ARADDR" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_ADDR_WIDTH-1):0]">
@@ -5173,16 +5172,16 @@
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="4" LSB="0" MPD_INDEX="199" MSB="4" NAME="DEBUG_MP_MR_BRESP" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="200" MSB="63" NAME="DEBUG_MP_MR_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="200" MSB="31" NAME="DEBUG_MP_MR_RDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="5" LSB="0" MPD_INDEX="201" MSB="5" NAME="DEBUG_MP_MR_RDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(((((1+1)+1)+2)+C_AXI_ID_WIDTH)-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="63" LSB="0" MPD_INDEX="202" MSB="63" NAME="DEBUG_MP_MR_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="31" LSB="0" MPD_INDEX="202" MSB="31" NAME="DEBUG_MP_MR_WDATA" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[(C_AXI_DATA_MAX_WIDTH-1):0]">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="10" LSB="0" MPD_INDEX="203" MSB="10" NAME="DEBUG_MP_MR_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_VALID="FALSE" LEFT="6" LSB="0" MPD_INDEX="203" MSB="6" NAME="DEBUG_MP_MR_WDATACONTROL" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[((((1+1)+1)+(C_AXI_DATA_MAX_WIDTH/8))-1):0]">
           <CONNECTIONS/>
         </PORT>
       </PORTS>
@@ -5728,6 +5727,7 @@
         <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="12" NAME="video_hsync" SIGNAME="v_axi4s_vid_out_0_video_hsync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="VGA_HS"/>
+            <CONNECTION INSTANCE="External Ports" PORT="v_axi4s_vid_out_0_video_hsync_pin"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="13" NAME="video_vblank" SIGNAME="v_axi4s_vid_out_0_video_vblank">
@@ -5741,6 +5741,7 @@
         <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="11" NAME="video_vsync" SIGNAME="v_axi4s_vid_out_0_video_vsync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="VGA_VS"/>
+            <CONNECTION INSTANCE="External Ports" PORT="v_axi4s_vid_out_0_video_vsync_pin"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" MHS_INDEX="4" MPD_INDEX="14" NAME="video_hblank" SIGNAME="__NOC__">
@@ -5761,9 +5762,9 @@
             <CONNECTION INSTANCE="net_gnd"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" IS_INSTANTIATED="TRUE" MPD_INDEX="2" NAME="aresetn" SIGIS="RST" SIGNAME="axi4lite_0_S_ARESETN">
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MPD_INDEX="2" NAME="aresetn" SIGIS="RST" SIGNAME="net_vcc">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi4lite_0" PORT="S_AXI_ARESET_OUT_N"/>
+            <CONNECTION INSTANCE="net_vcc"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" IS_INSTANTIATED="TRUE" MPD_INDEX="3" NAME="aclken" SIGNAME="net_vcc">
@@ -5824,20 +5825,26 @@
             <CONNECTION BUSINTERFACE="[VTIMING_OUT]" INSTANCE="v_tc_0" PORT="active_video_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" MPD_INDEX="21" NAME="vtg_ce" SIGNAME="__NOC__">
-          <CONNECTIONS/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="21" NAME="vtg_ce" SIGNAME="v_axi4s_vid_out_0_vtg_ce">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tc_0" PORT="gen_clken"/>
+          </CONNECTIONS>
         </PORT>
         <PORT DIR="O" MPD_INDEX="22" NAME="vtg_fsync" SIGNAME="__NOC__">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" MPD_INDEX="23" NAME="locked" SIGNAME="__NOC__">
-          <CONNECTIONS/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="23" NAME="locked" SIGNAME="v_axi4s_vid_out_0_locked">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="v_axi4s_vid_out_0_locked_pin"/>
+          </CONNECTIONS>
         </PORT>
         <PORT DIR="O" MPD_INDEX="24" NAME="wr_error" SIGNAME="__NOC__">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="O" MPD_INDEX="25" NAME="empty" SIGNAME="__NOC__">
-          <CONNECTIONS/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="25" NAME="empty" SIGNAME="v_axi4s_vid_out_0_empty">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="v_axi4s_vid_out_0_empty_pin"/>
+          </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
@@ -6078,9 +6085,9 @@
         <PORT DIR="I" IS_VALID="FALSE" MPD_INDEX="25" NAME="det_clken" SIGNAME="__NOC__">
           <CONNECTIONS/>
         </PORT>
-        <PORT DIR="I" IS_INSTANTIATED="TRUE" MPD_INDEX="26" NAME="gen_clken" SIGNAME="net_vcc">
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MPD_INDEX="26" NAME="gen_clken" SIGNAME="v_axi4s_vid_out_0_vtg_ce">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="net_vcc"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vtg_ce"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" MPD_INDEX="27" NAME="fsync_in" SIGNAME="__NOC__">
@@ -6352,6 +6359,26 @@
     <PORT DIR="O" MHS_INDEX="28" NAME="v_tc_0_hsync_out_pin" SIGNAME="v_tc_0_VTIMING_OUT_hsync">
       <CONNECTIONS>
         <CONNECTION BUSINTERFACE="[VTIMING_OUT]" INSTANCE="v_tc_0" PORT="hsync_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="29" NAME="v_axi4s_vid_out_0_empty_pin" SIGNAME="v_axi4s_vid_out_0_empty">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="empty"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="30" NAME="v_axi4s_vid_out_0_locked_pin" SIGNAME="v_axi4s_vid_out_0_locked">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="locked"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="31" NAME="v_axi4s_vid_out_0_video_vsync_pin" SIGNAME="v_axi4s_vid_out_0_video_vsync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="video_vsync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="32" NAME="v_axi4s_vid_out_0_video_hsync_pin" SIGNAME="v_axi4s_vid_out_0_video_hsync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="video_hsync"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

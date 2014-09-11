@@ -211,7 +211,7 @@ begin
       C_GEN_VBLANK_EN => 0,
       C_GEN_AVIDEO_EN => 1,
       C_GEN_ACHROMA_EN => 0,
-      C_GEN_VIDEO_FORMAT => 1,
+      C_GEN_VIDEO_FORMAT => 2,
       C_GEN_CPARITY => 0,
       C_SYNC_EN => 0,
       C_GEN_VBLANK_POLARITY => 1,

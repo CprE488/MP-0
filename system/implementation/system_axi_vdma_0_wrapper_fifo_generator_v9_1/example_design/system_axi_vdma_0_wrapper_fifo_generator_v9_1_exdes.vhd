@@ -73,13 +73,15 @@ use unisim.vcomponents.all;
 --------------------------------------------------------------------------------
 entity system_axi_vdma_0_wrapper_fifo_generator_v9_1_exdes is
    PORT (
-           CLK                       : IN  std_logic;
-     	   DATA_COUNT                : OUT std_logic_vector(8-1 DOWNTO 0);
-           SRST                      : IN  std_logic;
+           WR_CLK                    : IN  std_logic;
+     	   RD_CLK                    : IN  std_logic;
+     	   WR_DATA_COUNT             : OUT std_logic_vector(12-1 DOWNTO 0);
+           RD_DATA_COUNT             : OUT std_logic_vector(12-1 DOWNTO 0);
+           RST                       : IN  std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;
-           DIN                       : IN  std_logic_vector(18-1 DOWNTO 0);
-           DOUT                      : OUT std_logic_vector(18-1 DOWNTO 0);
+           DIN                       : IN  std_logic_vector(20-1 DOWNTO 0);
+           DOUT                      : OUT std_logic_vector(20-1 DOWNTO 0);
            FULL                      : OUT std_logic;
            EMPTY                     : OUT std_logic);
 
@@ -89,19 +91,22 @@ end system_axi_vdma_0_wrapper_fifo_generator_v9_1_exdes;
 
 architecture xilinx of system_axi_vdma_0_wrapper_fifo_generator_v9_1_exdes is
 
-  signal clk_i    : std_logic;
+  signal wr_clk_i : std_logic;
+  signal rd_clk_i : std_logic;
 
 
 
   component system_axi_vdma_0_wrapper_fifo_generator_v9_1 is
    PORT (
-           CLK                       : IN  std_logic;
-     	   DATA_COUNT                : OUT std_logic_vector(8-1 DOWNTO 0);
-           SRST                      : IN  std_logic;
+           WR_CLK                    : IN  std_logic;
+     	   RD_CLK                    : IN  std_logic;
+     	   WR_DATA_COUNT             : OUT std_logic_vector(12-1 DOWNTO 0);
+           RD_DATA_COUNT             : OUT std_logic_vector(12-1 DOWNTO 0);
+           RST                       : IN  std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;
-           DIN                       : IN  std_logic_vector(18-1 DOWNTO 0);
-           DOUT                      : OUT std_logic_vector(18-1 DOWNTO 0);
+           DIN                       : IN  std_logic_vector(20-1 DOWNTO 0);
+           DOUT                      : OUT std_logic_vector(20-1 DOWNTO 0);
            FULL                      : OUT std_logic;
            EMPTY                     : OUT std_logic);
 
@@ -109,19 +114,27 @@ architecture xilinx of system_axi_vdma_0_wrapper_fifo_generator_v9_1_exdes is
 
 
 begin
-  clk_buf: bufg
+
+  wr_clk_buf: bufg
     PORT map(
-      i => CLK,
-      o => clk_i
+      i => WR_CLK,
+      o => wr_clk_i
       );
 
+  rd_clk_buf: bufg
+    PORT map(
+      i => RD_CLK,
+      o => rd_clk_i
+      );
 
 
   exdes_inst : system_axi_vdma_0_wrapper_fifo_generator_v9_1 
     PORT MAP (
-           CLK                       => clk_i,
-           DATA_COUNT                => data_count,
-           SRST                      => srst,
+           WR_CLK                    => wr_clk_i,
+           RD_CLK                    => rd_clk_i,
+           WR_DATA_COUNT             => wr_data_count,
+           RD_DATA_COUNT             => rd_data_count,
+           RST                       => rst,
            WR_EN 		     => wr_en,
            RD_EN                     => rd_en,
            DIN                       => din,

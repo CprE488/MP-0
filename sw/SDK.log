@@ -87,3 +87,104 @@
 16:33:03.678 INFO  - PS Initialization is complete. 
 16:48:18.900 INFO  - Processor reset is completed for ps7_cortexa9_0 
 16:49:52.241 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:06:13.479 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+17:06:13.490 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:27:56.716 INFO  - Processing command line option -hwspec /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml. 
+17:27:58.701 INFO  - The hardware specification for project 'system_hw_platform' is different from /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml. 
+17:27:58.711 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml into /system_hw_platform/system.xml. 
+17:27:58.720 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+17:27:58.812 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.c into /system_hw_platform/ps7_init.c. 
+17:27:58.813 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.h into /system_hw_platform/ps7_init.h. 
+17:27:58.815 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.html into /system_hw_platform/ps7_init.html. 
+17:27:58.816 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.tcl into /system_hw_platform/ps7_init.tcl. 
+17:27:59.658 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:28:02.369 INFO  - Updating hardware inferred compiler options for cyclone_checker. 
+17:28:03.124 INFO  - Updating hardware inferred compiler options for hello_world. 
+17:28:03.875 INFO  - Updating hardware inferred compiler options for vga_test. 
+17:28:03.900 INFO  - Clearing existing target manager status. 
+17:28:03.957 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use 
+17:29:39.550 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+17:30:20.694 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:34:08.475 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+17:34:40.134 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:34:48.643 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+17:37:04.325 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+17:37:58.418 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:38:00.419 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+17:38:18.455 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:39:13.534 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:39:57.935 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use 
+17:40:14.543 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+17:40:25.514 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:40:25.614 INFO  - PS initialization will be done as it is not done before. 
+17:40:25.614 INFO  - Running PS initialization.... 
+17:40:27.187 INFO  - ps7_init is completed. 
+17:40:27.287 INFO  - ps7_post_config is completed. 
+17:40:27.387 INFO  - PS Initialization is complete. 
+17:41:09.216 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+17:43:10.125 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+17:44:11.867 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:44:11.967 INFO  - PS initialization will be done as it is not done before. 
+17:44:11.967 INFO  - Running PS initialization.... 
+17:44:13.038 INFO  - ps7_init is completed. 
+17:44:13.138 INFO  - ps7_post_config is completed. 
+17:44:13.238 INFO  - PS Initialization is complete. 
+18:10:54.026 INFO  - Project system_hw_platform's source hardware specification located at /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+18:11:00.563 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml into /system_hw_platform/system.xml. 
+18:11:00.576 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+18:11:00.628 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.c into /system_hw_platform/ps7_init.c. 
+18:11:00.628 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.h into /system_hw_platform/ps7_init.h. 
+18:11:00.630 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.html into /system_hw_platform/ps7_init.html. 
+18:11:00.631 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.tcl into /system_hw_platform/ps7_init.tcl. 
+18:11:01.131 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:11:20.327 INFO  - Updating hardware inferred compiler options for cyclone_checker. 
+18:11:21.078 INFO  - Updating hardware inferred compiler options for hello_world. 
+18:11:21.830 INFO  - Updating hardware inferred compiler options for vga_test. 
+18:11:21.868 INFO  - Clearing existing target manager status. 
+18:33:56.099 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+18:35:28.194 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+18:36:54.058 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+18:37:38.496 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:40:00.237 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:43:32.258 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+18:46:01.615 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+18:46:21.732 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:46:21.832 INFO  - PS initialization will be done as it is not done before. 
+18:46:21.833 INFO  - Running PS initialization.... 
+18:46:22.980 INFO  - ps7_init is completed. 
+18:46:23.081 INFO  - ps7_post_config is completed. 
+18:46:23.181 INFO  - PS Initialization is complete. 
+19:09:29.446 INFO  - Project system_hw_platform's source hardware specification located at /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+19:09:32.662 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.xml into /system_hw_platform/system.xml. 
+19:09:32.670 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+19:09:32.724 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.c into /system_hw_platform/ps7_init.c. 
+19:09:32.725 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.h into /system_hw_platform/ps7_init.h. 
+19:09:32.727 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.html into /system_hw_platform/ps7_init.html. 
+19:09:32.727 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/ps7_init.tcl into /system_hw_platform/ps7_init.tcl. 
+19:09:33.320 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+19:09:35.726 INFO  - Updating hardware inferred compiler options for cyclone_checker. 
+19:09:36.477 INFO  - Updating hardware inferred compiler options for hello_world. 
+19:09:37.227 INFO  - Updating hardware inferred compiler options for vga_test. 
+19:09:37.254 INFO  - Clearing existing target manager status. 
+19:21:49.647 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+19:22:03.283 INFO  - Copied contents of /tmp/cpre488/MP-0/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+19:23:04.243 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+19:23:23.156 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:37:53.860 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+19:37:53.865 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

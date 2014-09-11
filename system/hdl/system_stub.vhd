@@ -37,7 +37,11 @@ entity system_stub is
     VGA_HS : out std_logic;
     VGA_DATA : out std_logic_vector(11 downto 0);
     v_tc_0_vsync_out_pin : out std_logic;
-    v_tc_0_hsync_out_pin : out std_logic
+    v_tc_0_hsync_out_pin : out std_logic;
+    v_axi4s_vid_out_0_empty_pin : out std_logic;
+    v_axi4s_vid_out_0_locked_pin : out std_logic;
+    v_axi4s_vid_out_0_video_vsync_pin : out std_logic;
+    v_axi4s_vid_out_0_video_hsync_pin : out std_logic
   );
 end system_stub;
 
@@ -73,7 +77,11 @@ architecture STRUCTURE of system_stub is
       VGA_HS : out std_logic;
       VGA_DATA : out std_logic_vector(11 downto 0);
       v_tc_0_vsync_out_pin : out std_logic;
-      v_tc_0_hsync_out_pin : out std_logic
+      v_tc_0_hsync_out_pin : out std_logic;
+      v_axi4s_vid_out_0_empty_pin : out std_logic;
+      v_axi4s_vid_out_0_locked_pin : out std_logic;
+      v_axi4s_vid_out_0_video_vsync_pin : out std_logic;
+      v_axi4s_vid_out_0_video_hsync_pin : out std_logic
     );
   end component;
 
@@ -112,7 +120,11 @@ begin
       VGA_HS => VGA_HS,
       VGA_DATA => VGA_DATA,
       v_tc_0_vsync_out_pin => v_tc_0_vsync_out_pin,
-      v_tc_0_hsync_out_pin => v_tc_0_hsync_out_pin
+      v_tc_0_hsync_out_pin => v_tc_0_hsync_out_pin,
+      v_axi4s_vid_out_0_empty_pin => v_axi4s_vid_out_0_empty_pin,
+      v_axi4s_vid_out_0_locked_pin => v_axi4s_vid_out_0_locked_pin,
+      v_axi4s_vid_out_0_video_vsync_pin => v_axi4s_vid_out_0_video_vsync_pin,
+      v_axi4s_vid_out_0_video_hsync_pin => v_axi4s_vid_out_0_video_hsync_pin
     );
 
 end architecture STRUCTURE;

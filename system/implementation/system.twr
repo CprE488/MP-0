@@ -28,13 +28,27 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
    please see the device datasheet.
 
 ================================================================================
+Timing constraint: PATH "TS_axi_vdma_0_cdc_tig_v_path" TIG;
+
+ 720 paths analyzed, 387 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_axi_vdma_0_cdc_from_2_cdc_to_path" TIG;
+
+ 16 paths analyzed, 16 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
 Timing constraint: TS_v_tc_0_async_clock_conv = MAXDELAY FROM TIMEGRP "FFS" TO 
 TIMEGRP         "v_tc_0_async_clock_conv_FFDEST" 10 ns DATAPATHONLY;
 For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
 
  34 paths analyzed, 34 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   1.928ns.
+ Maximum delay is   1.782ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -44,7 +58,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  42 paths analyzed, 42 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   1.756ns.
+ Maximum delay is   1.815ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -62,22 +76,22 @@ Timing constraint: PATH "TS_axi4lite_0_reset_resync_path" TIG;
 --------------------------------------------------------------------------------
 
 ================================================================================
+Timing constraint: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 42701 paths analyzed, 9683 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.808ns.
+--------------------------------------------------------------------------------
+
+================================================================================
 Timing constraint: TS_clk_fpga_1 = PERIOD TIMEGRP "clk_fpga_1" 25 MHz HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
  22780 paths analyzed, 5911 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  11.820ns.
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH 
-50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 56842 paths analyzed, 9902 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   8.740ns.
+ Minimum period is  10.202ns.
 --------------------------------------------------------------------------------
 
 
@@ -95,21 +109,21 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 79702 paths, 0 nets, and 20119 connections
+Constraints cover 66297 paths, 0 nets, and 19620 connections
 
 Design statistics:
-   Minimum period:  11.820ns   (Maximum frequency:  84.602MHz)
-   Maximum path delay from/to any node:   1.928ns
+   Minimum period:  10.202ns   (Maximum frequency:  98.020MHz)
+   Maximum path delay from/to any node:   1.815ns
 
 
-Analysis completed Wed Sep 10 16:22:56 2014 
+Analysis completed Wed Sep 10 19:20:23 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 830 MB
+Peak Memory Usage: 831 MB
 
 
 

@@ -188,7 +188,8 @@ PACKAGE system_axi_vdma_0_wrapper_fifo_generator_v9_1_pkg IS
 	   TB_SEED        : INTEGER := 1
 	 );
   PORT(
-	CLK        :  IN  STD_LOGIC;
+	WR_CLK     :  IN  STD_LOGIC;
+	RD_CLK     :  IN  STD_LOGIC;
         RESET      :  IN  STD_LOGIC;
         SIM_DONE   :  OUT STD_LOGIC;
         STATUS     :  OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
@@ -197,13 +198,15 @@ PACKAGE system_axi_vdma_0_wrapper_fifo_generator_v9_1_pkg IS
  ------------------------
  COMPONENT system_axi_vdma_0_wrapper_fifo_generator_v9_1_exdes IS
    PORT (
-           CLK                       : IN  std_logic;
-     	   DATA_COUNT                : OUT std_logic_vector(8-1 DOWNTO 0);
-           SRST                      : IN  std_logic;
+           WR_CLK                    : IN  std_logic;
+     	   RD_CLK                    : IN  std_logic;
+     	   WR_DATA_COUNT             : OUT std_logic_vector(12-1 DOWNTO 0);
+           RD_DATA_COUNT             : OUT std_logic_vector(12-1 DOWNTO 0);
+           RST                       : IN  std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;
-           DIN                       : IN  std_logic_vector(18-1 DOWNTO 0);
-           DOUT                      : OUT std_logic_vector(18-1 DOWNTO 0);
+           DIN                       : IN  std_logic_vector(20-1 DOWNTO 0);
+           DOUT                      : OUT std_logic_vector(20-1 DOWNTO 0);
            FULL                      : OUT std_logic;
            EMPTY                     : OUT std_logic);
 

@@ -1,6 +1,10 @@
-## INFO: No CDC present in axi_vdma_0
-## INFO: When C_PRMRY_IS_ACLK_ASYNC = 0, AXI-VDMA MANDATORY REQUIREMENT IS THAT ALL AXI-VDMA CLOCK PORTS MUST BE CONNECTED TO THE SAME CLOCK SOURCE HAVING SAME FREQUENCY i.e. THERE IS ONLY ONE CLOCK-DOMAIN IN THE ENTIRE axi_vdma_0 DESIGN
-## INFO: PLEASE ENSURE THIS REQUIREMENT IS MET.
+## INFO: AXI-Lite to&fro MMAP clock domain Crossings in axi_vdma_0
+INST "axi_vdma_0/*cdc_tig*" TNM = FFS "TNM_axi_vdma_0_cdc_tig_v";
+TIMESPEC TS_axi_vdma_0_cdc_tig_v = TO "TNM_axi_vdma_0_cdc_tig_v" TIG;
+## INFO: CDC Crossings in axi_vdma_0
+INST "axi_vdma_0/*cdc_from*" TNM = FFS "TNM_axi_vdma_0_cdc_from";
+INST "axi_vdma_0/*cdc_to*" TNM = FFS "TNM_axi_vdma_0_cdc_to";
+TIMESPEC TS_axi_vdma_0_cdc_from_2_cdc_to = FROM "TNM_axi_vdma_0_cdc_from" TO "TNM_axi_vdma_0_cdc_to" TIG;
 #
 #
 

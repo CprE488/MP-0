@@ -59,7 +59,6 @@ int main() {
     // Set up VDMA config registers
 	#define CHANGE_ME 0
 
-    //Xil_Out32(XPAR_LEDS_8BITS_BASEADDR,led);
 
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_CR_OFFSET,  3);  // Circular Mode and Start bits set, VDMA MM2S Control
     XAxiVdma_WriteReg(XPAR_AXI_VDMA_0_BASEADDR, XAXIVDMA_HI_FRMBUF_OFFSET, 0);  // VDMA MM2S Reg_Index
