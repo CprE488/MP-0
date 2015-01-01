@@ -1,6 +1,11 @@
 MP-0 Report
 ===========
 
+Team member contributions
+-------------------------
+Jeramie Vens: 50%
+Adam Sunderman: 50%
+
 describe how nes_bootloader.c currently works
 ---------------------------------------------
 1. Initialize the board
@@ -34,4 +39,11 @@ Describe what print() does, and how.
 ------------------------------------
 Print() calls outbyte() for each character in the string. It takes less memory.
 
+VDMA Register Values
+--------------------
+We want to operate in circular mode and start the VDMA so we set the config register to 0b11.  The rest were setting to match the hardware settings and set the size of the buffer values.  Last was to point to the start of the memory map which held the frame buffer.
+
+Color Values
+------------
+We rounded each byte to the MSN.  Therefore, 0xYZ rounds to Y when Z is less than 8 and rounds to Y+1 otherwise.
 
