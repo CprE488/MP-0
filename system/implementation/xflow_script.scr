@@ -6,7 +6,7 @@
 #
 # Command line for ngdbuild
 #
-ngdbuild -p xc7z020clg484-1 -nt timestamp -bm system.bmm "/tmp/cpre488/MP-0/system/implementation/system.ngc" -uc system.ucf system.ngd 
+ngdbuild -p xc7z020clg484-1 -nt timestamp -bm system.bmm "/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system.ngc" -uc system.ucf system.ngd 
 
 #
 # Command line for map

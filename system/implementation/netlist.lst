@@ -1,11 +1,11 @@
-/tmp/cpre488/MP-0/system/implementation/system.ngc 1410394368
-/tmp/cpre488/MP-0/system/implementation/system_processing_system7_0_wrapper.ngc 1410394257
-/tmp/cpre488/MP-0/system/implementation/system_axi4lite_0_wrapper.ngc 1410394257
-/tmp/cpre488/MP-0/system/implementation/system_axi_interconnect_1_wrapper.ngc 1410394257
-/tmp/cpre488/MP-0/system/implementation/system_v_axi4s_vid_out_0_wrapper.ngc 1410394257
-/tmp/cpre488/MP-0/system/implementation/system_v_tc_0_wrapper.ngc 1410394277
-/tmp/cpre488/MP-0/system/implementation/system_axi_vdma_0_wrapper.ngc 1410394257
-/tmp/cpre488/MP-0/system/implementation/system_sws_8bits_wrapper.ngc 1410394257
-/tmp/cpre488/MP-0/system/implementation/system_leds_8bits_wrapper.ngc 1410394257
-/tmp/cpre488/MP-0/system/implementation/system_btns_5bits_wrapper.ngc 1410394257
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system.ngc 1410396834
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_processing_system7_0_wrapper.ngc 1410396715
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_axi4lite_0_wrapper.ngc 1410396715
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_axi_interconnect_1_wrapper.ngc 1410396716
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_v_axi4s_vid_out_0_wrapper.ngc 1410396716
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_v_tc_0_wrapper.ngc 1410396738
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_axi_vdma_0_wrapper.ngc 1410396716
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_sws_8bits_wrapper.ngc 1410396715
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_leds_8bits_wrapper.ngc 1410396715
+/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/system/implementation/system_btns_5bits_wrapper.ngc 1410396715
 OK

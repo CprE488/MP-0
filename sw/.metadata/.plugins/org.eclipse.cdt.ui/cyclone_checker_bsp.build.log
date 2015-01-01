@@ -1,4 +1,4 @@
-19:22:20 **** Auto Build of project cyclone_checker_bsp ****
+20:35:31 **** Auto Build of project cyclone_checker_bsp ****
 make -k all 
 libgen -hw ../system_hw_platform/system.xml\
 	       \
@@ -46,5 +46,5 @@ Compiling cpu_cortexa9
 Running execs_generate.
 Finished building libraries
 
-19:22:37 Build Finished (took 16s.952ms)
+20:36:40 Build Finished (took 1m:8s.747ms)
 

@@ -188,3 +188,11 @@
 	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
 
 19:37:53.865 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:38:13.739 INFO  - FPGA configured successfully with bitstream "/tmp/cpre488/MP-0/sw/system_hw_platform/system.bit" 
+20:38:51.093 INFO  - FPGA configured successfully with bitstream "/home/vens/classes/Fall2014/cpre488/labs/mp0/MP-0/sw/system_hw_platform/system.bit" 
+20:39:14.214 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:40:03.550 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:40:03.556 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
